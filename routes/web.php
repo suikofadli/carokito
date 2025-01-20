@@ -1,20 +1,25 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostByCategoryController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostDetailController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
+
+Route::get('/', HomeController::class)->name('home');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -69,6 +74,5 @@ Route::get('/info-iklan', function () {
     return 'Info Iklan';
 });
 
-Route::get('/{category}', function ($category) {
-    return "Category: {$category}";
-});
+Route::get('/{category:slug}', PostByCategoryController::class)->name('posts.category.index');
+Route::get('/{category:slug}/{post:slug}', PostDetailController::class)->name('posts.show');

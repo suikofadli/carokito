@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('content');
             $table->string('cover_image_url')->nullable();
+            $table->integer('view_count')->default(0);
             $table->foreignIdFor(Category::class)->constrained();
             $table->foreignIdFor(User::class)->constrained();
             $table->timestamps();
