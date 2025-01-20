@@ -1,0 +1,27 @@
+<template>
+    <div>
+        <editor v-model="content" />
+
+        <div class="output-group">
+            <label>Content</label>
+            <code>{{ content }}</code>
+        </div>
+    </div>
+</template>
+
+<script setup>
+import { ref, watch } from 'vue';
+import Editor from './TiptapEditor.vue'
+
+const { initialContent } = defineProps({
+    initialContent: String
+})
+
+const emit = defineEmits(['updateContent'])
+
+const content = ref(initialContent);
+
+watch(content, () => {
+    emit('updateContent', content.value)
+})
+</script>
