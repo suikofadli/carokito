@@ -26,7 +26,7 @@
                     </div>
 
                     <figure class="h-28 aspect-video self-start">
-                        <img :src="post.cover_image_url" :alt="post.title"
+                        <img :src="'/storage/' + post.cover_image_url" :alt="post.title"
                             class="h-full w-full object-cover rounded-sm" />
                     </figure>
                 </article>
