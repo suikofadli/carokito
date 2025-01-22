@@ -1,14 +1,3 @@
-<template>
-    <div>
-        <editor v-model="content" />
-
-        <div class="output-group">
-            <label>Content</label>
-            <code>{{ content }}</code>
-        </div>
-    </div>
-</template>
-
 <script setup>
 import { ref, watch } from 'vue';
 import Editor from './TiptapEditor.vue'
@@ -25,3 +14,7 @@ watch(content, () => {
     emit('updateContent', content.value)
 })
 </script>
+
+<template>
+    <editor v-model="content" />
+</template>

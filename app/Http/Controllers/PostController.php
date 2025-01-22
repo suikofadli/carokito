@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 
 class PostController extends Controller
@@ -30,7 +31,7 @@ class PostController extends Controller
         ]);
 
         if ($request->hasFile('coverImage')) {
-            $coverImageUrl = $request->file('coverImage')->storeAs('images');
+            $coverImageUrl = $request->file('coverImage')->store('images');
         }
 
         Post::create([
@@ -75,7 +76,11 @@ class PostController extends Controller
         ]);
 
         if ($request->hasFile('coverImage')) {
-            $coverImageUrl = $request->file('coverImage')->storeAs('images');
+            if (isset($post->cover_image_url) && Storage::exists($post->cover_image_url)) {
+                Storage::delete($post->cover_image_url);
+            }
+
+            $coverImageUrl = $request->file('coverImage')->store('images');
         }
 
         $post->update([

@@ -1,29 +1,43 @@
 <template>
-    <nav>
-        <ul>
-            <li v-for="category in categories" :key="category.id">
-                <Link :href="route('posts.category.index', category.slug)">
-                {{ category.name }}
-                </Link>
-            </li>
-        </ul>
-    </nav>
+    <BaseLayout>
+        <div class="grid grid-cols-2 gap-7 mt-5">
+            <div class="grid grid-cols-1 divide-y">
+                <article v-for="post in newestPosts" :key="post.id"
+                    class="relative group flex gap-3 justify-between py-3">
+                    <Link :href="route('posts.show', {
+                        category: post.category.slug,
+                        post: post.slug
+                    })" class="absolute inset-0 z-10">
+                    </Link>
 
-    <div>
-        <div>Post Terbaru</div>
-        <pre>
-            {{ newestPosts }}
-        </pre>
+                    <div>
+                        <div class="font-bold text-xl group-hover:text-indigo-600">{{ post.title }}</div>
 
-        <div>Post Populer</div>
-        <pre>
-            {{ popularPosts }}
-        </pre>
-    </div>
+                        <div class="flex gap-2 mt-2">
+                            <Link :href="route('posts.category.index', post.category)"
+                                class="font-medium underline z-20 hover:text-indigo-600">
+                            {{ post.category.name }}
+                            </Link>
+                            &middot;
+                            <div>
+                                {{ post.created_at_formatted }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <figure class="h-28 aspect-video self-start">
+                        <img :src="post.cover_image_url" :alt="post.title"
+                            class="h-full w-full object-cover rounded-sm" />
+                    </figure>
+                </article>
+            </div>
+        </div>
+    </BaseLayout>
 </template>
 
 <script setup>
 import { Link } from '@inertiajs/vue3';
+import BaseLayout from '@/Layouts/BaseLayout.vue';
 
 defineProps({
     categories: Array,

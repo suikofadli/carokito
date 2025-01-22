@@ -14,9 +14,15 @@ class HomeController extends Controller
     public function __invoke(Request $request)
     {
         $newestPosts = Post::query()
+            ->with('category')
             ->latest()
             ->limit(10)
-            ->get();
+            ->get()
+            ->map(function ($post) {
+                return $post->toArray() + [
+                    'created_at_formatted' => $post->created_at->diffForHumans(),
+                ];
+            });
 
         // Get popular posts in the 30 days left
         $popularPosts = Post::query()
