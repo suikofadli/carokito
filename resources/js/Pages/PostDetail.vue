@@ -1,15 +1,51 @@
 <template>
-    <div>
-        Post Detail
 
-        <div>
-            {{ post }}
+    <Head>
+        <title>{{ post.title }}</title>
+    </Head>
+
+    <div class="grid grid-cols-12 gap-7">
+        <div class="col-span-8">
+            <Breadcrumb :pages="breadcrumbPages" class="mb-4" />
+
+            <article class="prose">
+                <header>
+                    <h1 class="capitalize md:text-4xl mb-2.5">{{ post.title }}</h1>
+                    <p class="my-0 text-sm">
+                        Kamis, 23 Januari 2025 13:07 WIB
+                        &middot;
+                        waktu baca 2 menit
+                    </p>
+                </header>
+
+                <main class="mt-6">
+                    <figure v-if="!!post.cover_image_url">
+                        <img :src="'/storage/' + post.cover_image_url" :alt="post.title">
+                    </figure>
+
+                    <div v-html="post.content"></div>
+                </main>
+            </article>
         </div>
     </div>
+
 </template>
 
 <script setup>
-defineProps({
-    post: Object
+import Breadcrumb from '@/Components/Core/Breadcrumb.vue';
+import BaseLayout from '@/Layouts/BaseLayout.vue';
+import { computed } from 'vue';
+
+defineOptions({
+    layout: BaseLayout
 })
+
+const { category } = defineProps({
+    post: Object,
+    category: Object
+})
+
+const breadcrumbPages = computed(() => [
+    { name: category.name, href: `/${category.slug}`, current: false }
+])
 </script>

@@ -12,14 +12,12 @@ import { Link } from '@inertiajs/vue3';
                 <a href="/">
                     <img src="https://rbtv.disway.id/assets/logo.png" alt="" class="w-56">
                 </a>
-
-                <!-- Search -->
-
             </div>
 
             <!-- Actions -->
             <div class="flex gap-2">
                 <div class="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end">
+                    <!-- Search -->
                     <div class="grid w-full max-w-lg grid-cols-1 lg:max-w-xs">
                         <input type="search" name="search"
                             class="col-start-1 row-start-1 block w-full rounded-sm bg-white py-1.5 pl-10 pr-3 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
@@ -45,7 +43,7 @@ import { Link } from '@inertiajs/vue3';
     </nav>
 
     <main>
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-5xl mx-auto mt-5">
             <slot />
         </div>
     </main>

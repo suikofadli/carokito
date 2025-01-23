@@ -15,6 +15,7 @@ class PostDetailController extends Controller
     {
         return inertia('PostDetail', [
             'post' => $post,
+            'category' => $category
         ]);
     }
 }
