@@ -32,13 +32,13 @@ require __DIR__.'/auth.php';
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
 Route::get('/dashboard/posts', function () {
     return 'List Post';
 });
 
-Route::middleware(['auth', 'verified'])
+Route::middleware(['auth'])
     ->prefix('/dashboard/posts')->group(function () {
         Route::get('/', [PostController::class, 'index'])->name('dashboard.posts.index');
         Route::post('/', [PostController::class, 'store'])->name('dashboard.posts.store');
