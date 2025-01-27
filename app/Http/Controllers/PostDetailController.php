@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\PostResource;
 use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
@@ -13,9 +14,11 @@ class PostDetailController extends Controller
      */
     public function __invoke(Request $request, Category $category, Post $post)
     {
+        $post = PostResource::make($post);
+
         return inertia('PostDetail', [
             'post' => $post,
-            'category' => $category
+            'category' => $category,
         ]);
     }
 }

@@ -1,8 +1,6 @@
 <template>
 
-    <Head>
-        <title>{{ post.title }}</title>
-    </Head>
+    <Head :title="post.title" />
 
     <div class="grid grid-cols-12 gap-7">
         <div class="col-span-8">
@@ -12,9 +10,9 @@
                 <header>
                     <h1 class="capitalize md:text-4xl mb-2.5">{{ post.title }}</h1>
                     <p class="my-0 text-sm">
-                        Kamis, 23 Januari 2025 13:07 WIB
+                        {{ post.created_at }}
                         &middot;
-                        waktu baca 2 menit
+                        waktu baca {{ post.minutes_to_read }} menit
                     </p>
                 </header>
 

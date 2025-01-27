@@ -1,23 +1,3 @@
-<script setup>
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, Link, router } from '@inertiajs/vue3';
-
-defineProps({
-    posts: Array,
-});
-
-const handleDelete = (post) => {
-    const confirm = window.confirm('Are you sure you want to delete this post?');
-
-    if (confirm) {
-        router.delete(route('dashboard.posts.delete', post));
-    }
-}
-
-</script>
-
 <template>
 
     <Head title="Posts" />
@@ -95,33 +75,31 @@ const handleDelete = (post) => {
                             </div>
                         </div>
 
-                        <nav class="flex items-center justify-between border-gray-200 bg-white mt-5 border-t pt-5"
-                            aria-label="Pagination">
-                            <div class="hidden sm:block">
-                                <p class="text-sm text-gray-700">
-                                    Showing
-                                    <span class="font-medium">{{ posts.from }}</span>
-                                    to
-                                    <span class="font-medium">{{ posts.to }}</span>
-                                    of
-                                    <span class="font-medium">{{ posts.total }}</span>
-                                    results
-                                </p>
-                            </div>
-                            <div class="flex flex-1 justify-between sm:justify-end">
-                                <a v-show="posts.prev_page_url" :href="posts.prev_page_url"
-                                    class="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
-                                    Previous
-                                </a>
-                                <a v-show="posts.next_page_url" :href="posts.next_page_url"
-                                    class="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
-                                    Next
-                                </a>
-                            </div>
-                        </nav>
+                        <Pagination v-if="posts.meta.last_page > 1" :meta="posts.meta" />
                     </div>
                 </div>
             </div>
         </div>
     </AuthenticatedLayout>
 </template>
+
+<script setup>
+import Pagination from '@/Components/Core/Pagination.vue';
+import PrimaryButton from '@/Components/PrimaryButton.vue';
+import TextInput from '@/Components/TextInput.vue';
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import { Head, Link, router } from '@inertiajs/vue3';
+
+defineProps({
+    posts: Array,
+});
+
+const handleDelete = (post) => {
+    const confirm = window.confirm('Are you sure you want to delete this post?');
+
+    if (confirm) {
+        router.delete(route('dashboard.posts.delete', post));
+    }
+}
+
+</script>

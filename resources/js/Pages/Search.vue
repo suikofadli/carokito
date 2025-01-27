@@ -1,6 +1,6 @@
 <template>
-    <h1 class="text-xl font-bold mb-6 border-l-4 border-indigo-600 pl-2">
-        {{ category.name }}
+    <h1 class="text-xl font-bold mb-6">
+        Pencarian dengan kata kunci: <em>'{{ keyword }}'</em>
     </h1>
 
     <div class="grid grid-cols-2 gap-7">
@@ -9,6 +9,7 @@
 
             <p v-if="posts.meta.total === 0">Tidak dapat menemukan artikel dengan kata kunci diatas.</p>
         </div>
+
     </div>
 </template>
 
@@ -21,7 +22,7 @@ defineOptions({
 })
 
 defineProps({
-    category: Object,
+    keyword: String,
     posts: {
         type: Object,
         required: true

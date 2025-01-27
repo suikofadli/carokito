@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\CategoryResource;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
@@ -10,11 +11,13 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        return inertia('Dashboard/Category/Index', [
-            'categories' => Category::query()
+        $categories = CategoryResource::collection(
+            Category::query()
                 ->latest()
-                ->paginate(10),
-        ]);
+                ->paginate(10)
+        );
+
+        return inertia('Dashboard/Category/Index', compact('categories'));
     }
 
     public function store(Request $request)

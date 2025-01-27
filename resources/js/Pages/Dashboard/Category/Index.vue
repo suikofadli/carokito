@@ -1,31 +1,3 @@
-<script setup>
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import RecordStatus from '@/Components/RecordStatus.vue';
-import TextInput from '@/Components/TextInput.vue';
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, Link, router } from '@inertiajs/vue3';
-
-defineProps({
-    categories: Array,
-});
-
-const handleDelete = (category) => {
-    const confirm = window.confirm('Are you sure you want to delete this category?');
-
-    if (confirm) {
-        router.delete(route('dashboard.categories.delete', category));
-    }
-}
-
-const handleEnable = (category) => {
-    const confirm = window.confirm('Are you sure you want to enable this category?');
-
-    if (confirm) {
-        router.patch(route('dashboard.categories.enable', category));
-    }
-}
-</script>
-
 <template>
 
     <Head title="Categories" />
@@ -69,10 +41,6 @@ const handleEnable = (category) => {
                                                 </th>
                                                 <th scope="col"
                                                     class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                                    Total Posts
-                                                </th>
-                                                <th scope="col"
-                                                    class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                                                     Status
                                                 </th>
                                                 <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0">
@@ -90,11 +58,7 @@ const handleEnable = (category) => {
                                                     {{ category.slug }}
                                                 </td>
                                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                                    1
-                                                </td>
-                                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                                    <RecordStatus :status="category.record_status
-                                                        " />
+                                                    <RecordStatus :status="category.record_status" />
                                                 </td>
                                                 <td
                                                     class="relative flex gap-x-5 whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
@@ -133,33 +97,39 @@ const handleEnable = (category) => {
                             </div>
                         </div>
 
-                        <nav class="flex items-center justify-between border-gray-200 bg-white mt-5 border-t pt-5"
-                            aria-label="Pagination">
-                            <div class="hidden sm:block">
-                                <p class="text-sm text-gray-700">
-                                    Showing
-                                    <span class="font-medium">{{ categories.from }}</span>
-                                    to
-                                    <span class="font-medium">{{ categories.to }}</span>
-                                    of
-                                    <span class="font-medium">{{ categories.total }}</span>
-                                    results
-                                </p>
-                            </div>
-                            <div class="flex flex-1 justify-between sm:justify-end">
-                                <a v-show="categories.prev_page_url" :href="categories.prev_page_url"
-                                    class="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
-                                    Previous
-                                </a>
-                                <a v-show="categories.next_page_url" :href="categories.next_page_url"
-                                    class="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
-                                    Next
-                                </a>
-                            </div>
-                        </nav>
+                        <Pagination v-if="categories.meta.last_page > 1" :meta="categories.meta" />
                     </div>
                 </div>
             </div>
         </div>
     </AuthenticatedLayout>
 </template>
+
+<script setup>
+import Pagination from '@/Components/Core/Pagination.vue';
+import PrimaryButton from '@/Components/PrimaryButton.vue';
+import RecordStatus from '@/Components/RecordStatus.vue';
+import TextInput from '@/Components/TextInput.vue';
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import { Head, Link, router } from '@inertiajs/vue3';
+
+defineProps({
+    categories: Array,
+});
+
+const handleDelete = (category) => {
+    const confirm = window.confirm('Are you sure you want to delete this category?');
+
+    if (confirm) {
+        router.delete(route('dashboard.categories.delete', category));
+    }
+}
+
+const handleEnable = (category) => {
+    const confirm = window.confirm('Are you sure you want to enable this category?');
+
+    if (confirm) {
+        router.patch(route('dashboard.categories.enable', category));
+    }
+}
+</script>

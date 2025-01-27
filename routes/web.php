@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostByCategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostDetailController;
+use App\Http\Controllers\PostSearchController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -73,6 +74,8 @@ Route::get('/privasi-dan-kebijakan', function () {
 Route::get('/info-iklan', function () {
     return 'Info Iklan';
 });
+
+Route::get('/search', PostSearchController::class)->name('posts.search');
 
 Route::get('/{category:slug}', PostByCategoryController::class)->name('posts.category.index');
 Route::get('/{category:slug}/{post:slug}', PostDetailController::class)->name('posts.show');

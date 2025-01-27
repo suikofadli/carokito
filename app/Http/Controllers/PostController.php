@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\PostResource;
 use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
@@ -13,11 +14,13 @@ class PostController extends Controller
 {
     public function index()
     {
-        return inertia('Dashboard/Post/Index', [
-            'posts' => Post::query()
+        $posts = PostResource::collection(
+            Post::query()
                 ->latest()
                 ->paginate(10),
-        ]);
+        );
+
+        return inertia('Dashboard/Post/Index', compact('posts'));
     }
 
     public function store(Request $request)

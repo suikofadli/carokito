@@ -3,24 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\PostResource;
-use App\Models\Category;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
-class PostByCategoryController extends Controller
+class PostSearchController extends Controller
 {
     /**
      * Handle the incoming request.
      */
-    public function __invoke(Request $request, Category $category)
+    public function __invoke(Request $request)
     {
         $posts = PostResource::collection(
-            $category->posts()
+            Post::query()
+                ->where('title', 'like', '%'.$request->input('keyword').'%')
                 ->with('category')
                 ->paginate(10)
         );
 
-        return inertia('PostByCategory', [
-            'category' => $category,
+        return inertia('Search', [
+            'keyword' => $request->input('keyword'),
             'posts' => $posts,
         ]);
     }
