@@ -21,8 +21,9 @@
                             aria-hidden="true" />
                     </form>
                 </div>
-                <Button href="/login">Masuk</Button>
-                <Button>Buat Tulisan</Button>
+                <Button href="/login">
+                    {{ $page.props.auth.user ? 'Dashboard' : 'Masuk' }}
+                </Button>
             </div>
         </div>
     </header>

@@ -123,6 +123,7 @@ import {
     ComboboxOptions,
 } from '@headlessui/vue'
 import Editor from '@/Components/Editor.vue';
+import { generateSlug } from '@/utils';
 
 const { categories } = defineProps({
     categories: Array,
@@ -158,7 +159,7 @@ const submit = () => {
 };
 
 watch(form, () => {
-    form.slug = form.title.toLowerCase().replace(/ /g, '-');
+    form.slug = generateSlug(form.title)
 });
 
 </script>

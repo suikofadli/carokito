@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use Illuminate\Contracts\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Post extends Model
 {
@@ -24,5 +26,32 @@ class Post extends Model
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public function views(): HasMany
+    {
+        return $this->hasMany(PostView::class);
+    }
+
+    public function recordView()
+    {
+        $ip = request()->ip();
+
+        $viewed = $this->views()
+            ->where('ip_address', $ip)
+            ->where('created_at', '>=', now()->subHours(24))
+            ->exists();
+
+        if (! $viewed) {
+            $this->views()->create([
+                'ip_address' => $ip,
+            ]);
+        }
+    }
+
+    public function scopePopular(Builder $query)
+    {
+        $query->withCount('views')
+            ->orderByDesc('views_count');
     }
 }

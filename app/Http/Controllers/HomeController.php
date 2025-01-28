@@ -23,10 +23,13 @@ class HomeController extends Controller
         );
 
         // Get popular posts in the 30 days left
-        $popularPosts = Post::query()
-            ->orderBy('view_count', 'desc')
-            ->limit(5)
-            ->get();
+        $popularPosts = PostResource::collection(
+            Post::query()
+                ->popular()
+                ->limit(5)
+                ->with('category')
+                ->get()
+        );
 
         $categories = Category::all();
 

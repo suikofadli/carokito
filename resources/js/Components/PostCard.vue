@@ -7,9 +7,13 @@
         </Link>
 
         <div>
-            <div class="font-bold text-xl group-hover:text-indigo-600">{{ post.title }}</div>
+            <div :class="{
+                'group-hover:text-indigo-600': true,
+                'text-xl font-bold': variant === 'default',
+                'text-lg font-normal': variant === 'simplified'
+            }">{{ post.title }}</div>
 
-            <div class="flex gap-2 mt-2">
+            <div class="flex gap-2 mt-2" v-if="variant === 'default'">
                 <Link :href="route('posts.category.index', post.category)"
                     class="font-medium underline z-20 hover:text-indigo-600">
                 {{ post.category.name }}
@@ -21,7 +25,7 @@
             </div>
         </div>
 
-        <figure v-if="post.cover_image_url" class="h-28 aspect-video self-start">
+        <figure v-if="post.cover_image_url && variant === 'default'" class="h-28 aspect-video self-start">
             <img :src="'/storage/' + post.cover_image_url" :alt="post.title"
                 class="h-full w-full object-cover rounded-sm" />
         </figure>
@@ -30,6 +34,10 @@
 
 <script setup>
 defineProps({
+    variant: {
+        type: String,
+        default: 'default'
+    },
     post: {
         type: Object,
         required: true

@@ -14,6 +14,8 @@ class PostDetailController extends Controller
      */
     public function __invoke(Request $request, Category $category, Post $post)
     {
+        $post->recordView();
+
         $post = PostResource::make($post);
 
         return inertia('PostDetail', [
