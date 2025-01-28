@@ -22,6 +22,6 @@ class DatabaseSeeder extends Seeder
             'password' => 'password123',
         ]);
 
-        Category::factory()->count(5)->create();
+        // Category::factory()->count(5)->create();
     }
 }
