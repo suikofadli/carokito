@@ -16,15 +16,17 @@ class HomeController extends Controller
     {
         $newestPosts = PostResource::collection(
             Post::query()
-                ->with('category')
+                ->published()
                 ->latest()
                 ->limit(10)
+                ->with('category')
                 ->get()
         );
 
         // Get popular posts in the 30 days left
         $popularPosts = PostResource::collection(
             Post::query()
+                ->published()
                 ->popular()
                 ->limit(5)
                 ->with('category')

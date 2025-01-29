@@ -2,7 +2,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
+        "build": "vite build && vite build --ssr",
         "dev": "vite",
         "lint": "eslint resources/js --ext .js,.vue --ignore-path .gitignore --fix"
     },
@@ -33,6 +33,7 @@
         "@tiptap/extension-link": "^2.11.3",
         "@tiptap/pm": "^2.11.2",
         "@tiptap/starter-kit": "^2.11.2",
-        "@tiptap/vue-3": "^2.11.2"
+        "@tiptap/vue-3": "^2.11.2",
+        "@vue/server-renderer": "^3.5.13"
     }
 }

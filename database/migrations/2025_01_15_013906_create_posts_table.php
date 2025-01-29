@@ -21,6 +21,9 @@ return new class extends Migration
             $table->string('cover_image_url')->nullable();
             $table->foreignIdFor(Category::class)->constrained();
             $table->foreignIdFor(User::class)->constrained();
+            $table->boolean('is_published')->default(false);
+            $table->timestamp('published_at')->nullable();
+            $table->foreignId('editor_id')->nullable()->constrained('users');
             $table->timestamps();
         });
     }

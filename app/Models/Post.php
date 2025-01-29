@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -28,6 +28,16 @@ class Post extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function editor(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'editor_id');
+    }
+
     public function views(): HasMany
     {
         return $this->hasMany(PostView::class);
@@ -37,21 +47,30 @@ class Post extends Model
     {
         $ip = request()->ip();
 
-        $viewed = $this->views()
+        $viewed = $this
+            ->views()
             ->where('ip_address', $ip)
             ->where('created_at', '>=', now()->subHours(24))
             ->exists();
 
         if (! $viewed) {
-            $this->views()->create([
-                'ip_address' => $ip,
-            ]);
+            $this
+                ->views()
+                ->create(['ip_address' => $ip]);
         }
     }
 
     public function scopePopular(Builder $query)
     {
-        $query->withCount('views')
-            ->orderByDesc('views_count');
+        $query
+            ->published()
+            ->withCount('views')
+            ->orderByDesc('views_count')
+            ->where('views_count', '>', 0);
+    }
+
+    public function scopePublished(Builder $query)
+    {
+        $query->where('is_published', true);
     }
 }

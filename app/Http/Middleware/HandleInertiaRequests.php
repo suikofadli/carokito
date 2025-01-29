@@ -34,8 +34,11 @@ class HandleInertiaRequests extends Middleware
             ...parent::share($request),
             'auth' => [
                 'user' => $request->user(),
+                'can' => $request->user() ? [
+                    'manage-categories' => $request->user()->can('manage-categories'),
+                    'create-post' => $request->user()->can('create-post'),
+                ] : [],
             ],
-            'foo' => 'bar',
             'categories' => Category::all(),
         ];
     }

@@ -39,6 +39,18 @@
                                                     class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                                                     Slug
                                                 </th>
+                                                <th scope="col"
+                                                    class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                                    Views
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                                    Author
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                                    Is Published?
+                                                </th>
 
                                                 <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0">
                                                     <span class="sr-only">Actions</span>
@@ -54,17 +66,48 @@
                                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                                     {{ post.slug }}
                                                 </td>
+                                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                                    {{ post.views }}
+                                                </td>
+                                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                                    {{ post.author.name }}
+                                                </td>
+                                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                                    <template v-if="post.is_published">
+                                                        Yes, at {{ post.published_at }} <br />
+                                                        by: {{ post.editor.name }}
+                                                    </template>
+                                                    <template v-else>
+                                                        No
+                                                    </template>
+                                                </td>
                                                 <td
                                                     class="relative flex gap-x-5 whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                                                    <Link :href="route('dashboard.posts.edit', post.id)"
+                                                    <Link v-if="post.can.edit"
+                                                        :href="route('dashboard.posts.edit', post.id)"
                                                         class="text-indigo-600 hover:text-indigo-900">
                                                     Edit
                                                     <span class="sr-only">{{ post.name }}</span>
                                                     </Link>
 
-                                                    <button href="#" class="text-red-600 hover:text-red-900"
+                                                    <button v-if="post.can.delete" href="#"
+                                                        class="text-red-600 hover:text-red-900"
                                                         @click="handleDelete(post)">
                                                         Delete
+                                                        <span class="sr-only">{{ post.name }}</span>
+                                                    </button>
+
+                                                    <button v-if="post.can.publish" href="#"
+                                                        class="text-zinc-600 hover:text-zinc-900"
+                                                        @click="handlePublish(post)">
+                                                        Publish
+                                                        <span class="sr-only">{{ post.name }}</span>
+                                                    </button>
+
+                                                    <button v-if="post.can.unpublish" href="#"
+                                                        class="text-amber-600 hover:text-amber-900"
+                                                        @click="handleUnpublish(post)">
+                                                        Unpublish
                                                         <span class="sr-only">{{ post.name }}</span>
                                                     </button>
                                                 </td>
@@ -99,6 +142,22 @@ const handleDelete = (post) => {
 
     if (confirm) {
         router.delete(route('dashboard.posts.delete', post));
+    }
+}
+
+const handlePublish = (post) => {
+    const confirm = window.confirm('Are you sure you want to publish this post?');
+
+    if (confirm) {
+        router.patch(route('dashboard.posts.publish', post));
+    }
+}
+
+const handleUnpublish = (post) => {
+    const confirm = window.confirm('Are you sure you want to unpublish this post?');
+
+    if (confirm) {
+        router.patch(route('dashboard.posts.unpublish', post));
     }
 }
 

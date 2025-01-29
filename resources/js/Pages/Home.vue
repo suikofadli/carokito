@@ -9,11 +9,11 @@
         </div>
 
         <div class="col-span-5">
-            <h2 class="text-xl font-bold border-l-4 border-indigo-600 pl-2">
+            <h2 class="text-xl font-bold border-l-4 border-indigo-600 pl-3">
                 Artikel Populer
             </h2>
             <template v-for="(post, index) in popularPosts" :key="post.id">
-                <div class="flex items-center gap-x-3">
+                <div class="flex items-center gap-x-3 mt-3">
                     <div
                         class="bg-gray-100 size-10 text-xl font-medium rounded-full flex items-center justify-center shrink-0">
                         {{ index + 1 }}

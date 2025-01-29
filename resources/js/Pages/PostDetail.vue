@@ -1,6 +1,9 @@
 <template>
 
-    <Head :title="post.title" />
+    <Head>
+        <title>{{ post.title }}</title>
+        <meta name="description" content="Test description" />
+    </Head>
 
     <div class="grid grid-cols-12 gap-7">
         <div class="col-span-8">

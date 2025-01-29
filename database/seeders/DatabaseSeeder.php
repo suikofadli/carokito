@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Category;
+use App\Models\Role;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -14,14 +15,30 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        Category::factory(5)->create();
 
-        User::factory()->create([
-            'name' => 'Super Admin',
-            'email' => 'superadmin@wartabengkulu.com',
+        $adminRole = Role::create(['name' => 'admin']);
+        $editorRole = Role::create(['name' => 'editor']);
+        $authorRole = Role::create(['name' => 'author']);
+
+        $adminUser = User::create([
+            'name' => 'Admin',
+            'email' => 'admin@wartabengkulu.com',
+            'password' => 'password123',
+        ]);
+        $editorUser = User::create([
+            'name' => 'Editor',
+            'email' => 'editor@wartabengkulu.com',
+            'password' => 'password123',
+        ]);
+        $authorUser = User::create([
+            'name' => 'Author',
+            'email' => 'author@wartabengkulu.com',
             'password' => 'password123',
         ]);
 
-        // Category::factory()->count(5)->create();
+        $adminUser->roles()->attach($adminRole);
+        $editorUser->roles()->attach($editorRole);
+        $authorUser->roles()->attach($authorRole);
     }
 }

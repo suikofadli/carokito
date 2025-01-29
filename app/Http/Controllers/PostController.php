@@ -14,10 +14,11 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = PostResource::collection(
-            Post::query()
-                ->latest()
-                ->paginate(10),
+        $posts = PostResource::collection(Post::query()
+            ->latest()
+            ->withCount('views')
+            ->with('user')
+            ->paginate(10)
         );
 
         return inertia('Dashboard/Post/Index', compact('posts'));
