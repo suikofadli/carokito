@@ -1,10 +1,13 @@
 <template>
-    <header class="max-w-5xl mx-auto py-5">
+    <header class="max-w-5xl mx-auto py-4">
         <div class="flex items-center justify-between">
             <div class="flex items-center">
                 <!-- Brand -->
-                <a href="/">
-                    <img src="https://rbtv.disway.id/assets/logo.png" alt="" class="w-56">
+                <a href="/" class="flex items-center">
+                    <img src="/logo.png" alt="" class="w-10">
+                    <span class="font-bold text-red-700 text-xl">
+                        Warta Bengkulu
+                    </span>
                 </a>
             </div>
 
