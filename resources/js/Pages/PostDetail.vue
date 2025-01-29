@@ -2,7 +2,7 @@
 
     <Head>
         <title>{{ post.title }}</title>
-        <meta name="description" content="Test description" />
+        <meta name="title" :content="post.title" />
     </Head>
 
     <div class="grid grid-cols-12 gap-7">
@@ -36,6 +36,7 @@
 import Breadcrumb from '@/Components/Core/Breadcrumb.vue';
 import BaseLayout from '@/Layouts/BaseLayout.vue';
 import { computed } from 'vue';
+import { Head } from '@inertiajs/vue3';
 
 defineOptions({
     layout: BaseLayout

@@ -47,5 +47,5 @@
   "resources/js/Pages/Welcome.vue": [],
   "resources/js/ssr.js": [],
   "resources/js/utils.js": [],
-  "vendor/tightenco/ziggy/dist/index.js": []
+  "resources/js/ziggy.js": []
 }

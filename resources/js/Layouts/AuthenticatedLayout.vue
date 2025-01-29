@@ -141,7 +141,6 @@
 
 <script setup>
 import { ref } from 'vue';
-import { route } from '../../../vendor/tightenco/ziggy'
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
