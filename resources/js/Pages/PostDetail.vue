@@ -2,7 +2,7 @@
 
     <Head>
         <title>{{ post.title }}</title>
-        <meta name="title" :content="post.title" />
+        <meta name="description" :content="post.title" />
     </Head>
 
     <div class="grid grid-cols-12 gap-7">
@@ -12,6 +12,13 @@
             <article class="prose">
                 <header>
                     <h1 class="capitalize md:text-4xl mb-2.5">{{ post.title }}</h1>
+                    <small class="text-gray-400">
+                        Reporter: {{ post.author.name }}
+                        <span v-if="post.editor">
+                            &dash;
+                            Editor: {{ post.editor.name }}
+                        </span>
+                    </small>
                     <p class="my-0 text-sm">
                         {{ post.created_at }}
                         &middot;

@@ -30,12 +30,12 @@ class Post extends Model
 
     public function user(): BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class)->withTrashed();
     }
 
     public function editor(): BelongsTo
     {
-        return $this->belongsTo(User::class, 'editor_id');
+        return $this->belongsTo(User::class, 'editor_id')->withTrashed();
     }
 
     public function views(): HasMany

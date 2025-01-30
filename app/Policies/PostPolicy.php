@@ -25,6 +25,6 @@ class PostPolicy
 
     public function unpublish(User $user, Post $post)
     {
-        return Gate::allows('manage-posts') && $post->is_published;
+        return $user->hasRole('admin') && $post->is_published;
     }
 }

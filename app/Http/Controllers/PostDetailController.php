@@ -16,7 +16,7 @@ class PostDetailController extends Controller
     {
         $post->recordView();
 
-        $post = PostResource::make($post);
+        $post = PostResource::make($post->load(['user', 'editor']));
 
         return inertia('PostDetail', [
             'post' => $post,

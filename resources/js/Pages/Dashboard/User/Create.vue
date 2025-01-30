@@ -1,11 +1,11 @@
 <template>
 
-    <Head title="Create Category" />
+    <Head title="Create User" />
 
     <AuthenticatedLayout>
         <template #header>
             <h2 class="text-xl font-semibold leading-tight text-gray-800">
-                Create Category
+                Create User
             </h2>
         </template>
 
@@ -24,13 +24,36 @@
                             </div>
 
                             <div>
-                                <InputLabel for="slug" value="Slug" />
+                                <InputLabel for="email" value="Email" />
 
-                                <TextInput id="slug" type="text" class="mt-1 block w-full" v-model="form.slug" readonly
-                                    autocomplete="slug" />
+                                <TextInput id="email" type="email" class="mt-1 block w-full" v-model="form.email"
+                                    autocomplete="email" />
 
-                                <InputError class="mt-2" :message="form.errors.slug" />
+                                <InputError class="mt-2" :message="form.errors.email" />
                             </div>
+
+                            <div>
+                                <InputLabel for="password" value="Password" />
+
+                                <TextInput id="password" type="password" class="mt-1 block w-full"
+                                    v-model="form.password" />
+
+                                <InputError class="mt-2" :message="form.errors.password" />
+                            </div>
+
+                            <div>
+                                <InputLabel value="Roles" class="mb-1" />
+                                <div class="space-y-2">
+                                    <div v-for="role in roles" :key="role.id" class="flex items-center gap-x-1.5">
+                                        <input :id="role.id" type="radio" name="roleId" :value="role.id"
+                                            v-model="form.roleId" />
+                                        <InputLabel class="capitalize" :for="role.id" :value="role.name" />
+                                    </div>
+                                </div>
+
+                                <InputError class="mt-2" :message="form.errors.roleId" />
+                            </div>
+
 
                             <div class="mt-4 flex items-center">
                                 <PrimaryButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
@@ -54,20 +77,18 @@ import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, useForm } from '@inertiajs/vue3';
 import { watch } from 'vue';
 
+defineProps({
+    roles: Array,
+})
+
 const form = useForm({
     name: '',
-    slug: '',
+    email: '',
+    password: '',
+    roleId: '',
 });
 
 const submit = () => {
-    form.post(route('dashboard.categories.store'));
+    form.post(route('dashboard.users.store'));
 };
-
-watch(form, () => {
-    form.slug = form.name.toLowerCase().replace(/ /g, '-');
-});
-
-defineProps({
-    categories: Array,
-});
 </script>

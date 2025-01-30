@@ -9,6 +9,8 @@ use App\Http\Controllers\PostPublishController;
 use App\Http\Controllers\PostSearchController;
 use App\Http\Controllers\PostUnpublishController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserRestoreController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -38,6 +40,12 @@ Route::get('/dashboard', function () {
 
 Route::get('/dashboard/posts', function () {
     return 'List Post';
+});
+
+Route::middleware(['auth', 'can:manage-users'])->group(function () {
+    Route::resource('/dashboard/users', UserController::class)
+        ->names('dashboard.users');
+    Route::post('/dashboard/users/{userId}/restore', UserRestoreController::class)->name('dashboard.users.restore');
 });
 
 Route::middleware(['auth'])

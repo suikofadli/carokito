@@ -19,7 +19,12 @@
                                     Dashboard
                                 </NavLink>
 
-                                <NavLink v-if="can['manage-categories']" :href="route('dashboard.categories.index')"
+                                <NavLink v-if="can.manageUsers" :href="route('dashboard.users.index')"
+                                    :active="route().current('dashboard.users.*',)">
+                                    Users
+                                </NavLink>
+
+                                <NavLink v-if="can.manageCategories" :href="route('dashboard.categories.index')"
                                     :active="route().current('dashboard.categories.*',)">
                                     Categories
                                 </NavLink>

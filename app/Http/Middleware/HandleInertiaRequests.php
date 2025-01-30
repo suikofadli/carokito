@@ -35,8 +35,8 @@ class HandleInertiaRequests extends Middleware
             'auth' => [
                 'user' => $request->user(),
                 'can' => $request->user() ? [
-                    'manage-categories' => $request->user()->can('manage-categories'),
-                    'create-post' => $request->user()->can('create-post'),
+                    'manageUsers' => $request->user()->can('manage-users'),
+                    'manageCategories' => $request->user()->can('manage-categories'),
                 ] : [],
             ],
             'categories' => Category::all(),

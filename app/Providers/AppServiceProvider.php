@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
         Vite::prefetch(concurrency: 3);
         JsonResource::withoutWrapping();
 
-        Gate::define('access-admin', function (User $user) {
+        Gate::define('manage-users', function (User $user) {
             return $user->hasRole('admin');
         });
 
