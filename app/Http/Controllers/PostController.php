@@ -17,7 +17,7 @@ class PostController extends Controller
         $posts = PostResource::collection(Post::query()
             ->latest()
             ->withCount('views')
-            ->with('user')
+            ->with(['user', 'editor'])
             ->paginate(10)
         );
 

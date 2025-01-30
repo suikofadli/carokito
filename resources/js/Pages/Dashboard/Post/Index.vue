@@ -75,7 +75,7 @@
                                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
                                                     <template v-if="post.is_published">
                                                         Yes, at {{ post.published_at }} <br />
-                                                        by: {{ post.editor.name }}
+                                                        by: {{ post.editor?.name }}
                                                     </template>
                                                     <template v-else>
                                                         No
