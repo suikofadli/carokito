@@ -31,10 +31,10 @@ class PostResource extends JsonResource
             'is_published' => $this->is_published,
             'published_at' => Carbon::parse($this->published_at)->format('d F Y - H:i').' WIB',
             'can' => [
-                'edit' => $request->user()->can('edit', $this->resource),
-                'delete' => $request->user()->can('delete', $this->resource),
-                'publish' => $request->user()->can('publish', $this->resource),
-                'unpublish' => $request->user()->can('unpublish', $this->resource),
+                'edit' => $request->user ? $request->user()->can('edit', $this->resource) : false,
+                'delete' => $request->user ? $request->user()->can('delete', $this->resource) : false,
+                'publish' => $request->user ? $request->user()->can('publish', $this->resource) : false,
+                'unpublish' => $request->user ? $request->user()->can('unpublish', $this->resource) : false,
             ],
         ];
     }
