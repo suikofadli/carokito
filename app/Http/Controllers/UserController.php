@@ -6,6 +6,7 @@ use App\Http\Resources\UserResource;
 use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class UserController extends Controller
 {
@@ -47,6 +48,35 @@ class UserController extends Controller
         ]);
 
         $user->roles()->attach($attrs['roleId']);
+
+        return redirect()->route('dashboard.users.index');
+    }
+
+    public function edit(User $user)
+    {
+        $roles = Role::select('id', 'name')
+            ->whereNot('name', 'admin')
+            ->get();
+
+        $user = UserResource::make($user->load('roles'));
+
+        return inertia('Dashboard/User/Edit', compact('user', 'roles'));
+    }
+
+    public function update(Request $request, User $user)
+    {
+        $attrs = $request->validate([
+            'name' => 'string|required|min:3',
+            'email' => ['email', 'required', Rule::unique('users', 'email')->ignore($user->id)],
+            'roleId' => 'required|exists:roles,id',
+        ]);
+
+        $user->update([
+            'name' => $attrs['name'],
+            'email' => $attrs['email'],
+        ]);
+
+        $user->roles()->sync($attrs['roleId']);
 
         return redirect()->route('dashboard.users.index');
     }
