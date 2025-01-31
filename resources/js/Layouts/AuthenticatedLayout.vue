@@ -34,7 +34,7 @@
                                     Posts
                                 </NavLink>
 
-                                <NavLink :href="route('dashboard.advertisements.index')"
+                                <NavLink v-if="can.manageAds" :href="route('dashboard.advertisements.index')"
                                     :active="route().current('dashboard.advertisements.*')">
                                     Pojok Iklan
                                 </NavLink>

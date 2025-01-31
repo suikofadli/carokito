@@ -38,7 +38,7 @@ class AppServiceProvider extends ServiceProvider
             return $user->hasRole('admin') || $user->hasRole('editor');
         });
 
-        Gate::define('manage-advertisement', function (User $user) {
+        Gate::define('manage-advertisements', function (User $user) {
             return $user->hasRole('admin');
         });
     }

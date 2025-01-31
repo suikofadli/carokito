@@ -49,7 +49,7 @@ Route::middleware(['auth', 'can:manage-users'])->group(function () {
     Route::post('/dashboard/users/{userId}/restore', UserRestoreController::class)->name('dashboard.users.restore');
 });
 
-Route::middleware(['auth', 'can:manage-advertisement'])->group(function () {
+Route::middleware(['auth', 'can:manage-advertisements'])->group(function () {
     Route::resource('/dashboard/advertisements', AdvertisementController::class)
         ->names('dashboard.advertisements');
 });

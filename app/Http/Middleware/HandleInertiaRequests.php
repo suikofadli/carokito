@@ -39,6 +39,7 @@ class HandleInertiaRequests extends Middleware
                 'can' => $request->user() ? [
                     'manageUsers' => $request->user()->can('manage-users'),
                     'manageCategories' => $request->user()->can('manage-categories'),
+                    'manageAds' => $request->user()->can('manage-advertisements'),
                 ] : [],
             ],
             'advertisement' => [
