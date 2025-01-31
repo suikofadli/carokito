@@ -40,6 +40,15 @@
         </ul>
     </nav>
 
+    <div v-if="ads.header">
+        <div class="max-w-5xl mx-auto py-5">
+            <a :href="ads.header.target_url" target="_blank">
+                <img :src="'/storage/' + ads.header.image_path" :alt="ads.header.title"
+                    class="w-full max-h-[250px] object-cover rounded">
+            </a>
+        </div>
+    </div>
+
     <main>
         <div class="max-w-5xl mx-auto mt-5">
             <slot />
@@ -50,10 +59,12 @@
 <script setup>
 import Button from '@/Components/Core/Button.vue';
 import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
-import { Link, router } from '@inertiajs/vue3';
-import { ref } from 'vue';
+import { Link, router, usePage } from '@inertiajs/vue3';
+import { computed, ref } from 'vue';
 
 const search = ref('')
+
+const ads = computed(() => usePage().props.advertisement)
 
 const handleSearch = () => {
     if (search.value) {

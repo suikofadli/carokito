@@ -20,18 +20,23 @@
                                 </NavLink>
 
                                 <NavLink v-if="can.manageUsers" :href="route('dashboard.users.index')"
-                                    :active="route().current('dashboard.users.*',)">
+                                    :active="route().current('dashboard.users.*')">
                                     Users
                                 </NavLink>
 
                                 <NavLink v-if="can.manageCategories" :href="route('dashboard.categories.index')"
-                                    :active="route().current('dashboard.categories.*',)">
+                                    :active="route().current('dashboard.categories.*')">
                                     Categories
                                 </NavLink>
 
                                 <NavLink :href="route('dashboard.posts.index')"
-                                    :active="route().current('dashboard.posts.*',)">
+                                    :active="route().current('dashboard.posts.*')">
                                     Posts
+                                </NavLink>
+
+                                <NavLink :href="route('dashboard.advertisements.index')"
+                                    :active="route().current('dashboard.advertisements.*')">
+                                    Pojok Iklan
                                 </NavLink>
                             </div>
                         </div>

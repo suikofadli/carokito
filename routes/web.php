@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostByCategoryController;
@@ -46,6 +47,11 @@ Route::middleware(['auth', 'can:manage-users'])->group(function () {
     Route::resource('/dashboard/users', UserController::class)
         ->names('dashboard.users');
     Route::post('/dashboard/users/{userId}/restore', UserRestoreController::class)->name('dashboard.users.restore');
+});
+
+Route::middleware(['auth', 'can:manage-advertisement'])->group(function () {
+    Route::resource('/dashboard/advertisements', AdvertisementController::class)
+        ->names('dashboard.advertisements');
 });
 
 Route::middleware(['auth'])
