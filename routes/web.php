@@ -63,7 +63,7 @@ Route::middleware(['auth'])
             ->middleware('can:edit,post')
             ->name('dashboard.posts.edit');
         Route::patch('/{post}', [PostController::class, 'update'])->name('dashboard.posts.update');
-        Route::delete('/{post}', [PostController::class, 'delete'])->name('dashboard.posts.delete');
+        Route::delete('/{post}', [PostController::class, 'destroy'])->name('dashboard.posts.delete');
         Route::patch('/{post}/publish', PostPublishController::class)->name('dashboard.posts.publish');
         Route::patch('/{post}/unpublish', PostUnpublishController::class)->name('dashboard.posts.unpublish');
     });
@@ -75,7 +75,7 @@ Route::middleware(['auth', 'can:manage-categories'])
         Route::get('/create', [CategoryController::class, 'create'])->name('dashboard.categories.create');
         Route::get('/{category}/edit', [CategoryController::class, 'edit'])->name('dashboard.categories.edit');
         Route::patch('/{category}', [CategoryController::class, 'update'])->name('dashboard.categories.update');
-        Route::delete('/{category}', [CategoryController::class, 'delete'])->name('dashboard.categories.delete');
+        Route::delete('/{category}', [CategoryController::class, 'destroy'])->name('dashboard.categories.delete');
         Route::patch('/{category}/enable', [CategoryController::class, 'enable'])->name('dashboard.categories.enable');
     });
 

@@ -56,7 +56,7 @@ class CategoryController extends Controller
         return redirect()->route('dashboard.categories.index');
     }
 
-    public function delete(Category $category)
+    public function destroy(Category $category)
     {
         $category->record_status = false;
         $category->save();

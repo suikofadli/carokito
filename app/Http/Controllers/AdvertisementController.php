@@ -77,7 +77,7 @@ class AdvertisementController extends Controller
     //     return redirect()->route('dashboard.categories.index');
     // }
 
-    public function delete(Advertisement $advertisement)
+    public function destroy(Advertisement $advertisement)
     {
         $advertisement->delete();
 

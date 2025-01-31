@@ -99,7 +99,7 @@ class PostController extends Controller
         return redirect()->route('dashboard.posts.index');
     }
 
-    public function delete(Post $post)
+    public function destroy(Post $post)
     {
         $post->delete();
 

@@ -3,7 +3,6 @@
 namespace App\Http\Middleware;
 
 use App\Enums\AdsPosition;
-use App\Http\Resources\AdvertisementResource;
 use App\Models\Advertisement;
 use App\Models\Category;
 use Illuminate\Http\Request;
@@ -43,12 +42,10 @@ class HandleInertiaRequests extends Middleware
                 ] : [],
             ],
             'advertisement' => [
-                'header' => AdvertisementResource::make(
-                    Advertisement::query()
-                        ->where('position', AdsPosition::HEADER)
-                        ->inRandomOrder()
-                        ->first()
-                ),
+                'header' => Advertisement::query()
+                    ->where('position', AdsPosition::HEADER)
+                    ->inRandomOrder()
+                    ->first(),
             ],
             'categories' => Category::all(),
         ];
