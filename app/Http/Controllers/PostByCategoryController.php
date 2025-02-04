@@ -14,8 +14,8 @@ class PostByCategoryController extends Controller
     public function __invoke(Request $request, Category $category)
     {
         $posts = PostResource::collection(
-            $category->posts()
-                ->with('category')
+            $category
+                ->posts()
                 ->paginate(10)
         );
 

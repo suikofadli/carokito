@@ -3,8 +3,10 @@
 namespace App\Http\Middleware;
 
 use App\Enums\AdsPosition;
+use App\Http\Resources\PostResource;
 use App\Models\Advertisement;
 use App\Models\Category;
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -49,6 +51,14 @@ class HandleInertiaRequests extends Middleware
                     ->first(),
             ],
             'categories' => Category::all(),
+            'popularPosts' => PostResource::collection(
+                Post::query()
+                    ->published()
+                    ->latest()
+                    ->limit(5)
+                    ->with('category')
+                    ->get()
+            ),
         ];
     }
 }

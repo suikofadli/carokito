@@ -2,7 +2,7 @@
     <nav class="flex" aria-label="Breadcrumb">
         <ol role="list" class="flex items-center space-x-2">
             <li>
-                <Link href="/" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                <Link href="/" class="text-sm font-medium text-primary hover:text-primary-400">
                 Beranda
                 </Link>
             </li>
@@ -13,7 +13,7 @@
                         <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
                     </svg>
 
-                    <Link :href="page.href" class="ml-2 text-sm font-medium text-indigo-600 hover:text-indigo-500"
+                    <Link :href="page.href" class="ml-2 text-sm font-medium text-primary hover:text-primary-400"
                         :aria-current="page.current ? 'page' : undefined">
                     {{ page.name }}
                     </Link>

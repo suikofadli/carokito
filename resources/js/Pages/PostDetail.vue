@@ -1,12 +1,10 @@
 <template>
-
+<div>
     <Head>
         <title>{{ post.title }}</title>
         <meta name="description" :content="post.title" />
     </Head>
 
-    <div class="grid grid-cols-12 gap-7">
-        <div class="col-span-8">
             <Breadcrumb :pages="breadcrumbPages" class="mb-4" />
 
             <article class="prose">
@@ -34,9 +32,7 @@
                     <div v-html="post.content"></div>
                 </main>
             </article>
-        </div>
-    </div>
-
+</div>
 </template>
 
 <script setup>

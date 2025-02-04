@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Category;
+use App\Models\Post;
 use App\Models\Role;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -40,5 +41,30 @@ class DatabaseSeeder extends Seeder
         $adminUser->roles()->attach($adminRole);
         $editorUser->roles()->attach($editorRole);
         $authorUser->roles()->attach($authorRole);
+
+        $category1 = Category::create([
+            'name' => 'Headline',
+            'slug' => 'headline',
+        ]);
+        $category2 = Category::create([
+            'name' => 'Teknologi',
+            'slug' => 'teknologi',
+        ]);
+
+        Post::factory()
+            ->count(25)
+            ->create([
+                'category_id' => $category1,
+                'user_id' => $authorUser,
+                'editor_id' => $editorUser,
+            ]);
+
+        Post::factory()
+            ->count(25)
+            ->create([
+                'category_id' => $category2,
+                'user_id' => $authorUser,
+                'editor_id' => $editorUser,
+            ]);
     }
 }

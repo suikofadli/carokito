@@ -8,14 +8,14 @@
 
         <div>
             <div :class="{
-                'group-hover:text-indigo-600': true,
+                'group-hover:text-primary': true,
                 'text-xl font-bold': variant === 'default',
                 'text-lg font-normal': variant === 'simplified'
             }">{{ post.title }}</div>
 
             <div class="flex gap-2 mt-2" v-if="variant === 'default'">
                 <Link :href="route('posts.category.index', post.category)"
-                    class="font-medium underline z-20 hover:text-indigo-600">
+                    class="font-medium underline z-20 hover:text-primary">
                 {{ post.category.name }}
                 </Link>
                 &middot;

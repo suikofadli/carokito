@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NewestController;
 use App\Http\Controllers\PostByCategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostDetailController;
@@ -96,6 +97,8 @@ Route::get('/info-iklan', function () {
 });
 
 Route::get('/search', PostSearchController::class)->name('posts.search');
+
+Route::get('/terkini', NewestController::class)->name('posts.newests');
 
 Route::get('/{category:slug}', PostByCategoryController::class)->name('posts.category.index');
 Route::get('/{category:slug}/{post:slug}', PostDetailController::class)->name('posts.show');

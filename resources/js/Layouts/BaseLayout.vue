@@ -1,47 +1,8 @@
 <template>
-    <header class="max-w-5xl mx-auto py-4">
-        <div class="flex items-center justify-between">
-            <div class="flex items-center">
-                <!-- Brand -->
-                <a href="/" class="flex items-center">
-                    <img src="/logo.png" alt="" class="w-10">
-                    <span class="font-bold text-red-700 text-xl">
-                        Warta Bengkulu
-                    </span>
-                </a>
-            </div>
-
-            <!-- Actions -->
-            <div class="flex gap-2">
-                <div class="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end">
-                    <!-- Search -->
-                    <form class="grid w-full max-w-lg grid-cols-1 lg:max-w-xs" @submit.prevent="handleSearch">
-                        <input type="search" name="search"
-                            class="col-start-1 row-start-1 block w-full rounded-sm bg-white py-1.5 pl-10 pr-3 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                            placeholder="Pencarian berita..." v-model="search" />
-                        <MagnifyingGlassIcon
-                            class="pointer-events-none col-start-1 row-start-1 ml-3 size-5 self-center text-gray-400"
-                            aria-hidden="true" />
-                    </form>
-                </div>
-                <Button href="/login">
-                    {{ $page.props.auth.user ? 'Dashboard' : 'Masuk' }}
-                </Button>
-            </div>
-        </div>
-    </header>
-    <nav class="bg-indigo-600">
-        <ul class="max-w-5xl mx-auto flex gap-x-5 py-3 overflow-auto">
-            <li v-for="category in $page.props.categories" :key="category.id">
-                <Link :href="route('posts.category.index', category)" class="text-white font-bold capitalize">
-                {{ category.name }}
-                </Link>
-            </li>
-        </ul>
-    </nav>
+    <Header />
 
     <div v-if="ads.header">
-        <div class="max-w-5xl mx-auto py-5">
+        <div class="max-w-6xl mx-auto py-5">
             <a :href="ads.header.target_url" target="_blank">
                 <img :src="'/storage/' + ads.header.image_path" :alt="ads.header.title"
                     class="w-full max-h-[250px] object-cover rounded">
@@ -50,25 +11,49 @@
     </div>
 
     <main>
-        <div class="max-w-5xl mx-auto mt-5">
-            <slot />
+        <div class="max-w-6xl mx-auto my-5 mb-10">
+            <div class="grid grid-cols-12 gap-10">
+                <div class="grid grid-cols-1 col-span-7 divide-y">
+                    <slot />
+                </div>
+
+                <div class="col-span-5">
+                    <div class="bg-gray-50 px-2 rounded border sticky top-32">
+                        <h2
+                            class="text-xl font-bold border-l-4 -mx-2 border-primary pl-5 border-b border-b-gray-200 py-2">
+                            Artikel Populer
+                        </h2>
+                        <div class="py-1">
+                            <template v-for="(post, index) in popularPosts" :key="post.id">
+                                <div class="flex items-center gap-x-3">
+                                    <div
+                                        class="bg-gray-100 size-10 text-xl font-medium rounded-full flex items-center justify-center shrink-0">
+                                        {{ index + 1 }}
+                                    </div>
+                                    <PostCard :post="post" variant="simplified" />
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <p v-if="popularPosts.length === 0">Belum ada artikel populer.</p>
+                </div>
+            </div>
         </div>
     </main>
 </template>
 
 <script setup>
 import Button from '@/Components/Core/Button.vue';
+import PostCard from '@/Components/PostCard.vue';
 import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
 import { Link, router, usePage } from '@inertiajs/vue3';
 import { computed, ref } from 'vue';
+import Header from './Header.vue';
 
 const search = ref('')
 
-const ads = computed(() => usePage().props.advertisement)
+const pageProps = usePage().props;
 
-const handleSearch = () => {
-    if (search.value) {
-        router.get(route('posts.search'), { keyword: search.value })
-    }
-}
+const ads = computed(() => pageProps.advertisement)
+const popularPosts = computed(() => pageProps.popularPosts)
 </script>
