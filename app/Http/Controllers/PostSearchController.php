@@ -15,6 +15,7 @@ class PostSearchController extends Controller
     {
         $posts = PostResource::collection(
             Post::query()
+                ->published()
                 ->where('title', 'like', '%'.$request->input('keyword').'%')
                 ->paginate(10)
         );

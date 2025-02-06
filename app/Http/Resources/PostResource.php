@@ -29,6 +29,7 @@ class PostResource extends JsonResource
             'created_at_formatted' => $this->created_at->diffForHumans(),
             'minutes_to_read' => $this->reading_time,
             'is_published' => $this->is_published,
+            'is_featured' => $this->is_featured,
             'published_at' => Carbon::parse($this->published_at)->format('d F Y - H:i').' WIB',
             'can' => [
                 'edit' => $request->user() ? $request->user()->can('edit', $this->resource) : false,

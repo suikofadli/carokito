@@ -14,7 +14,9 @@ class NewestController extends Controller
     public function __invoke(Request $request)
     {
         $posts = PostResource::collection(
-            Post::paginate(10)
+            Post::query()
+                ->published()
+                ->paginate(10)
         );
 
         return inertia('Newest', compact('posts'));

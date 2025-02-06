@@ -14,9 +14,15 @@
                 <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900">
                         <div class="sm:flex sm:items-center sm:justify-between">
-                            <div class="max-w-sm sm:flex-auto">
-                                <TextInput placeholder="Search post..." id="name" type="text" class="mt-1 block w-full"
+                            <div class="flex gap-2">
+                                <TextInput placeholder="Search post..." id="name" type="text" class="block w-full"
                                     autofocus />
+
+                                <Select v-model="isFeatured">
+                                    <option value="">Is Featuring?</option>
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </Select>
                             </div>
                             <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
                                 <Link :href="route('dashboard.posts.create')">
@@ -90,22 +96,38 @@
                                                     <span class="sr-only">{{ post.name }}</span>
                                                     </Link>
 
-                                                    <button v-if="post.can.delete" href="#"
+                                                    <button v-if="post.can.delete"
                                                         class="text-red-600 hover:text-red-900"
                                                         @click="handleDelete(post)">
                                                         Delete
                                                         <span class="sr-only">{{ post.name }}</span>
                                                     </button>
 
-                                                    <button v-if="post.can.publish" href="#"
+                                                    <template v-if="post.is_published && !post.is_featured">
+                                                        <button class="text-indigo-600 hover:text-indigo-900"
+                                                            @click="handleFeaturing(post)">
+                                                            Set as Featured
+                                                            <span class="sr-only">{{ post.name }}</span>
+                                                        </button>
+                                                    </template>
+
+                                                    <template v-if="post.is_published && post.is_featured">
+                                                        <button class="text-amber-600 hover:text-amber-900"
+                                                            @click="handleUnfeaturing(post)">
+                                                            Unfeatured
+                                                            <span class="sr-only">{{ post.name }}</span>
+                                                        </button>
+                                                    </template>
+
+                                                    <button v-if="post.can.publish"
                                                         class="text-zinc-600 hover:text-zinc-900"
                                                         @click="handlePublish(post)">
                                                         Publish
                                                         <span class="sr-only">{{ post.name }}</span>
                                                     </button>
 
-                                                    <button v-if="post.can.unpublish" href="#"
-                                                        class="text-amber-600 hover:text-amber-900"
+                                                    <button v-if="post.can.unpublish"
+                                                        class="text-rose-600 hover:text-rose-900"
                                                         @click="handleUnpublish(post)">
                                                         Unpublish
                                                         <span class="sr-only">{{ post.name }}</span>
@@ -128,14 +150,22 @@
 
 <script setup>
 import Pagination from '@/Components/Core/Pagination.vue';
+import Select from '@/Components/Core/Select.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head, Link, router } from '@inertiajs/vue3';
+import { ref, watch } from 'vue';
 
 defineProps({
     posts: Array,
 });
+
+const isFeatured = ref('')
+
+watch(isFeatured, (value) => {
+    router.get(route('dashboard.posts.index'), { is_featured: value }, { preserveState: true, replace: true })
+})
 
 const handleDelete = (post) => {
     const confirm = window.confirm('Are you sure you want to delete this post?');
@@ -161,4 +191,19 @@ const handleUnpublish = (post) => {
     }
 }
 
+const handleFeaturing = (post) => {
+    const confirm = window.confirm('Are you sure you want to featuring this post?');
+
+    if (confirm) {
+        router.patch(route('dashboard.posts.featuring', post));
+    }
+}
+
+const handleUnfeaturing = (post) => {
+    const confirm = window.confirm('Are you sure you want to unfeaturing this post?');
+
+    if (confirm) {
+        router.patch(route('dashboard.posts.unfeaturing', post));
+    }
+}
 </script>

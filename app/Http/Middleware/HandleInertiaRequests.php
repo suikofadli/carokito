@@ -49,6 +49,9 @@ class HandleInertiaRequests extends Middleware
                     ->where('position', AdsPosition::HEADER)
                     ->inRandomOrder()
                     ->first(),
+                'sidebar' => Advertisement::query()
+                    ->where('position', AdsPosition::SIDEBAR)
+                    ->get(),
             ],
             'categories' => Category::all(),
             'popularPosts' => PostResource::collection(

@@ -7,8 +7,10 @@ use App\Http\Controllers\NewestController;
 use App\Http\Controllers\PostByCategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostDetailController;
+use App\Http\Controllers\PostFeaturingController;
 use App\Http\Controllers\PostPublishController;
 use App\Http\Controllers\PostSearchController;
+use App\Http\Controllers\PostUnfeaturingController;
 use App\Http\Controllers\PostUnpublishController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
@@ -55,19 +57,15 @@ Route::middleware(['auth', 'can:manage-advertisements'])->group(function () {
         ->names('dashboard.advertisements');
 });
 
-Route::middleware(['auth'])
-    ->prefix('/dashboard/posts')->group(function () {
-        Route::get('/', [PostController::class, 'index'])->name('dashboard.posts.index');
-        Route::post('/', [PostController::class, 'store'])->name('dashboard.posts.store');
-        Route::get('/create', [PostController::class, 'create'])->name('dashboard.posts.create');
-        Route::get('/{post}/edit', [PostController::class, 'edit'])
-            ->middleware('can:edit,post')
-            ->name('dashboard.posts.edit');
-        Route::patch('/{post}', [PostController::class, 'update'])->name('dashboard.posts.update');
-        Route::delete('/{post}', [PostController::class, 'destroy'])->name('dashboard.posts.delete');
-        Route::patch('/{post}/publish', PostPublishController::class)->name('dashboard.posts.publish');
-        Route::patch('/{post}/unpublish', PostUnpublishController::class)->name('dashboard.posts.unpublish');
-    });
+Route::middleware(['auth', 'can:manage-posts'])->group(function () {
+    Route::resource('/dashboard/posts', PostController::class)
+        ->names('dashboard.posts');
+
+    Route::patch('/dashboard/{post}/publish', PostPublishController::class)->name('dashboard.posts.publish');
+    Route::patch('/dashboard/{post}/unpublish', PostUnpublishController::class)->name('dashboard.posts.unpublish');
+    Route::patch('/dashboard/{post}/featuring', PostFeaturingController::class)->name('dashboard.posts.featuring');
+    Route::patch('/dashboard/{post}/unfeaturing', PostUnfeaturingController::class)->name('dashboard.posts.unfeaturing');
+});
 
 Route::middleware(['auth', 'can:manage-categories'])
     ->prefix('/dashboard/categories')->group(function () {

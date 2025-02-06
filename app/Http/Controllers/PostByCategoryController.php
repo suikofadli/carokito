@@ -16,6 +16,7 @@ class PostByCategoryController extends Controller
         $posts = PostResource::collection(
             $category
                 ->posts()
+                ->published()
                 ->paginate(10)
         );
 

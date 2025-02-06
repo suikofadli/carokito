@@ -1,38 +1,39 @@
 <template>
-<div>
-    <Head>
-        <title>{{ post.title }}</title>
-        <meta name="description" :content="post.title" />
-    </Head>
+    <div>
 
-            <Breadcrumb :pages="breadcrumbPages" class="mb-4" />
+        <Head>
+            <title>{{ post.title }}</title>
+            <meta name="description" :content="post.title" />
+        </Head>
 
-            <article class="prose">
-                <header>
-                    <h1 class="capitalize md:text-4xl mb-2.5">{{ post.title }}</h1>
-                    <small class="text-gray-400">
-                        Reporter: {{ post.author.name }}
-                        <span v-if="post.editor">
-                            &dash;
-                            Editor: {{ post.editor.name }}
-                        </span>
-                    </small>
-                    <p class="my-0 text-sm">
-                        {{ post.created_at }}
-                        &middot;
-                        waktu baca {{ post.minutes_to_read }} menit
-                    </p>
-                </header>
+        <Breadcrumb :pages="breadcrumbPages" class="mb-4" />
 
-                <main class="mt-6">
-                    <figure v-if="!!post.cover_image_url">
-                        <img :src="'/storage/' + post.cover_image_url" :alt="post.title">
-                    </figure>
+        <article class="prose prose-lg">
+            <header>
+                <h1 class="capitalize md:text-4xl mb-2.5">{{ post.title }}</h1>
+                <small class="text-gray-400">
+                    Reporter: {{ post.author.name }}
+                    <span v-if="post.editor">
+                        &dash;
+                        Editor: {{ post.editor.name }}
+                    </span>
+                </small>
+                <p class="my-0 text-sm">
+                    {{ post.created_at }}
+                    &middot;
+                    waktu baca {{ post.minutes_to_read }} menit
+                </p>
+            </header>
 
-                    <div v-html="post.content"></div>
-                </main>
-            </article>
-</div>
+            <main class="mt-6">
+                <figure v-if="!!post.cover_image_url">
+                    <img :src="'/storage/' + post.cover_image_url" :alt="post.title">
+                </figure>
+
+                <div v-html="post.content"></div>
+            </main>
+        </article>
+    </div>
 </template>
 
 <script setup>

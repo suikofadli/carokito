@@ -19,31 +19,39 @@ class Post extends Model
 
     protected $guarded = [];
 
+    public function scopeFeatured(Builder $query)
+    {
+        $query->where('is_featured', true);
+    }
+
+    public function scopePopular(Builder $query)
+    {
+        $query
+            ->withCount('views')
+            ->orderByDesc('views_count')
+            ->where('views_count', '>', 0);
+    }
+
+    public function scopeFeaturing(Builder $query)
+    {
+        $query->where('is_featured', true);
+    }
+
+    public function scopeUnfeaturing(Builder $query)
+    {
+        $query->where('is_featured', false);
+    }
+
+    public function scopePublished(Builder $query)
+    {
+        $query->where('is_published', true);
+    }
+
     protected function readingTime(): Attribute
     {
         return Attribute::make(
             get: fn (mixed $value, array $attributes) => ceil(str_word_count(strip_tags($attributes['content'])) / 200)
         );
-    }
-
-    public function category(): BelongsTo
-    {
-        return $this->belongsTo(Category::class);
-    }
-
-    public function user(): BelongsTo
-    {
-        return $this->belongsTo(User::class)->withTrashed();
-    }
-
-    public function editor(): BelongsTo
-    {
-        return $this->belongsTo(User::class, 'editor_id')->withTrashed();
-    }
-
-    public function views(): HasMany
-    {
-        return $this->hasMany(PostView::class);
     }
 
     public function recordView()
@@ -63,17 +71,23 @@ class Post extends Model
         }
     }
 
-    public function scopePopular(Builder $query)
+    public function category(): BelongsTo
     {
-        $query
-            ->published()
-            ->withCount('views')
-            ->orderByDesc('views_count')
-            ->where('views_count', '>', 0);
+        return $this->belongsTo(Category::class);
     }
 
-    public function scopePublished(Builder $query)
+    public function editor(): BelongsTo
     {
-        $query->where('is_published', true);
+        return $this->belongsTo(User::class, 'editor_id')->withTrashed();
+    }
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class)->withTrashed();
+    }
+
+    public function views(): HasMany
+    {
+        return $this->hasMany(PostView::class);
     }
 }

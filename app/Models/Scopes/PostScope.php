@@ -15,7 +15,6 @@ class PostScope implements Scope
     {
         $builder
             ->latest()
-            ->published()
             ->with('category');
     }
 }

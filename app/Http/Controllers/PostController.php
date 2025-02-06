@@ -12,10 +12,12 @@ use Illuminate\Validation\Rule;
 
 class PostController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $posts = PostResource::collection(Post::query()
-            ->latest()
+            ->when($request->is_featured, function ($query, $isFeatured) {
+                return $query->where('is_featured', $isFeatured);
+            })
             ->withCount('views')
             ->with(['user', 'editor'])
             ->paginate(10)

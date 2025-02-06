@@ -42,9 +42,21 @@ class DatabaseSeeder extends Seeder
         $editorUser->roles()->attach($editorRole);
         $authorUser->roles()->attach($authorRole);
 
+        Category::create([
+            'name' => 'Politik',
+            'slug' => 'politik',
+        ]);
         $category1 = Category::create([
-            'name' => 'Headline',
-            'slug' => 'headline',
+            'name' => 'Hukum',
+            'slug' => 'hukum',
+        ]);
+        Category::create([
+            'name' => 'Bisnis',
+            'slug' => 'bisnis',
+        ]);
+        Category::create([
+            'name' => 'Investasi',
+            'slug' => 'investasi',
         ]);
         $category2 = Category::create([
             'name' => 'Teknologi',

@@ -9,7 +9,7 @@
         <div>
             <div :class="{
                 'group-hover:text-primary': true,
-                'text-xl font-bold': variant === 'default',
+                'text-xl font-semibold': variant === 'default',
                 'text-lg font-normal': variant === 'simplified'
             }">{{ post.title }}</div>
 

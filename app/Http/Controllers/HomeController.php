@@ -15,12 +15,19 @@ class HomeController extends Controller
     {
         $newestPosts = PostResource::collection(
             Post::query()
+                ->published()
+                ->unfeaturing()
                 ->limit(50)
                 ->get()
         );
 
-        return inertia('Home', [
-            'newestPosts' => $newestPosts,
-        ]);
+        $featuringPosts = PostResource::collection(
+            Post::query()
+                ->published()
+                ->featuring()
+                ->get()
+        );
+
+        return inertia('Home', compact('newestPosts', 'featuringPosts'));
     }
 }
