@@ -1,20 +1,22 @@
 <template>
     <div>
-        <h2 class="text-xl font-bold border-l-4 border-primary  pl-3 mb-3">
+        <SectionTitle>
             {{ category.name }}
-        </h2>
+        </SectionTitle>
 
-        <PostCard v-for="post in posts.data" :post="post" :key="post.id" />
+        <div class="grid grid-cols-1 gap-y-5">
+            <PostCard v-for="post in posts.data" :post="post" :key="post.id" class="border-b" />
+        </div>
+        <PostPagination v-if="posts.meta.last_page > 1" :meta="posts.meta" />
 
         <p v-if="posts.meta.total === 0">Belum ada artikel.</p>
-
-        <PostPagination :meta="posts.meta" />
     </div>
 </template>
 
 <script setup>
 import PostCard from '@/Components/PostCard.vue';
 import BaseLayout from '@/Layouts/BaseLayout.vue';
+import SectionTitle from '@/Layouts/SectionTitle.vue';
 import PostPagination from '@/Shared/PostPagination.vue';
 
 defineOptions({

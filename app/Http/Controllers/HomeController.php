@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\CategoryResource;
 use App\Http\Resources\PostResource;
+use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -28,6 +30,25 @@ class HomeController extends Controller
                 ->get()
         );
 
-        return inertia('Home', compact('newestPosts', 'featuringPosts'));
+        $categories = Category::query()
+            ->with('posts')
+            ->get();
+
+        $postsByCategory = [];
+
+        $categories->each(function ($category) use (&$postsByCategory) {
+            $postsByCategory[$category->name] = [
+                'category' => CategoryResource::make($category),
+                'posts' => PostResource::collection(
+                    $category
+                        ->posts()
+                        ->published()
+                        ->limit(5)
+                        ->get()
+                ),
+            ];
+        });
+
+        return inertia('Home/Index', compact('newestPosts', 'featuringPosts', 'postsByCategory'));
     }
 }

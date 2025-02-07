@@ -1,19 +1,33 @@
 <template>
-    <div class="relative group flex gap-3 justify-between py-3">
+    <div :class="[
+        'relative group flex gap-5',
+        variant === 'default' ? 'pb-5' : 'pb-3'
+    ]">
         <Link :href="route('posts.show', {
             category: post.category.slug,
             post: post.slug
         })" class="absolute inset-0 z-10">
         </Link>
 
+        <figure v-if="post.cover_image_url && variant === 'simplified' && showImage"
+            class="h-16 aspect-square self-start">
+            <img :src="'/storage/' + post.cover_image_url" :alt="post.title"
+                class="h-full w-full object-cover rounded-sm" />
+        </figure>
+
+        <figure v-if="post.cover_image_url && variant === 'default'" class="h-28 aspect-video self-start">
+            <img :src="'/storage/' + post.cover_image_url" :alt="post.title"
+                class="h-full w-full object-cover rounded-sm" />
+        </figure>
+
         <div>
             <div :class="{
                 'group-hover:text-primary': true,
-                'text-xl font-semibold': variant === 'default',
+                'text-xl font-medium': variant === 'default',
                 'text-lg font-normal': variant === 'simplified'
             }">{{ post.title }}</div>
 
-            <div class="flex gap-2 mt-2" v-if="variant === 'default'">
+            <div :class="['flex gap-2 mt-2', { 'text-sm': variant === 'simplified' }]">
                 <Link :href="route('posts.category.index', post.category)"
                     class="font-medium underline z-20 hover:text-primary">
                 {{ post.category.name }}
@@ -24,11 +38,6 @@
                 </div>
             </div>
         </div>
-
-        <figure v-if="post.cover_image_url && variant === 'default'" class="h-28 aspect-video self-start">
-            <img :src="'/storage/' + post.cover_image_url" :alt="post.title"
-                class="h-full w-full object-cover rounded-sm" />
-        </figure>
     </div>
 </template>
 
@@ -40,6 +49,7 @@ defineProps({
         type: String,
         default: 'default'
     },
+    showImage: Boolean,
     post: {
         type: Object,
         required: true

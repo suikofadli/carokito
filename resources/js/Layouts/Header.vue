@@ -1,6 +1,6 @@
 <template>
     <div class="sticky top-0 bg-white z-40">
-        <header class="max-w-6xl mx-auto py-4">
+        <header class="max-w-6xl mx-auto py-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
                     <!-- Brand -->

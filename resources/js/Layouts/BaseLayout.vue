@@ -34,7 +34,7 @@
                 </div>
             </section>
 
-            <section class="border-t mt-10 pt-5">
+            <section v-if="$slots.category_posts" class="border-t mt-10 pt-5">
                 <slot name="category_posts" />
             </section>
         </div>
