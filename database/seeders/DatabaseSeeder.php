@@ -63,20 +63,20 @@ class DatabaseSeeder extends Seeder
             'slug' => 'teknologi',
         ]);
 
-        Post::factory()
-            ->count(25)
-            ->create([
-                'category_id' => $category1,
-                'user_id' => $authorUser,
-                'editor_id' => $editorUser,
-            ]);
+        // Post::factory()
+        //     ->count(25)
+        //     ->create([
+        //         'category_id' => $category1,
+        //         'user_id' => $authorUser,
+        //         'editor_id' => $editorUser,
+        //     ]);
 
-        Post::factory()
-            ->count(25)
-            ->create([
-                'category_id' => $category2,
-                'user_id' => $authorUser,
-                'editor_id' => $editorUser,
-            ]);
+        // Post::factory()
+        //     ->count(25)
+        //     ->create([
+        //         'category_id' => $category2,
+        //         'user_id' => $authorUser,
+        //         'editor_id' => $editorUser,
+        //     ]);
     }
 }
