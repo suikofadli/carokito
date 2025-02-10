@@ -18,7 +18,8 @@
                         <nav class="p-4 border-b">
                             <ul class="grid gap-y-5">
                                 <li v-for="category in categories" :key="category.id">
-                                    <Link :href="route('posts.category.index', category)" class="capitalize py-2 pr-2">
+                                    <Link :href="route('posts.category.index', category)" class="capitalize py-2 pr-2"
+                                        @click="openNavigation = false">
                                     {{ category.name }}
                                     </Link>
                                 </li>
@@ -70,7 +71,7 @@
             <div class="flex flex-col gap-3 md:flex-row items-center justify-between">
                 <div class="flex items-center">
                     <!-- Brand -->
-                    <Link href="/" class="flex items-center" :preserve-state="true" :preserve-scroll="true">
+                    <Link href="/" class="flex items-center">
                     <img src="/logo.png" alt="" class="w-10">
                     <span class="font-bold text-red-700 text-xl">
                         Warta Bengkulu

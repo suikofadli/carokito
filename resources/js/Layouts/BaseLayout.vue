@@ -52,7 +52,7 @@
         </div>
     </main>
 
-    <footer class="py-4 border-t text-end px-5 hidden lg:block">
+    <footer class="py-3 lg:py-4 border-t text-center lg:text-end px-5">
         <p class="text-sm text-gray-500">© {{ new Date().getFullYear() }}. All Right Reserved</p>
     </footer>
 </template>

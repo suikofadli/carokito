@@ -13,14 +13,16 @@
                         </Link>
                     </div>
                     <div class="grid grid-cols-1 gap-y-5">
-                        <PostCard v-for="(post, index) in postByCategory.posts" :post="post" :key="post.id"
-                            variant="simplified" size="sm" :show-image="postByCategory.posts.length > 1 && index === 0"
-                            :class="{ 'border-b': index !== postByCategory.posts.length - 1 }" />
+                        <template v-for="(post, index) in postByCategory.posts" :key="post.id">
+                            <PostCard :post="post" variant="simplified" size="sm"
+                                :show-image="postByCategory.posts.length > 1 && index === 0"
+                                :class="{ 'border-b': index !== postByCategory.posts.length - 1 }" />
+                        </template>
                     </div>
                 </div>
             </div>
 
-            <hr v-if="index !== postsByCategory.length - 1" class="-mx-5 lg:hidden" />
+            <hr v-if="postByCategory.posts.length && index !== postsByCategory.length - 1" class="-mx-5 lg:hidden" />
         </template>
     </div>
 </template>
