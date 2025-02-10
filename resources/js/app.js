@@ -6,6 +6,7 @@ import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import { createSSRApp, h } from "vue";
 import { ZiggyVue } from "../../vendor/tightenco/ziggy";
 // import BaseLayout from "./Layouts/BaseLayout.vue";
+import MansoryWall from "@yeger/vue-masonry-wall";
 
 // const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 const appName = "Warta Bengkulu";
@@ -29,6 +30,7 @@ createInertiaApp({
         return createSSRApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue)
+            .use(MansoryWall)
             .mount(el);
     },
     progress: {

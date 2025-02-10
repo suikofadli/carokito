@@ -8,7 +8,7 @@
         <p v-if="posts.length === 0">Belum ada artikel terbaru.</p>
     </div>
 
-    <div class="pt-7 flex justify-center">
+    <div v-if="posts.length" class="pt-7 flex md:justify-center">
         <Link :href="route('posts.newests')"
             class="relative items-center font-medium justify-center gap-2 whitespace-nowrap disabled:opacity-75 dark:disabled:opacity-75 disabled:cursor-default disabled:pointer-events-none h-10 text-sm rounded-lg px-4 inline-flex  bg-white hover:bg-zinc-50 dark:bg-zinc-700 dark:hover:bg-zinc-600/75 text-zinc-800 dark:text-white border border-zinc-200 hover:border-zinc-200 border-b-zinc-300/80 dark:border-zinc-600 dark:hover:border-zinc-600 shadow-sm">
         Lihat Indeks Artikel

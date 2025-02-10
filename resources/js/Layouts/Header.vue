@@ -1,37 +1,135 @@
 <template>
     <div class="sticky top-0 bg-white z-40">
-        <header class="max-w-6xl mx-auto py-3">
-            <div class="flex items-center justify-between">
+        <header class="max-w-2xl lg:max-w-6xl mx-auto py-2 lg:py-3 relative">
+            <button class="absolute left-4 top-5" @click="openNavigation = !openNavigation">
+                <Bars3Icon class="size-5" />
+            </button>
+
+            <Teleport to="body">
+                <div v-show="openNavigation" class="fixed inset-0 bg-black/50 z-40">
+                    <div class="fixed h-full w-full max-w-[275px] left-0 bg-white">
+                        <div class="flex items-center justify-between border-b p-4">
+                            <div class="font-bold">Menu</div>
+                            <button class="p-1" @click="openNavigation = false">
+                                <XMarkIcon class="size-6" />
+                            </button>
+                        </div>
+
+                        <nav class="p-4 border-b">
+                            <ul class="grid gap-y-5">
+                                <li v-for="category in categories" :key="category.id">
+                                    <Link :href="route('posts.category.index', category)" class="capitalize py-2 pr-2">
+                                    {{ category.name }}
+                                    </Link>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <nav class="p-4 border-b">
+                            <ul class="grid gap-y-5">
+                                <li>
+                                    <a class="flex items-center gap-3" href="https://www.facebook.com/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="size-5 text-gray-500 lucide lucide-facebook">
+                                            <path
+                                                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                        </svg>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex items-center gap-3" href="https://www.instagram.com/"
+                                        target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="size-5 text-gray-500 lucide lucide-instagram">
+                                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                                        </svg>
+                                        Instagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <footer class="text-sm text-gray-500 p-3">
+                            © {{ new Date().getFullYear() }}. All Right Reserved
+                        </footer>
+                    </div>
+                </div>
+            </Teleport>
+
+            <button class="absolute right-4 top-5 lg:hidden" @click="openSearch = !openSearch">
+                <MagnifyingGlassIcon class="size-5" />
+            </button>
+
+            <div class="flex flex-col gap-3 md:flex-row items-center justify-between">
                 <div class="flex items-center">
                     <!-- Brand -->
-                    <a href="/" class="flex items-center">
-                        <img src="/logo.png" alt="" class="w-10">
-                        <span class="font-bold text-red-700 text-xl">
-                            Warta Bengkulu
-                        </span>
-                    </a>
+                    <Link href="/" class="flex items-center" :preserve-state="true" :preserve-scroll="true">
+                    <img src="/logo.png" alt="" class="w-10">
+                    <span class="font-bold text-red-700 text-xl">
+                        Warta Bengkulu
+                    </span>
+                    </Link>
                 </div>
 
                 <!-- Actions -->
-                <div class="flex gap-2">
-                    <div class="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end">
-                        <!-- Search -->
-                        <form class="grid w-full max-w-lg grid-cols-1 lg:max-w-xs" @submit.prevent="handleSearch">
-                            <input type="search" name="search"
-                                class="col-start-1 row-start-1 block w-full rounded-sm bg-white py-1.5 pl-10 pr-3 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"
-                                placeholder="Pencarian berita..." v-model="search" />
-                            <MagnifyingGlassIcon
-                                class="pointer-events-none col-start-1 row-start-1 ml-3 size-5 self-center text-gray-400"
-                                aria-hidden="true" />
-                        </form>
+                <div class="flex items-center">
+                    <div :class="[
+                        'gap-2 w-full lg:flex md:w-auto',
+                        openSearch ? 'block' : 'hidden'
+                    ]">
+                        <div class="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end">
+                            <!-- Search -->
+                            <form class="grid w-full mx-2 grid-cols-1 lg:max-w-xs" @submit.prevent="handleSearch">
+                                <input type="search" name="search"
+                                    class="col-start-1 row-start-1 block w-full rounded-sm bg-white py-1.5 pl-10 pr-3 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6"
+                                    placeholder="Pencarian berita..." v-model="search" />
+                                <MagnifyingGlassIcon
+                                    class="pointer-events-none col-start-1 row-start-1 ml-3 size-5 self-center text-gray-400"
+                                    aria-hidden="true" />
+                            </form>
+                        </div>
                     </div>
+
+                    <nav class="p-4 hidden lg:block">
+                        <ul class="flex gap-5">
+                            <li>
+                                <a class="flex items-center gap-3" href="https://www.facebook.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-facebook">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center gap-3" href="https://www.instagram.com/" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-instagram">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>
-        <nav class="bg-primary">
-            <ul class="max-w-6xl mx-auto flex gap-x-5 py-3 overflow-auto">
+
+        <nav class="bg-primary pl-5 md:px-0">
+            <ul class="max-w-2xl lg:max-w-6xl mx-auto flex gap-x-5 py-3 overflow-auto">
                 <li v-for="category in categories" :key="category.id">
-                    <Link :href="route('posts.category.index', category)" class="text-white font-bold capitalize">
+                    <Link :href="route('posts.category.index', category)"
+                        class="text-white text-sm font-bold capitalize">
                     {{ category.name }}
                     </Link>
                 </li>
@@ -41,9 +139,12 @@
 </template>
 
 <script setup>
-import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid';
+import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/vue/20/solid';
 import { Link, router, usePage } from '@inertiajs/vue3';
 import { computed, ref } from 'vue';
+
+const openNavigation = ref(false)
+const openSearch = ref(false)
 
 const search = ref('')
 

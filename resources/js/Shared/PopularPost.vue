@@ -1,9 +1,9 @@
 <template>
     <div class="bg-gray-50 px-2 rounded border">
-        <SectionTitle class="-mx-2 pl-5 border-b border-b-gray-200 py-2 !text-lg">
+        <SectionTitle class="-mx-2 pl-4 border-b border-b-gray-200 py-2 !text-lg !mb-0">
             Artikel Populer
         </SectionTitle>
-        <div class="py-1">
+        <div class="py-2">
             <template v-for="(post, index) in posts" :key="post.id">
                 <div class="flex items-center gap-x-3">
                     <div
@@ -13,9 +13,9 @@
                     <PostCard :post="post" variant="simplified" />
                 </div>
             </template>
-        </div>
 
-        <p v-if="posts.length === 0">Belum ada artikel populer.</p>
+            <p v-if="posts.length === 0">Belum ada artikel populer.</p>
+        </div>
     </div>
 </template>
 

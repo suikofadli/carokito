@@ -12,22 +12,26 @@
         <figure v-if="post.cover_image_url && variant === 'simplified' && showImage"
             class="h-16 aspect-square self-start">
             <img :src="'/storage/' + post.cover_image_url" :alt="post.title"
-                class="h-full w-full object-cover rounded-sm" />
+                class="h-full w-full object-cover rounded-sm text-xs" />
         </figure>
 
-        <figure v-if="post.cover_image_url && variant === 'default'" class="h-28 aspect-video self-start">
+        <figure v-if="post.cover_image_url && variant === 'default'" class="h-16 md:h-28 aspect-video self-start">
             <img :src="'/storage/' + post.cover_image_url" :alt="post.title"
-                class="h-full w-full object-cover rounded-sm" />
+                class="h-full w-full object-cover rounded-sm text-xs" />
         </figure>
 
         <div>
-            <div :class="{
+            <h2 :class="{
                 'group-hover:text-primary': true,
-                'text-xl font-medium': variant === 'default',
-                'text-lg font-normal': variant === 'simplified'
-            }">{{ post.title }}</div>
+                'text-base md:text-xl font-medium': variant === 'default',
+                'text-base md:text-lg font-normal': variant === 'simplified',
+                '!text-lg': size === 'sm'
+            }">
+                {{ post.title }}
+            </h2>
 
-            <div :class="['flex gap-2 mt-2', { 'text-sm': variant === 'simplified' }]">
+            <div
+                :class="['flex gap-2 mt-2 text-sm md:text-base', { 'text-sm': variant === 'simplified' || size === 'sm' }]">
                 <Link :href="route('posts.category.index', post.category)"
                     class="font-medium underline z-20 hover:text-primary">
                 {{ post.category.name }}
@@ -46,6 +50,10 @@ import { Link } from '@inertiajs/vue3'
 
 defineProps({
     variant: {
+        type: String,
+        default: 'default'
+    },
+    size: {
         type: String,
         default: 'default'
     },

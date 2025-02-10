@@ -37,7 +37,7 @@ class HomeController extends Controller
         $postsByCategory = [];
 
         $categories->each(function ($category) use (&$postsByCategory) {
-            $postsByCategory[$category->name] = [
+            $postsByCategory[] = [
                 'category' => CategoryResource::make($category),
                 'posts' => PostResource::collection(
                     $category

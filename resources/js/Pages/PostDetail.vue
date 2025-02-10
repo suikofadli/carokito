@@ -8,21 +8,23 @@
 
         <Breadcrumb :pages="breadcrumbPages" class="mb-4" />
 
-        <article class="prose prose-lg">
+        <article class="prose-sm md:prose-lg">
             <header>
                 <h1 class="capitalize md:text-4xl mb-2.5">{{ post.title }}</h1>
-                <small class="text-gray-400">
-                    Reporter: {{ post.author.name }}
-                    <span v-if="post.editor">
-                        &dash;
-                        Editor: {{ post.editor.name }}
-                    </span>
-                </small>
-                <p class="my-0 text-sm">
-                    {{ post.created_at }}
-                    &middot;
-                    waktu baca {{ post.minutes_to_read }} menit
-                </p>
+                <div class="flex flex-col gap-1">
+                    <div class="text-gray-400 text-sm">
+                        Reporter: {{ post.author.name }}
+                        <span v-if="post.editor">
+                            &dash;
+                            Editor: {{ post.editor.name }}
+                        </span>
+                    </div>
+                    <div class="my-0 text-sm text-gray-500">
+                        {{ post.created_at }}
+                        &middot;
+                        waktu baca {{ post.minutes_to_read }} menit
+                    </div>
+                </div>
             </header>
 
             <main class="mt-6">

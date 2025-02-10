@@ -57,6 +57,7 @@ class HandleInertiaRequests extends Middleware
             'popularPosts' => PostResource::collection(
                 Post::query()
                     ->published()
+                    ->popular()
                     ->latest()
                     ->limit(5)
                     ->with('category')

@@ -1,11 +1,11 @@
 <template>
-    <div class="grid grid-cols-12 gap-5 mb-7 relative">
+    <div class="grid md:grid-cols-12 gap-5 mb-7 relative">
         <SectionTitle class="absolute top-0 left-0 z-20 bg-zinc-800 !text-base text-white p-2">
             Headline
         </SectionTitle>
 
         <div
-            :class="['col-span-5 h-96 relative rounded overflow-hidden group', { '!col-span-12': posts.length === 1 }]">
+            :class="['col-span-12 md:col-span-5 h-96 relative rounded overflow-hidden group', { '!col-span-12': posts.length === 1 }]">
             <Link :href="route('posts.show', {
                 category: firstPost.category,
                 post: firstPost
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div v-if="posts.length > 1" class="col-span-7 overflow-y-auto h-96">
+        <div v-if="posts.length > 1" class="col-span-12 md:col-span-7 overflow-y-auto h-96">
             <div class="grid grid-cols-1 gap-y-3">
                 <PostCard class="border-b" v-for="post in otherPosts" :key="post.id" show-image variant="simplified"
                     :post="post" />
