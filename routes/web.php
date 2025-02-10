@@ -57,7 +57,7 @@ Route::middleware(['auth', 'can:manage-advertisements'])->group(function () {
         ->names('dashboard.advertisements');
 });
 
-Route::middleware(['auth', 'can:manage-posts'])->group(function () {
+Route::middleware(['auth'])->group(function () {
     Route::resource('/dashboard/posts', PostController::class)
         ->names('dashboard.posts');
 
