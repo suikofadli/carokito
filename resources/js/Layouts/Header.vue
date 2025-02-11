@@ -5,7 +5,7 @@
                 <Bars3Icon class="size-5" />
             </button>
 
-            <Teleport to="body">
+            <Teleport to="#sidenav">
                 <div v-show="openNavigation" class="fixed inset-0 bg-black/50 z-40">
                     <div class="fixed h-full w-full max-w-[275px] left-0 bg-white">
                         <div class="flex items-center justify-between border-b p-4">

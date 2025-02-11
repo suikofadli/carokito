@@ -35,7 +35,7 @@ class PostSeeder extends Seeder
         ];
 
         Post::factory()
-            ->count(25)
+            ->count(3)
             ->sequence(fn (Sequence $sequence) => [
                 'category_id' => Arr::random($categories),
                 'user_id' => Arr::random([$editorUser->id, $adminUser->id, $authorUser->id]),
