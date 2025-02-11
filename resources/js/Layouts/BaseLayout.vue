@@ -1,7 +1,6 @@
 <template>
     <Header />
     <!-- Avoid mismatch hydration SSR of Teleport -->
-    <div id="sidenav"></div>
 
     <div v-if="ads.header">
         <div class="max-w-2xl lg:max-w-6xl mx-auto bg-gray-100 p-2 lg:rounded my-5">
