@@ -15,6 +15,7 @@ class PostUnpublishController extends Controller
         $post->update([
             'editor_id' => null,
             'is_published' => false,
+            'is_featured' => false,
             'published_at' => null,
         ]);
         $post->save();

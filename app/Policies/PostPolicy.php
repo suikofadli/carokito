@@ -27,4 +27,14 @@ class PostPolicy
     {
         return $user->hasRole('admin') && $post->is_published;
     }
+
+    public function featuring(User $user, Post $post)
+    {
+        return Gate::allows('manage-posts');
+    }
+
+    public function unfeaturing(User $user, Post $post)
+    {
+        return Gate::allows('manage-posts');
+    }
 }

@@ -69,7 +69,7 @@
                                                     class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">
                                                     {{ post.title }}
                                                 </td>
-                                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                                                <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 ">
                                                     {{ post.slug }}
                                                 </td>
                                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
@@ -103,21 +103,21 @@
                                                         <span class="sr-only">{{ post.name }}</span>
                                                     </button>
 
-                                                    <template v-if="post.is_published && !post.is_featured">
-                                                        <button class="text-indigo-600 hover:text-indigo-900"
-                                                            @click="handleFeaturing(post)">
-                                                            Set as Featured
-                                                            <span class="sr-only">{{ post.name }}</span>
-                                                        </button>
-                                                    </template>
+                                                    <button
+                                                        v-if="post.can.featuring && post.is_published && !post.is_featured"
+                                                        class="text-indigo-600 hover:text-indigo-900"
+                                                        @click="handleFeaturing(post)">
+                                                        Set as Featured
+                                                        <span class="sr-only">{{ post.name }}</span>
+                                                    </button>
 
-                                                    <template v-if="post.is_published && post.is_featured">
-                                                        <button class="text-amber-600 hover:text-amber-900"
-                                                            @click="handleUnfeaturing(post)">
-                                                            Unfeatured
-                                                            <span class="sr-only">{{ post.name }}</span>
-                                                        </button>
-                                                    </template>
+                                                    <button
+                                                        v-if="post.can.unfeaturing && post.is_published && post.is_featured"
+                                                        class="text-amber-600 hover:text-amber-900"
+                                                        @click="handleUnfeaturing(post)">
+                                                        Unfeatured
+                                                        <span class="sr-only">{{ post.name }}</span>
+                                                    </button>
 
                                                     <button v-if="post.can.publish"
                                                         class="text-zinc-600 hover:text-zinc-900"
