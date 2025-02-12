@@ -43,7 +43,7 @@ import Breadcrumb from '@/Components/Core/Breadcrumb.vue';
 import BaseLayout from '@/Layouts/BaseLayout.vue';
 import { computed } from 'vue';
 import { Head } from '@inertiajs/vue3';
-import { useServerHead } from '@vueuse/head'
+// import { useServerHead } from '@vueuse/head'
 
 defineOptions({
     layout: BaseLayout
