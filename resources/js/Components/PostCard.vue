@@ -12,12 +12,12 @@
         <figure v-if="post.cover_image_url && variant === 'simplified' && showImage"
             class="h-16 aspect-square self-start">
             <img :src="'/storage/' + post.cover_image_url" :alt="post.title"
-                class="h-full w-full object-cover rounded-sm text-xs" />
+                class="h-full w-full object-cover rounded-sm text-xs" loading="lazy" />
         </figure>
 
         <figure v-if="post.cover_image_url && variant === 'default'" class="h-16 md:h-28 aspect-video self-start">
             <img :src="'/storage/' + post.cover_image_url" :alt="post.title"
-                class="h-full w-full object-cover rounded-sm text-xs" />
+                class="h-full w-full object-cover rounded-sm text-xs" loading="lazy" />
         </figure>
 
         <div>

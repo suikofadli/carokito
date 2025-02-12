@@ -1,4 +1,8 @@
 <template>
+
+    <Head>
+    </Head>
+
     <Header />
     <!-- Avoid mismatch hydration SSR of Teleport -->
 
@@ -60,7 +64,7 @@
 
 <script setup>
 import PopularPost from '@/Shared/PopularPost.vue';
-import { usePage } from '@inertiajs/vue3';
+import { usePage, Head } from '@inertiajs/vue3';
 import { computed, ref } from 'vue';
 import Header from './Header.vue';
 

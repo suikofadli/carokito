@@ -43,12 +43,13 @@ import Breadcrumb from '@/Components/Core/Breadcrumb.vue';
 import BaseLayout from '@/Layouts/BaseLayout.vue';
 import { computed } from 'vue';
 import { Head } from '@inertiajs/vue3';
+import { useServerHead } from '@vueuse/head'
 
 defineOptions({
     layout: BaseLayout
 })
 
-const { category } = defineProps({
+const { category, post } = defineProps({
     post: Object,
     category: Object
 })
@@ -56,4 +57,25 @@ const { category } = defineProps({
 const breadcrumbPages = computed(() => [
     { name: category.name, href: `/${category.slug}`, current: false }
 ])
+
+// const jsonLd = computed(() => ({
+//     "@context": "https://schema.org",
+//     "@type": "NewsArticle",
+//     "headline": post.title,
+//     "description": post.title,
+//     "datePublished": post.created_at,
+//     "author": {
+//         "@type": "Person",
+//         "name": "Author Name",
+//     },
+// }))
+
+// useServerHead({
+//     script: [
+//         {
+//             type: 'application/ld+json',
+//             children: JSON.stringify(jsonLd.value)
+//         }
+//     ]
+// })
 </script>

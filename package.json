@@ -35,6 +35,8 @@
         "@tiptap/starter-kit": "^2.11.2",
         "@tiptap/vue-3": "^2.11.2",
         "@vue/server-renderer": "^3.5.13",
+        "@vueuse/core": "^12.5.0",
+        "@vueuse/head": "^2.0.0",
         "@yeger/vue-masonry-wall": "^5.0.18",
         "react-responsive-masonry": "^2.7.1",
         "ziggy-js": "^2.5.0"
