@@ -1,10 +1,7 @@
 <template>
     <div>
 
-        <Head>
-            <title>{{ post.title }}</title>
-            <meta name="description" :content="post.title" />
-        </Head>
+        <SeoMeta :post="post" />
 
         <Breadcrumb :pages="breadcrumbPages" class="mb-4" />
 
@@ -43,6 +40,7 @@ import Breadcrumb from '@/Components/Core/Breadcrumb.vue';
 import BaseLayout from '@/Layouts/BaseLayout.vue';
 import { computed } from 'vue';
 import { Head } from '@inertiajs/vue3';
+import SeoMeta from '@/Shared/SeoMeta.vue';
 // import { useServerHead } from '@vueuse/head'
 
 defineOptions({

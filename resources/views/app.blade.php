@@ -21,19 +21,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
-
-    <!-- OG Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Berita Terkini, Berita Hari Ini Indonesia dan Dunia | tempo.co" />
-    <meta property="og:description"
-        content="Berita terbaru, akurat dan terpercaya di Tempo.co. Baca di sini biar kamu gak ketinggalan informasi terbaru seputar Politik, Hukum, Ekonomi, Teknologi, dan Lainnya." />
-    <meta property="og:url" content="https://www.tempo.co/">
-    <meta property="og:locale" content="id">
-    <meta property="og:site_name" content="tempo.co">
-
-
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
 </head>
 
 <body class="font-sans antialiased">

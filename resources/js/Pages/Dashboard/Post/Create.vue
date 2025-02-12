@@ -90,6 +90,21 @@
                                 <InputError class=" mt-2" :message="form.errors.coverImage" />
                             </div>
 
+                            <div>
+                                <h2 class="font-semibold">SEO Tags (Opsional)</h2>
+
+                                <div class="space-y-4">
+                                    <div>
+                                        <InputLabel for="seo_description" value="SEO Description" />
+
+                                        <TextInput id="seo_description" type="text" class="mt-1 block w-full"
+                                            v-model="form.seo_description" autofocus autocomplete="seo_description" />
+
+                                        <InputError class="mt-2" :message="form.errors.seo_description" />
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="mt-4 flex items-center">
                                 <PrimaryButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing"
                                     type="submit">
@@ -144,17 +159,19 @@ const form = useForm({
     slug: '',
     category: null,
     content: null,
-    coverImage: null
+    coverImage: null,
+    seo_description: '',
 });
 
 const submit = () => {
-    const { title, slug, category, content, coverImage } = form
+    const { title, slug, category, content, coverImage, ...seoValues } = form
     router.post(route('dashboard.posts.store'), {
         title,
         slug,
         categoryId: category.id,
         content,
-        coverImage
+        coverImage,
+        ...seoValues
     });
 };
 

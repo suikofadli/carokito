@@ -9,3 +9,24 @@ export const generateSlug = (text) => {
         .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
         .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
 };
+
+export const getAppName = () => {
+    const appName = import.meta.env.VITE_APP_NAME || "wartabengkulu.co";
+    return appName;
+}
+
+export const getSeoTitle = (title) => {
+    return title
+            ? `${title} | ${getAppName()}`
+            : `${getAppName()} | Berita Bengkulu Hari Ini`
+}
+
+export const getSeoDescription = (title) => {
+    return title
+            ? `${title} | ${getAppName()}`
+            : `${getAppName()} | Berita Bengkulu Hari Ini`
+}
+
+export const getAppUrl = () => {
+    return import.meta.env.VITE_APP_URL || "";
+}

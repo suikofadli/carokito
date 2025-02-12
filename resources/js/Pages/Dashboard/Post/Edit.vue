@@ -1,66 +1,3 @@
-<script setup>
-import InputError from '@/Components/InputError.vue';
-import InputLabel from '@/Components/InputLabel.vue';
-import PrimaryButton from '@/Components/PrimaryButton.vue';
-import TextInput from '@/Components/TextInput.vue';
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, router, useForm } from '@inertiajs/vue3';
-
-import { computed, ref, watch } from 'vue'
-import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/20/solid'
-import {
-    Combobox,
-    ComboboxButton,
-    ComboboxInput,
-    ComboboxLabel,
-    ComboboxOption,
-    ComboboxOptions,
-} from '@headlessui/vue'
-import Editor from '@/Components/Editor.vue';
-
-const { categories, post } = defineProps({
-    categories: Array,
-    post: Object
-});
-
-const selectedCategory = categories.find(e => e.id === post.category_id);
-
-const query = ref('')
-const filteredCategories = computed(() =>
-    query.value === ''
-        ? categories
-        : categories.filter((category) => {
-            return category.name.toLowerCase().includes(query.value.toLowerCase())
-        }),
-)
-
-const form = useForm({
-    title: post.title,
-    slug: post.slug,
-    category: selectedCategory,
-    content: post.content,
-    coverImage: null
-});
-
-const submit = () => {
-    const { title, slug, category, content, coverImage } = form
-    router.post(route('dashboard.posts.update', post), {
-        _method: 'patch',
-        title,
-        slug,
-        categoryId: category.id,
-        content,
-        coverImage
-    });
-};
-
-watch(form, () => {
-    form.slug = form.title.toLowerCase().replace(/ /g, '-');
-});
-
-</script>
-
-
 <template>
 
     <Head title="Create Category" />
@@ -153,6 +90,21 @@ watch(form, () => {
                                 <InputError class=" mt-2" :message="form.errors.coverImage" />
                             </div>
 
+                            <div>
+                                <h2 class="font-semibold">SEO Tags (Opsional)</h2>
+
+                                <div class="space-y-4">
+                                    <div>
+                                        <InputLabel for="seo_description" value="SEO Description" />
+
+                                        <TextInput id="seo_description" type="text" class="mt-1 block w-full"
+                                            v-model="form.seo_description" autofocus autocomplete="seo_description" />
+
+                                        <InputError class="mt-2" :message="form.errors.seo_description" />
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="mt-4 flex items-center">
                                 <PrimaryButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing"
                                     type="submit">
@@ -171,3 +123,67 @@ watch(form, () => {
         </div>
     </AuthenticatedLayout>
 </template>
+
+<script setup>
+import InputError from '@/Components/InputError.vue';
+import InputLabel from '@/Components/InputLabel.vue';
+import PrimaryButton from '@/Components/PrimaryButton.vue';
+import TextInput from '@/Components/TextInput.vue';
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import { Head, router, useForm } from '@inertiajs/vue3';
+
+import { computed, ref, watch } from 'vue'
+import { CheckIcon, ChevronUpDownIcon } from '@heroicons/vue/20/solid'
+import {
+    Combobox,
+    ComboboxButton,
+    ComboboxInput,
+    ComboboxLabel,
+    ComboboxOption,
+    ComboboxOptions,
+} from '@headlessui/vue'
+import Editor from '@/Components/Editor.vue';
+
+const { categories, post } = defineProps({
+    categories: Array,
+    post: Object
+});
+
+const selectedCategory = categories.find(e => e.id === post.category_id);
+
+const query = ref('')
+const filteredCategories = computed(() =>
+    query.value === ''
+        ? categories
+        : categories.filter((category) => {
+            return category.name.toLowerCase().includes(query.value.toLowerCase())
+        }),
+)
+
+const form = useForm({
+    title: post.title,
+    slug: post.slug,
+    category: selectedCategory,
+    content: post.content,
+    coverImage: null,
+    seo_description: post.seo_description,
+});
+
+const submit = () => {
+    const { title, slug, category, content, coverImage, ...seoValues } = form
+    router.post(route('dashboard.posts.update', post), {
+        _method: 'patch',
+        title,
+        slug,
+        categoryId: category.id,
+        content,
+        coverImage,
+        ...seoValues
+    });
+};
+
+watch(form, () => {
+    form.slug = form.title.toLowerCase().replace(/ /g, '-');
+});
+
+</script>

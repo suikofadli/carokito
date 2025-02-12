@@ -5,16 +5,11 @@ import { createInertiaApp, Head, Link } from "@inertiajs/vue3";
 import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import { createSSRApp, h } from "vue";
 import { ZiggyVue } from "../../vendor/tightenco/ziggy";
+import { getSeoTitle } from "./utils";
 // import BaseLayout from "./Layouts/BaseLayout.vue";
 
-// const appName = import.meta.env.VITE_APP_NAME || "Laravel";
-const appName = "Warta Bengkulu";
-
 createInertiaApp({
-    title: (title) =>
-        title
-            ? `${title} - ${appName}`
-            : `${appName} - Berita Bengkulu Terkini`,
+    title: (title) => getSeoTitle(title),
     resolve: async (name) => {
         const page = await resolvePageComponent(
             `./Pages/${name}.vue`,

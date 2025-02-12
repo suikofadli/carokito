@@ -1,5 +1,7 @@
 <template>
+    <!-- Avoid mismatch hydration SSR of Teleport -->
     <div id="sidenav"></div>
+
     <div class="sticky top-0 bg-white z-40">
         <header class="max-w-2xl lg:max-w-6xl mx-auto py-2 lg:py-3 relative">
             <button class="absolute left-4 top-5 lg:hidden" @click="openNavigation = !openNavigation">

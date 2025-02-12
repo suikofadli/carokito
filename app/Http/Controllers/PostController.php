@@ -29,11 +29,12 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title' => ['required', 'string', 'max:255'],
-            'slug' => ['required', 'string', 'max:255', 'unique:posts,slug'],
+            'title' => ['required', 'string', 'max:60'],
+            'slug' => ['required', 'string', 'max:60', 'unique:posts,slug'],
             'categoryId' => ['required', 'exists:categories,id'],
             'content' => ['required', 'string'],
             'coverImage' => ['nullable', 'image', 'mimes:png,jpg,jpeg,webp', 'max:2048'],
+            'seo_description' => ['string', 'nullable', 'max:160'],
         ]);
 
         if ($request->hasFile('coverImage')) {
@@ -47,6 +48,7 @@ class PostController extends Controller
             'content' => $request->content,
             'cover_image_url' => $coverImageUrl ?? null,
             'user_id' => Auth::id(),
+            'seo_description' => $request->seo_description,
         ]);
 
         return redirect()->route('dashboard.posts.index');
@@ -74,11 +76,12 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         $request->validate([
-            'title' => ['required', 'string', 'max:255'],
-            'slug' => ['required', 'string', 'max:255', Rule::unique('posts', 'slug')->ignore($post->id)],
+            'title' => ['required', 'string', 'max:60'],
+            'slug' => ['required', 'string', 'max:60', Rule::unique('posts', 'slug')->ignore($post->id)],
             'categoryId' => ['required', 'exists:categories,id'],
             'content' => ['required', 'string'],
             'coverImage' => ['nullable', 'image', 'mimes:png,jpg,jpeg,webp', 'max:2048'],
+            'seo_description' => ['string', 'nullable', 'max:160'],
         ]);
 
         if ($request->hasFile('coverImage')) {
@@ -96,6 +99,7 @@ class PostController extends Controller
             'content' => $request->content,
             'cover_image_url' => $coverImageUrl ?? $post->cover_image_url ?? null,
             'user_id' => Auth::id(),
+            'seo_description' => $request->seo_description,
         ]);
 
         return redirect()->route('dashboard.posts.index');
