@@ -31,10 +31,6 @@ jobs:
       - name: Build Assets
         run: npm run build
 
-      - name: Debug SSH connection
-        run: |
-          ssh -v ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}
-
       - name: Syncronize Files to Server
         uses: easingthemes/ssh-deploy@main
         env:
