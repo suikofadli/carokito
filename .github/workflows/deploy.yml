@@ -49,10 +49,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/html/carokito
-            php artisan migrate --force --no-interaction
-             php artisan config:clear
-            php artisan cache:clear
-            php artisan route:clear
-            php artisan view:clear
-            php artisan optimize:clear
+            php artisan migrate --force
             php artisan optimize
