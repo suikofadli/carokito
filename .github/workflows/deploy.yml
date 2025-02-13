@@ -50,6 +50,6 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/html/wartabengkulu.co
+            cd /var/www/html/carokito
             php artisan migrate --force
             php artisan optimize
