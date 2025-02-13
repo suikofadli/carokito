@@ -1,4 +1,4 @@
-name: Deploy wartabengkulu.co to Production
+name: Deploy Wartabengkulu.co to Production
 on:
   push:
     branches:
