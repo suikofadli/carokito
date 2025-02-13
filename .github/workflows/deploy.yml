@@ -32,19 +32,6 @@ jobs:
       - name: Build Assets
         run: npm run build
 
-      - name: Create SQLite Database
-        run: |
-          touch database/database.sqlite
-          chmod 777 database/database.sqlite
-
-      - name: Clear Laravel Cache
-        run: |
-          php artisan config:clear
-          php artisan cache:clear
-          php artisan route:clear
-          php artisan view:clear
-          php artisan optimize:clear
-
       - name: Syncronize Files to Server
         uses: easingthemes/ssh-deploy@main
         env:
@@ -62,5 +49,10 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/html/carokito
-            php artisan migrate --force
+            php artisan migrate --force --no-interaction
+             php artisan config:clear
+            php artisan cache:clear
+            php artisan route:clear
+            php artisan view:clear
+            php artisan optimize:clear
             php artisan optimize
