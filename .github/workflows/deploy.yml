@@ -18,7 +18,10 @@ jobs:
           php-version: 8.3
 
       - name: Install Dependencies
-        run: composer install --no-dev --optimize-autoloader
+        run: |
+          rm -rf config/telescope.php
+          rm -rf app/Providers/TelescopeServiceProvider.php
+          composer install --no-dev --optimize-autoloader
 
       - name: Install Node.js
         uses: actions/setup-node@v2
