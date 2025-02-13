@@ -10,6 +10,8 @@
 .env
 .env.backup
 .env.production
+config/telescope.php
+app/Providers/TelescopeServiceProvider.php
 .phpactor.json
 .phpunit.result.cache
 Homestead.json
