@@ -32,6 +32,11 @@ jobs:
       - name: Build Assets
         run: npm run build
 
+      - name: Create SQLite Database
+        run: |
+          touch database/database.sqlite
+          chmod 777 database/database.sqlite
+
       - name: Clear Laravel Cache
         run: |
           php artisan config:clear
