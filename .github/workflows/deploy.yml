@@ -19,8 +19,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          rm -rf config/telescope.php
-          rm -rf app/Providers/TelescopeServiceProvider.php
           composer install --no-dev --optimize-autoloader
 
       - name: Install Node.js
