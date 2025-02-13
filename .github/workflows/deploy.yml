@@ -32,6 +32,14 @@ jobs:
       - name: Build Assets
         run: npm run build
 
+      - name: Clear Laravel Cache
+        run: |
+          php artisan config:clear
+          php artisan cache:clear
+          php artisan route:clear
+          php artisan view:clear
+          php artisan optimize:clear
+
       - name: Syncronize Files to Server
         uses: easingthemes/ssh-deploy@main
         env:
@@ -49,8 +57,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /var/www/html/carokito
-            php artisan config:clear
-            php artisan cache:clear
-            php artisan optimize:clear
             php artisan migrate --force
             php artisan optimize
