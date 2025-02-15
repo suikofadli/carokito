@@ -171,7 +171,7 @@ const handleDelete = (post) => {
     const confirm = window.confirm('Are you sure you want to delete this post?');
 
     if (confirm) {
-        router.delete(route('dashboard.posts.delete', post));
+        router.delete(route('dashboard.posts.destroy', post));
     }
 }
 
