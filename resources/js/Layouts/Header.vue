@@ -1,4 +1,5 @@
 <script setup>
+import Copyright from '@/Shared/Copyright.vue';
 import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/vue/20/solid';
 import { Link, router, usePage } from '@inertiajs/vue3';
 import { computed, ref } from 'vue';
@@ -28,9 +29,9 @@ const handleSearch = () => {
             </button>
 
             <Teleport to="#sidenav">
-                <div v-show="openNavigation" class="fixed inset-0 bg-black/50 z-40">
-                    <div class="fixed h-full w-full max-w-[275px] left-0 bg-white">
-                        <div class="flex items-center justify-between border-b p-4">
+                <div v-show="openNavigation" class="fixed inset-0 bg-black/50 z-50">
+                    <div class="fixed h-full w-full max-w-[275px] left-0 bg-white overflow-auto">
+                        <div class="flex items-center justify-between border-b p-4 sticky top-0 left-0 bg-white">
                             <div class="font-bold">Menu</div>
                             <button class="p-1" @click="openNavigation = false">
                                 <XMarkIcon class="size-6" />
@@ -106,9 +107,7 @@ const handleSearch = () => {
                             </ul>
                         </nav>
 
-                        <footer class="text-sm text-gray-500 p-3">
-                            © {{ new Date().getFullYear() }}. All Right Reserved
-                        </footer>
+                        <Copyright />
                     </div>
                 </div>
             </Teleport>
