@@ -23,9 +23,8 @@
         <div>
             <h2 :class="{
                 'group-hover:text-primary': true,
-                'text-base md:text-xl font-medium': variant === 'default',
-                'text-base md:text-lg font-normal': variant === 'simplified',
-                '!text-lg': size === 'sm'
+                'text-sm md:text-lg font-semibold': variant === 'default',
+                'text-sm md:text-base font-medium': variant === 'simplified',
             }">
                 {{ post.title }}
             </h2>
@@ -33,7 +32,7 @@
             <div
                 :class="['flex gap-2 mt-2 text-sm md:text-base', { 'text-sm': variant === 'simplified' || size === 'sm' }]">
                 <Link :href="route('posts.category.index', post.category)"
-                    class="font-medium underline z-20 hover:text-primary">
+                    class="font-normal underline z-20 hover:text-primary">
                 {{ post.category.name }}
                 </Link>
                 &middot;

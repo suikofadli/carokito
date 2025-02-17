@@ -7,7 +7,7 @@
 
         <article class="prose-sm md:prose-lg">
             <header>
-                <h1 class="capitalize md:text-4xl mb-2.5">{{ post.title }}</h1>
+                <h1 class="capitalize md:text-4xl mb-2.5 font-semibold">{{ post.title }}</h1>
                 <div class="flex flex-col gap-1">
                     <div class="text-gray-400 text-sm">
                         Reporter: {{ post.author.name }}

@@ -1,7 +1,7 @@
 <template>
     <div class="grid lg:grid-cols-3 gap-10">
-        <template v-for="(postByCategory, index) in postsByCategory" :key="postByCategory.category.id">
-            <div v-if="postByCategory.posts.length > 0" class="grid gap-4">
+        <template v-for="(postByCategory, index) in filteredPostsByCategory" :key="postByCategory.category.id">
+            <div class="grid gap-4">
                 <div class="h-auto max-w-full">
                     <div class="flex items-center justify-between mb-5">
                         <SectionTitle class="!mb-0">{{ postByCategory.category.name }}</SectionTitle>
@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <hr v-if="postByCategory.posts.length && index !== postsByCategory.length - 1" class="-mx-5 lg:hidden" />
+            <hr v-if="index < filteredPostsByCategory.length - 1" class="-mx-5 lg:hidden" />
         </template>
     </div>
 </template>
@@ -32,8 +32,15 @@ import PostCard from '@/Components/PostCard.vue';
 import SectionTitle from '@/Layouts/SectionTitle.vue';
 import { ArrowRightIcon } from '@heroicons/vue/20/solid';
 import { Link } from '@inertiajs/vue3';
+import { computed } from 'vue';
 
-defineProps({
+const { postsByCategory } = defineProps({
     postsByCategory: Array,
 })
+
+const filteredPostsByCategory = computed(() => {
+    return postsByCategory.filter((postByCategory) => {
+        return postByCategory.posts.length > 0;
+    })
+});
 </script>
