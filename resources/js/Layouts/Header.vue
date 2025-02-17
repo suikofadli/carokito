@@ -1,3 +1,22 @@
+<script setup>
+import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/vue/20/solid';
+import { Link, router, usePage } from '@inertiajs/vue3';
+import { computed, ref } from 'vue';
+
+const openNavigation = ref(false)
+const openSearch = ref(false)
+
+const search = ref('')
+
+const categories = computed(() => usePage().props.categories);
+
+const handleSearch = () => {
+    if (search.value) {
+        router.get(route('posts.search'), { keyword: search.value })
+    }
+}
+</script>
+
 <template>
     <!-- Avoid mismatch hydration SSR of Teleport -->
     <div id="sidenav"></div>
@@ -197,22 +216,3 @@
         </nav>
     </div>
 </template>
-
-<script setup>
-import { Bars3Icon, MagnifyingGlassIcon, XMarkIcon } from '@heroicons/vue/20/solid';
-import { Link, router, usePage } from '@inertiajs/vue3';
-import { computed, ref } from 'vue';
-
-const openNavigation = ref(false)
-const openSearch = ref(false)
-
-const search = ref('')
-
-const categories = computed(() => usePage().props.categories);
-
-const handleSearch = () => {
-    if (search.value) {
-        router.get(route('posts.search'), { keyword: search.value })
-    }
-}
-</script>

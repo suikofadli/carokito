@@ -1,9 +1,9 @@
 <script setup>
 import PopularPost from '@/Shared/PopularPost.vue';
-import { usePage, Head } from '@inertiajs/vue3';
-import { computed, ref } from 'vue';
-import Header from './Header.vue';
 import { getAppName, getAppUrl, getSeoTitle } from '@/utils';
+import { Head, usePage } from '@inertiajs/vue3';
+import { computed } from 'vue';
+import Header from './Header.vue';
 
 const pageProps = usePage().props;
 
