@@ -206,7 +206,7 @@ const handleSearch = () => {
 
         <nav class="bg-primary pl-5 md:px-0">
             <ul class="max-w-2xl lg:max-w-6xl mx-auto flex gap-x-5 py-3 overflow-auto">
-                <li v-for="category in categories" :key="category.id" style="display: flex; flex-shrink: 0;">
+                <li v-for="category in categories" :key="category.id" class="flex shrink-0 grow-0">
                     <Link :href="route('posts.category.index', category)"
                         class="text-white text-sm font-bold capitalize">
                     {{ category.name }}
