@@ -31,7 +31,7 @@
                 <div class="grid grid-cols-2 gap-5">
                     <div v-for="ad in ads.sidebar" :key="ad.id" class="p-2 bg-gray-100 mt-2.5">
                         <a :href="ad.target_url" target="_blank">
-                            <img class="h-[150px] w-full rounded object-cover" :src="'/storage/' + ad.image_path" />
+                            <img class="h-[150px] w-full rounded object-cover" :src="ad.image_path" />
                         </a>
                     </div>
                 </div>

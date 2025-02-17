@@ -38,7 +38,7 @@ class AdvertisementController extends Controller
 
         Advertisement::create([
             'title' => $attrs['title'],
-            'image_path' => $image_path,
+            'image_path' => "/storage/$image_path",
             'target_url' => $attrs['target_url'],
             'position' => $attrs['position'],
             'start_date' => $attrs['start_date'],

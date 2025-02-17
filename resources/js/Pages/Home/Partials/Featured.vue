@@ -11,7 +11,7 @@
                 post: firstPost
             })" class="absolute inset-0 z-10">
             </Link>
-            <img :src="'/storage/' + firstPost.cover_image_url" alt=""
+            <img :src="firstPost.cover_image_url" alt=""
                 class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-500">
             <div class="bg-black/70 absolute bottom-0 inset-x-0 px-2 py-3">
                 <h2 class="text-white font-bold text-lg">{{ firstPost.title }}</h2>

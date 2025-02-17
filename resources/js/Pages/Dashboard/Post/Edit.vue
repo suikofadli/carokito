@@ -115,7 +115,7 @@
 
                         <div v-if="!!post.cover_image_url">
                             <div class="mb-1">Cover Image</div>
-                            <img :src="'/storage/' + post.cover_image_url" />
+                            <img :src="post.cover_image_url" />
                         </div>
                     </div>
                 </div>

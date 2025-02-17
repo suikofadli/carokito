@@ -26,7 +26,7 @@
 
             <main class="mt-6">
                 <figure v-if="!!post.cover_image_url">
-                    <img :src="'/storage/' + post.cover_image_url" :alt="post.title">
+                    <img :src="post.cover_image_url" :alt="post.title">
                 </figure>
 
                 <div v-html="post.content"></div>
