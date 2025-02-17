@@ -1,3 +1,19 @@
+<script setup>
+import PopularPost from '@/Shared/PopularPost.vue';
+import { usePage, Head } from '@inertiajs/vue3';
+import { computed, ref } from 'vue';
+import Header from './Header.vue';
+import { getAppName, getAppUrl, getSeoTitle } from '@/utils';
+
+const pageProps = usePage().props;
+
+const ads = computed(() => pageProps.advertisement)
+const popularPosts = computed(() => pageProps.popularPosts)
+
+const seoTitle = computed(() => getSeoTitle())
+const seoDescription = computed(() => "Berita terbaru, akurat dan terpercaya di Wartabengkulu.co. Baca di sini biar kamu gak ketinggalan informasi terbaru seputar Politik, Hukum, Ekonomi, Teknologi, dan Lainnya.")
+</script>
+
 <template>
 
     <Head>
@@ -78,19 +94,3 @@
         <p class="text-sm text-gray-500">© {{ new Date().getFullYear() }}. All Right Reserved</p>
     </footer>
 </template>
-
-<script setup>
-import PopularPost from '@/Shared/PopularPost.vue';
-import { usePage, Head } from '@inertiajs/vue3';
-import { computed, ref } from 'vue';
-import Header from './Header.vue';
-import { getAppName, getAppUrl, getSeoTitle } from '@/utils';
-
-const pageProps = usePage().props;
-
-const ads = computed(() => pageProps.advertisement)
-const popularPosts = computed(() => pageProps.popularPosts)
-
-const seoTitle = computed(() => getSeoTitle())
-const seoDescription = computed(() => "Berita terbaru, akurat dan terpercaya di Wartabengkulu.co. Baca di sini biar kamu gak ketinggalan informasi terbaru seputar Politik, Hukum, Ekonomi, Teknologi, dan Lainnya.")
-</script>
