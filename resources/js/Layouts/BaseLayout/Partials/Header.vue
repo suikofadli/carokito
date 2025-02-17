@@ -1,30 +1,23 @@
 <template>
-    <!-- Avoid mismatch hydration SSR of Teleport -->
-    <div id="sidenav"></div>
-
     <div class="sticky top-0 bg-white z-40">
-        <header class="max-w-2xl lg:max-w-6xl mx-auto py-2 lg:py-3 relative">
-            <MobileMenu />
+        <header class="max-w-2xl lg:max-w-5xl xl:max-w-6xl mx-auto py-2 lg:py-3 relative">
+            <div class="md:hidden">
+                <MobileMenu />
+            </div>
 
-            <button class="absolute right-4 top-5 lg:hidden" @click="openSearch = !openSearch">
+            <button class="absolute right-4 top-5 md:hidden" @click="openSearch = !openSearch">
                 <MagnifyingGlassIcon class="size-5" />
             </button>
 
-            <div class="flex flex-col gap-3 md:flex-row items-center justify-between">
+            <div class="flex flex-col gap-3 md:flex-row items-center justify-between lg:px-5">
                 <div class="flex items-center">
-                    <!-- Brand -->
-                    <Link href="/" class="flex items-center">
-                    <img src="/logo.png" alt="" class="w-10">
-                    <span class="font-bold text-red-700 text-xl">
-                        Warta Bengkulu
-                    </span>
-                    </Link>
+                    <BrandLink />
                 </div>
 
                 <!-- Actions -->
                 <div class="flex items-center">
                     <div :class="[
-                        'gap-2 w-full lg:flex md:w-auto',
+                        'gap-2 w-full md:flex md:w-auto',
                         openSearch ? 'block' : 'hidden'
                     ]">
                         <div class="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end">
@@ -40,70 +33,27 @@
                         </div>
                     </div>
 
-                    <nav class="p-4 hidden lg:block">
-                        <ul class="flex gap-5">
-                            <li>
-                                <a class="flex items-center gap-3" href="https://www.instagram.com/wartabengkulu.id/"
-                                    target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-instagram">
-                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                                    </svg>
-                                    <span class="sr-only">Instagram</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex items-center gap-3" href="https://www.facebook.com/share/15iuzXfuaY/"
-                                    target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-facebook">
-                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                                    </svg>
-                                </a>
-                                <span class="sr-only">Facebook</span>
-                            </li>
-                            <li>
-                                <a class="flex items-center gap-3" href="https://www.youtube.com/@wartabengkulu4357"
-                                    target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-youtube">
-                                        <path
-                                            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
-                                        <path d="m10 15 5-3-5-3z" />
-                                    </svg>
-                                    <span class="sr-only">Youtube</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex items-center gap-3"
-                                    href="https://www.tiktok.com/@wartabengkulu?_t=ZS-8tnd7nbZ4Aq&_r=1" target="_blank">
-                                    <svg fill="currentColor" class="size-5 text-gray-500" width="20px" height="20px"
-                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
-                                        <path
-                                            d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" />
-                                    </svg>
-                                    <span class="sr-only">Tiktok</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <nav class="p-4 hidden md:block">
+                        <SocialLinks class="gap-5" :show-label="false" />
                     </nav>
                 </div>
             </div>
         </header>
 
-        <nav class="bg-primary pl-5 md:px-0">
-            <ul class="max-w-2xl lg:max-w-6xl mx-auto flex gap-x-5 py-3 overflow-auto">
-                <li v-for="category in categories" :key="category.id" class="flex shrink-0 grow-0">
-                    <Link :href="route('posts.category.index', category)"
-                        class="text-white text-sm font-bold capitalize">
-                    {{ category.name }}
-                    </Link>
-                </li>
+        <nav class="bg-primary pl-5">
+            <ul
+                class="max-w-2xl lg:max-w-6xl mx-auto flex gap-x-5 py-3 md:flex-wrap overflow-auto md:overflow-visible gap-y-3">
+                <template v-for="(category, index) in categories" :key="category.id">
+                    <li :class="{
+                        'flex shrink-0 grow-0': true,
+                        'mr-5': index === categories.length - 1
+                    }">
+                        <Link :href="route('posts.category.index', category)"
+                            class="text-white text-sm font-bold capitalize">
+                        {{ category.name }}
+                        </Link>
+                    </li>
+                </template>
             </ul>
         </nav>
     </div>
@@ -114,6 +64,8 @@ import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid';
 import { Link, router, usePage } from '@inertiajs/vue3';
 import { computed, ref } from 'vue';
 import MobileMenu from './MobileMenu.vue';
+import BrandLink from '@/Shared/BrandLink.vue';
+import SocialLinks from '@/Shared/SocialLinks.vue';
 
 const openSearch = ref(false)
 

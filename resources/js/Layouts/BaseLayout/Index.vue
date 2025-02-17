@@ -1,4 +1,6 @@
 <template>
+    <!-- Avoid mismatch hydration SSR of Teleport -->
+    <div id="sidenav"></div>
 
     <DefaultSeoMeta />
 
@@ -6,8 +8,8 @@
 
     <AdsHeader />
 
-    <main class="px-5 lg:p-0">
-        <div class="max-w-2xl lg:max-w-6xl mx-auto my-5 mb-10">
+    <main class="px-5 xl:p-0">
+        <div class="max-w-2xl lg:max-w-5xl xl:max-w-6xl mx-auto my-5 mb-10">
             <section class="grid lg:grid-cols-12 gap-10">
                 <div class="grid lg:col-span-8 w-full">
                     <slot />
