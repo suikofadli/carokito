@@ -50,4 +50,5 @@ jobs:
           script: |
             cd /var/www/html/carokito
             php artisan migrate --force
+            php artisan optimize:clear
             php artisan optimize
