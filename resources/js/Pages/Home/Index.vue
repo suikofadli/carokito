@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import BaseLayout from '@/Layouts/BaseLayout.vue';
+import BaseLayout from '@/Layouts/BaseLayout/Index.vue';
 import { usePage } from '@inertiajs/vue3';
 import { computed } from 'vue';
 import Categorized from './Partials/Categorized.vue';

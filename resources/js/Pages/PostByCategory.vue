@@ -15,7 +15,7 @@
 
 <script setup>
 import PostCard from '@/Components/PostCard.vue';
-import BaseLayout from '@/Layouts/BaseLayout.vue';
+import BaseLayout from '@/Layouts/BaseLayout/Index.vue';
 import SectionTitle from '@/Layouts/SectionTitle.vue';
 import PostPagination from '@/Shared/PostPagination.vue';
 

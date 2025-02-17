@@ -37,7 +37,7 @@
 
 <script setup>
 import Breadcrumb from '@/Components/Core/Breadcrumb.vue';
-import BaseLayout from '@/Layouts/BaseLayout.vue';
+import BaseLayout from '@/Layouts/BaseLayout/Index.vue';
 import { computed } from 'vue';
 import { Head } from '@inertiajs/vue3';
 import SeoMeta from '@/Shared/SeoMeta.vue';
