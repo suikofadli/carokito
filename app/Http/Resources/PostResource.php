@@ -33,7 +33,8 @@ class PostResource extends JsonResource
             'published_at' => Carbon::parse($this->published_at)->format('d F Y - H:i').' WIB',
             'seo' => [
                 'description' => $this->seo_description,
-                'publish_at' => Carbon::parse($this->published_at)->toIso8601String(),
+                'published_at' => Carbon::parse($this->published_at)->toIso8601String(),
+                'updated_at' => Carbon::parse($this->updated_at)->toIso8601String(),
             ],
             'can' => $request->user() ? [
                 'edit' => $request->user()->can('edit', $this->resource),

@@ -16,21 +16,21 @@ const _export_sfc = (sfc, props) => {
   }
   return target;
 };
-const _sfc_main$X = {};
-function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
+const _sfc_main$12 = {};
+function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs) {
   _push(`<svg${ssrRenderAttrs(mergeProps({
     viewBox: "0 0 316 316",
     xmlns: "http://www.w3.org/2000/svg"
   }, _attrs))}><path d="M305.8 81.125C305.77 80.995 305.69 80.885 305.65 80.755C305.56 80.525 305.49 80.285 305.37 80.075C305.29 79.935 305.17 79.815 305.07 79.685C304.94 79.515 304.83 79.325 304.68 79.175C304.55 79.045 304.39 78.955 304.25 78.845C304.09 78.715 303.95 78.575 303.77 78.475L251.32 48.275C249.97 47.495 248.31 47.495 246.96 48.275L194.51 78.475C194.33 78.575 194.19 78.725 194.03 78.845C193.89 78.955 193.73 79.045 193.6 79.175C193.45 79.325 193.34 79.515 193.21 79.685C193.11 79.815 192.99 79.935 192.91 80.075C192.79 80.285 192.71 80.525 192.63 80.755C192.58 80.875 192.51 80.995 192.48 81.125C192.38 81.495 192.33 81.875 192.33 82.265V139.625L148.62 164.795V52.575C148.62 52.185 148.57 51.805 148.47 51.435C148.44 51.305 148.36 51.195 148.32 51.065C148.23 50.835 148.16 50.595 148.04 50.385C147.96 50.245 147.84 50.125 147.74 49.995C147.61 49.825 147.5 49.635 147.35 49.485C147.22 49.355 147.06 49.265 146.92 49.155C146.76 49.025 146.62 48.885 146.44 48.785L93.99 18.585C92.64 17.805 90.98 17.805 89.63 18.585L37.18 48.785C37 48.885 36.86 49.035 36.7 49.155C36.56 49.265 36.4 49.355 36.27 49.485C36.12 49.635 36.01 49.825 35.88 49.995C35.78 50.125 35.66 50.245 35.58 50.385C35.46 50.595 35.38 50.835 35.3 51.065C35.25 51.185 35.18 51.305 35.15 51.435C35.05 51.805 35 52.185 35 52.575V232.235C35 233.795 35.84 235.245 37.19 236.025L142.1 296.425C142.33 296.555 142.58 296.635 142.82 296.725C142.93 296.765 143.04 296.835 143.16 296.865C143.53 296.965 143.9 297.015 144.28 297.015C144.66 297.015 145.03 296.965 145.4 296.865C145.5 296.835 145.59 296.775 145.69 296.745C145.95 296.655 146.21 296.565 146.45 296.435L251.36 236.035C252.72 235.255 253.55 233.815 253.55 232.245V174.885L303.81 145.945C305.17 145.165 306 143.725 306 142.155V82.265C305.95 81.875 305.89 81.495 305.8 81.125ZM144.2 227.205L100.57 202.515L146.39 176.135L196.66 147.195L240.33 172.335L208.29 190.625L144.2 227.205ZM244.75 114.995V164.795L226.39 154.225L201.03 139.625V89.825L219.39 100.395L244.75 114.995ZM249.12 57.105L292.81 82.265L249.12 107.425L205.43 82.265L249.12 57.105ZM114.49 184.425L96.13 194.995V85.305L121.49 70.705L139.85 60.135V169.815L114.49 184.425ZM91.76 27.425L135.45 52.585L91.76 77.745L48.07 52.585L91.76 27.425ZM43.67 60.135L62.03 70.705L87.39 85.305V202.545V202.555V202.565C87.39 202.735 87.44 202.895 87.46 203.055C87.49 203.265 87.49 203.485 87.55 203.695V203.705C87.6 203.875 87.69 204.035 87.76 204.195C87.84 204.375 87.89 204.575 87.99 204.745C87.99 204.745 87.99 204.755 88 204.755C88.09 204.905 88.22 205.035 88.33 205.175C88.45 205.335 88.55 205.495 88.69 205.635L88.7 205.645C88.82 205.765 88.98 205.855 89.12 205.965C89.28 206.085 89.42 206.225 89.59 206.325C89.6 206.325 89.6 206.325 89.61 206.335C89.62 206.335 89.62 206.345 89.63 206.345L139.87 234.775V285.065L43.67 229.705V60.135ZM244.75 229.705L148.58 285.075V234.775L219.8 194.115L244.75 179.875V229.705ZM297.2 139.625L253.49 164.795V114.995L278.85 100.395L297.21 89.825V139.625H297.2Z"></path></svg>`);
 }
-const _sfc_setup$X = _sfc_main$X.setup;
-_sfc_main$X.setup = (props, ctx) => {
+const _sfc_setup$12 = _sfc_main$12.setup;
+_sfc_main$12.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/ApplicationLogo.vue");
-  return _sfc_setup$X ? _sfc_setup$X(props, ctx) : void 0;
+  return _sfc_setup$12 ? _sfc_setup$12(props, ctx) : void 0;
 };
-const ApplicationLogo = /* @__PURE__ */ _export_sfc(_sfc_main$X, [["ssrRender", _sfc_ssrRender$3]]);
-const _sfc_main$W = {
+const ApplicationLogo = /* @__PURE__ */ _export_sfc(_sfc_main$12, [["ssrRender", _sfc_ssrRender$4]]);
+const _sfc_main$11 = {
   __name: "GuestLayout",
   __ssrInlineRender: true,
   setup(__props) {
@@ -54,13 +54,13 @@ const _sfc_main$W = {
     };
   }
 };
-const _sfc_setup$W = _sfc_main$W.setup;
-_sfc_main$W.setup = (props, ctx) => {
+const _sfc_setup$11 = _sfc_main$11.setup;
+_sfc_main$11.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/GuestLayout.vue");
-  return _sfc_setup$W ? _sfc_setup$W(props, ctx) : void 0;
+  return _sfc_setup$11 ? _sfc_setup$11(props, ctx) : void 0;
 };
-const _sfc_main$V = {
+const _sfc_main$10 = {
   __name: "InputError",
   __ssrInlineRender: true,
   props: {
@@ -76,13 +76,13 @@ const _sfc_main$V = {
     };
   }
 };
-const _sfc_setup$V = _sfc_main$V.setup;
-_sfc_main$V.setup = (props, ctx) => {
+const _sfc_setup$10 = _sfc_main$10.setup;
+_sfc_main$10.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/InputError.vue");
-  return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
+  return _sfc_setup$10 ? _sfc_setup$10(props, ctx) : void 0;
 };
-const _sfc_main$U = {
+const _sfc_main$$ = {
   __name: "InputLabel",
   __ssrInlineRender: true,
   props: {
@@ -104,26 +104,26 @@ const _sfc_main$U = {
     };
   }
 };
-const _sfc_setup$U = _sfc_main$U.setup;
-_sfc_main$U.setup = (props, ctx) => {
+const _sfc_setup$$ = _sfc_main$$.setup;
+_sfc_main$$.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/InputLabel.vue");
-  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
+  return _sfc_setup$$ ? _sfc_setup$$(props, ctx) : void 0;
 };
-const _sfc_main$T = {};
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+const _sfc_main$_ = {};
+function _sfc_ssrRender$3(_ctx, _push, _parent, _attrs) {
   _push(`<button${ssrRenderAttrs(mergeProps({ class: "inline-flex items-center rounded-md border border-transparent bg-gray-800 px-4 py-3 text-xs font-semibold uppercase tracking-widest text-white transition duration-150 ease-in-out hover:bg-gray-700 focus:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 active:bg-gray-900" }, _attrs))}>`);
   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
   _push(`</button>`);
 }
-const _sfc_setup$T = _sfc_main$T.setup;
-_sfc_main$T.setup = (props, ctx) => {
+const _sfc_setup$_ = _sfc_main$_.setup;
+_sfc_main$_.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/PrimaryButton.vue");
-  return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
+  return _sfc_setup$_ ? _sfc_setup$_(props, ctx) : void 0;
 };
-const PrimaryButton = /* @__PURE__ */ _export_sfc(_sfc_main$T, [["ssrRender", _sfc_ssrRender$2]]);
-const _sfc_main$S = {
+const PrimaryButton = /* @__PURE__ */ _export_sfc(_sfc_main$_, [["ssrRender", _sfc_ssrRender$3]]);
+const _sfc_main$Z = {
   __name: "TextInput",
   __ssrInlineRender: true,
   props: /* @__PURE__ */ mergeModels({
@@ -156,13 +156,13 @@ const _sfc_main$S = {
     };
   }
 };
-const _sfc_setup$S = _sfc_main$S.setup;
-_sfc_main$S.setup = (props, ctx) => {
+const _sfc_setup$Z = _sfc_main$Z.setup;
+_sfc_main$Z.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/TextInput.vue");
-  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
+  return _sfc_setup$Z ? _sfc_setup$Z(props, ctx) : void 0;
 };
-const _sfc_main$R = {
+const _sfc_main$Y = {
   __name: "ConfirmPassword",
   __ssrInlineRender: true,
   setup(__props) {
@@ -175,16 +175,16 @@ const _sfc_main$R = {
       });
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(_sfc_main$W, _attrs, {
+      _push(ssrRenderComponent(_sfc_main$11, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(ssrRenderComponent(unref(Head), { title: "Confirm Password" }, null, _parent2, _scopeId));
             _push2(`<div class="mb-4 text-sm text-gray-600"${_scopeId}> This is a secure area of the application. Please confirm your password before continuing. </div><form${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "password",
               value: "Password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "password",
               type: "password",
               class: "mt-1 block w-full",
@@ -194,7 +194,7 @@ const _sfc_main$R = {
               autocomplete: "current-password",
               autofocus: ""
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.password
             }, null, _parent2, _scopeId));
@@ -223,11 +223,11 @@ const _sfc_main$R = {
                 onSubmit: withModifiers(submit, ["prevent"])
               }, [
                 createVNode("div", null, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "password",
                     value: "Password"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "password",
                     type: "password",
                     class: "mt-1 block w-full",
@@ -237,7 +237,7 @@ const _sfc_main$R = {
                     autocomplete: "current-password",
                     autofocus: ""
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.password
                   }, null, 8, ["message"])
@@ -262,17 +262,17 @@ const _sfc_main$R = {
     };
   }
 };
-const _sfc_setup$R = _sfc_main$R.setup;
-_sfc_main$R.setup = (props, ctx) => {
+const _sfc_setup$Y = _sfc_main$Y.setup;
+_sfc_main$Y.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/ConfirmPassword.vue");
-  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
+  return _sfc_setup$Y ? _sfc_setup$Y(props, ctx) : void 0;
 };
 const __vite_glob_0_0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$R
+  default: _sfc_main$Y
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$Q = {
+const _sfc_main$X = {
   __name: "ForgotPassword",
   __ssrInlineRender: true,
   props: {
@@ -288,7 +288,7 @@ const _sfc_main$Q = {
       form.post(route("password.email"));
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(_sfc_main$W, _attrs, {
+      _push(ssrRenderComponent(_sfc_main$11, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(ssrRenderComponent(unref(Head), { title: "Forgot Password" }, null, _parent2, _scopeId));
@@ -299,11 +299,11 @@ const _sfc_main$Q = {
               _push2(`<!---->`);
             }
             _push2(`<form${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "email",
               value: "Email"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "email",
               type: "email",
               class: "mt-1 block w-full",
@@ -313,7 +313,7 @@ const _sfc_main$Q = {
               autofocus: "",
               autocomplete: "username"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.email
             }, null, _parent2, _scopeId));
@@ -346,11 +346,11 @@ const _sfc_main$Q = {
                 onSubmit: withModifiers(submit, ["prevent"])
               }, [
                 createVNode("div", null, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "email",
                     value: "Email"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "email",
                     type: "email",
                     class: "mt-1 block w-full",
@@ -360,7 +360,7 @@ const _sfc_main$Q = {
                     autofocus: "",
                     autocomplete: "username"
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.email
                   }, null, 8, ["message"])
@@ -385,17 +385,17 @@ const _sfc_main$Q = {
     };
   }
 };
-const _sfc_setup$Q = _sfc_main$Q.setup;
-_sfc_main$Q.setup = (props, ctx) => {
+const _sfc_setup$X = _sfc_main$X.setup;
+_sfc_main$X.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/ForgotPassword.vue");
-  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
+  return _sfc_setup$X ? _sfc_setup$X(props, ctx) : void 0;
 };
 const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$Q
+  default: _sfc_main$X
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$P = {
+const _sfc_main$W = {
   __name: "Checkbox",
   __ssrInlineRender: true,
   props: {
@@ -430,13 +430,13 @@ const _sfc_main$P = {
     };
   }
 };
-const _sfc_setup$P = _sfc_main$P.setup;
-_sfc_main$P.setup = (props, ctx) => {
+const _sfc_setup$W = _sfc_main$W.setup;
+_sfc_main$W.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Checkbox.vue");
-  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
+  return _sfc_setup$W ? _sfc_setup$W(props, ctx) : void 0;
 };
-const _sfc_main$O = {
+const _sfc_main$V = {
   __name: "Login",
   __ssrInlineRender: true,
   props: {
@@ -459,7 +459,7 @@ const _sfc_main$O = {
       });
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(_sfc_main$W, _attrs, {
+      _push(ssrRenderComponent(_sfc_main$11, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(ssrRenderComponent(unref(Head), { title: "Log in" }, null, _parent2, _scopeId));
@@ -469,11 +469,11 @@ const _sfc_main$O = {
               _push2(`<!---->`);
             }
             _push2(`<form${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "email",
               value: "Email"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "email",
               type: "email",
               class: "mt-1 block w-full",
@@ -483,16 +483,16 @@ const _sfc_main$O = {
               autofocus: "",
               autocomplete: "username"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.email
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="mt-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "password",
               value: "Password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "password",
               type: "password",
               class: "mt-1 block w-full",
@@ -501,12 +501,12 @@ const _sfc_main$O = {
               required: "",
               autocomplete: "current-password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.password
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="mt-4 block"${_scopeId}><label class="flex items-center"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$P, {
+            _push2(ssrRenderComponent(_sfc_main$W, {
               name: "remember",
               checked: unref(form).remember,
               "onUpdate:checked": ($event) => unref(form).remember = $event
@@ -558,11 +558,11 @@ const _sfc_main$O = {
                 onSubmit: withModifiers(submit, ["prevent"])
               }, [
                 createVNode("div", null, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "email",
                     value: "Email"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "email",
                     type: "email",
                     class: "mt-1 block w-full",
@@ -572,17 +572,17 @@ const _sfc_main$O = {
                     autofocus: "",
                     autocomplete: "username"
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.email
                   }, null, 8, ["message"])
                 ]),
                 createVNode("div", { class: "mt-4" }, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "password",
                     value: "Password"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "password",
                     type: "password",
                     class: "mt-1 block w-full",
@@ -591,14 +591,14 @@ const _sfc_main$O = {
                     required: "",
                     autocomplete: "current-password"
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.password
                   }, null, 8, ["message"])
                 ]),
                 createVNode("div", { class: "mt-4 block" }, [
                   createVNode("label", { class: "flex items-center" }, [
-                    createVNode(_sfc_main$P, {
+                    createVNode(_sfc_main$W, {
                       name: "remember",
                       checked: unref(form).remember,
                       "onUpdate:checked": ($event) => unref(form).remember = $event
@@ -636,17 +636,17 @@ const _sfc_main$O = {
     };
   }
 };
-const _sfc_setup$O = _sfc_main$O.setup;
-_sfc_main$O.setup = (props, ctx) => {
+const _sfc_setup$V = _sfc_main$V.setup;
+_sfc_main$V.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/Login.vue");
-  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
+  return _sfc_setup$V ? _sfc_setup$V(props, ctx) : void 0;
 };
 const __vite_glob_0_2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$O
+  default: _sfc_main$V
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$N = {
+const _sfc_main$U = {
   __name: "Register",
   __ssrInlineRender: true,
   setup(__props) {
@@ -662,16 +662,16 @@ const _sfc_main$N = {
       });
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(_sfc_main$W, _attrs, {
+      _push(ssrRenderComponent(_sfc_main$11, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(ssrRenderComponent(unref(Head), { title: "Register" }, null, _parent2, _scopeId));
             _push2(`<form${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "name",
               value: "Name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -681,16 +681,16 @@ const _sfc_main$N = {
               autofocus: "",
               autocomplete: "name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="mt-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "email",
               value: "Email"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "email",
               type: "email",
               class: "mt-1 block w-full",
@@ -699,16 +699,16 @@ const _sfc_main$N = {
               required: "",
               autocomplete: "username"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.email
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="mt-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "password",
               value: "Password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "password",
               type: "password",
               class: "mt-1 block w-full",
@@ -717,16 +717,16 @@ const _sfc_main$N = {
               required: "",
               autocomplete: "new-password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.password
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="mt-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "password_confirmation",
               value: "Confirm Password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "password_confirmation",
               type: "password",
               class: "mt-1 block w-full",
@@ -735,7 +735,7 @@ const _sfc_main$N = {
               required: "",
               autocomplete: "new-password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.password_confirmation
             }, null, _parent2, _scopeId));
@@ -778,11 +778,11 @@ const _sfc_main$N = {
                 onSubmit: withModifiers(submit, ["prevent"])
               }, [
                 createVNode("div", null, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "name",
                     value: "Name"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "name",
                     type: "text",
                     class: "mt-1 block w-full",
@@ -792,17 +792,17 @@ const _sfc_main$N = {
                     autofocus: "",
                     autocomplete: "name"
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.name
                   }, null, 8, ["message"])
                 ]),
                 createVNode("div", { class: "mt-4" }, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "email",
                     value: "Email"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "email",
                     type: "email",
                     class: "mt-1 block w-full",
@@ -811,17 +811,17 @@ const _sfc_main$N = {
                     required: "",
                     autocomplete: "username"
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.email
                   }, null, 8, ["message"])
                 ]),
                 createVNode("div", { class: "mt-4" }, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "password",
                     value: "Password"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "password",
                     type: "password",
                     class: "mt-1 block w-full",
@@ -830,17 +830,17 @@ const _sfc_main$N = {
                     required: "",
                     autocomplete: "new-password"
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.password
                   }, null, 8, ["message"])
                 ]),
                 createVNode("div", { class: "mt-4" }, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "password_confirmation",
                     value: "Confirm Password"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "password_confirmation",
                     type: "password",
                     class: "mt-1 block w-full",
@@ -849,7 +849,7 @@ const _sfc_main$N = {
                     required: "",
                     autocomplete: "new-password"
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.password_confirmation
                   }, null, 8, ["message"])
@@ -883,17 +883,17 @@ const _sfc_main$N = {
     };
   }
 };
-const _sfc_setup$N = _sfc_main$N.setup;
-_sfc_main$N.setup = (props, ctx) => {
+const _sfc_setup$U = _sfc_main$U.setup;
+_sfc_main$U.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/Register.vue");
-  return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
+  return _sfc_setup$U ? _sfc_setup$U(props, ctx) : void 0;
 };
 const __vite_glob_0_3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$N
+  default: _sfc_main$U
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$M = {
+const _sfc_main$T = {
   __name: "ResetPassword",
   __ssrInlineRender: true,
   props: {
@@ -920,16 +920,16 @@ const _sfc_main$M = {
       });
     };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(_sfc_main$W, _attrs, {
+      _push(ssrRenderComponent(_sfc_main$11, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(ssrRenderComponent(unref(Head), { title: "Reset Password" }, null, _parent2, _scopeId));
             _push2(`<form${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "email",
               value: "Email"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "email",
               type: "email",
               class: "mt-1 block w-full",
@@ -939,16 +939,16 @@ const _sfc_main$M = {
               autofocus: "",
               autocomplete: "username"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.email
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="mt-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "password",
               value: "Password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "password",
               type: "password",
               class: "mt-1 block w-full",
@@ -957,16 +957,16 @@ const _sfc_main$M = {
               required: "",
               autocomplete: "new-password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.password
             }, null, _parent2, _scopeId));
             _push2(`</div><div class="mt-4"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "password_confirmation",
               value: "Confirm Password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "password_confirmation",
               type: "password",
               class: "mt-1 block w-full",
@@ -975,7 +975,7 @@ const _sfc_main$M = {
               required: "",
               autocomplete: "new-password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.password_confirmation
             }, null, _parent2, _scopeId));
@@ -1003,11 +1003,11 @@ const _sfc_main$M = {
                 onSubmit: withModifiers(submit, ["prevent"])
               }, [
                 createVNode("div", null, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "email",
                     value: "Email"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "email",
                     type: "email",
                     class: "mt-1 block w-full",
@@ -1017,17 +1017,17 @@ const _sfc_main$M = {
                     autofocus: "",
                     autocomplete: "username"
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.email
                   }, null, 8, ["message"])
                 ]),
                 createVNode("div", { class: "mt-4" }, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "password",
                     value: "Password"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "password",
                     type: "password",
                     class: "mt-1 block w-full",
@@ -1036,17 +1036,17 @@ const _sfc_main$M = {
                     required: "",
                     autocomplete: "new-password"
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.password
                   }, null, 8, ["message"])
                 ]),
                 createVNode("div", { class: "mt-4" }, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "password_confirmation",
                     value: "Confirm Password"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "password_confirmation",
                     type: "password",
                     class: "mt-1 block w-full",
@@ -1055,7 +1055,7 @@ const _sfc_main$M = {
                     required: "",
                     autocomplete: "new-password"
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     class: "mt-2",
                     message: unref(form).errors.password_confirmation
                   }, null, 8, ["message"])
@@ -1080,17 +1080,17 @@ const _sfc_main$M = {
     };
   }
 };
-const _sfc_setup$M = _sfc_main$M.setup;
-_sfc_main$M.setup = (props, ctx) => {
+const _sfc_setup$T = _sfc_main$T.setup;
+_sfc_main$T.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/ResetPassword.vue");
-  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
+  return _sfc_setup$T ? _sfc_setup$T(props, ctx) : void 0;
 };
 const __vite_glob_0_4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$M
+  default: _sfc_main$T
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$L = {
+const _sfc_main$S = {
   __name: "VerifyEmail",
   __ssrInlineRender: true,
   props: {
@@ -1108,7 +1108,7 @@ const _sfc_main$L = {
       () => props.status === "verification-link-sent"
     );
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(_sfc_main$W, _attrs, {
+      _push(ssrRenderComponent(_sfc_main$11, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(ssrRenderComponent(unref(Head), { title: "Email Verification" }, null, _parent2, _scopeId));
@@ -1194,17 +1194,17 @@ const _sfc_main$L = {
     };
   }
 };
-const _sfc_setup$L = _sfc_main$L.setup;
-_sfc_main$L.setup = (props, ctx) => {
+const _sfc_setup$S = _sfc_main$S.setup;
+_sfc_main$S.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/VerifyEmail.vue");
-  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
+  return _sfc_setup$S ? _sfc_setup$S(props, ctx) : void 0;
 };
 const __vite_glob_0_5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$L
+  default: _sfc_main$S
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$K = {
+const _sfc_main$R = {
   __name: "Dropdown",
   __ssrInlineRender: true,
   props: {
@@ -1257,13 +1257,13 @@ const _sfc_main$K = {
     };
   }
 };
-const _sfc_setup$K = _sfc_main$K.setup;
-_sfc_main$K.setup = (props, ctx) => {
+const _sfc_setup$R = _sfc_main$R.setup;
+_sfc_main$R.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Dropdown.vue");
-  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
+  return _sfc_setup$R ? _sfc_setup$R(props, ctx) : void 0;
 };
-const _sfc_main$J = {
+const _sfc_main$Q = {
   __name: "DropdownLink",
   __ssrInlineRender: true,
   props: {
@@ -1292,13 +1292,13 @@ const _sfc_main$J = {
     };
   }
 };
-const _sfc_setup$J = _sfc_main$J.setup;
-_sfc_main$J.setup = (props, ctx) => {
+const _sfc_setup$Q = _sfc_main$Q.setup;
+_sfc_main$Q.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/DropdownLink.vue");
-  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
+  return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
 };
-const _sfc_main$I = {
+const _sfc_main$P = {
   __name: "NavLink",
   __ssrInlineRender: true,
   props: {
@@ -1334,13 +1334,13 @@ const _sfc_main$I = {
     };
   }
 };
-const _sfc_setup$I = _sfc_main$I.setup;
-_sfc_main$I.setup = (props, ctx) => {
+const _sfc_setup$P = _sfc_main$P.setup;
+_sfc_main$P.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/NavLink.vue");
-  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
+  return _sfc_setup$P ? _sfc_setup$P(props, ctx) : void 0;
 };
-const _sfc_main$H = {
+const _sfc_main$O = {
   __name: "ResponsiveNavLink",
   __ssrInlineRender: true,
   props: {
@@ -1376,13 +1376,13 @@ const _sfc_main$H = {
     };
   }
 };
-const _sfc_setup$H = _sfc_main$H.setup;
-_sfc_main$H.setup = (props, ctx) => {
+const _sfc_setup$O = _sfc_main$O.setup;
+_sfc_main$O.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/ResponsiveNavLink.vue");
-  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
+  return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
 };
-const _sfc_main$G = {
+const _sfc_main$N = {
   __name: "AuthenticatedLayout",
   __ssrInlineRender: true,
   setup(__props) {
@@ -1405,7 +1405,7 @@ const _sfc_main$G = {
         _: 1
       }, _parent));
       _push(`</div><div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">`);
-      _push(ssrRenderComponent(_sfc_main$I, {
+      _push(ssrRenderComponent(_sfc_main$P, {
         href: _ctx.route("dashboard"),
         active: _ctx.route().current("dashboard")
       }, {
@@ -1421,7 +1421,7 @@ const _sfc_main$G = {
         _: 1
       }, _parent));
       if (unref(can).manageUsers) {
-        _push(ssrRenderComponent(_sfc_main$I, {
+        _push(ssrRenderComponent(_sfc_main$P, {
           href: _ctx.route("dashboard.users.index"),
           active: _ctx.route().current("dashboard.users.*")
         }, {
@@ -1440,7 +1440,7 @@ const _sfc_main$G = {
         _push(`<!---->`);
       }
       if (unref(can).manageCategories) {
-        _push(ssrRenderComponent(_sfc_main$I, {
+        _push(ssrRenderComponent(_sfc_main$P, {
           href: _ctx.route("dashboard.categories.index"),
           active: _ctx.route().current("dashboard.categories.*")
         }, {
@@ -1458,7 +1458,7 @@ const _sfc_main$G = {
       } else {
         _push(`<!---->`);
       }
-      _push(ssrRenderComponent(_sfc_main$I, {
+      _push(ssrRenderComponent(_sfc_main$P, {
         href: _ctx.route("dashboard.posts.index"),
         active: _ctx.route().current("dashboard.posts.*")
       }, {
@@ -1474,7 +1474,7 @@ const _sfc_main$G = {
         _: 1
       }, _parent));
       if (unref(can).manageAds) {
-        _push(ssrRenderComponent(_sfc_main$I, {
+        _push(ssrRenderComponent(_sfc_main$P, {
           href: _ctx.route("dashboard.advertisements.index"),
           active: _ctx.route().current("dashboard.advertisements.*")
         }, {
@@ -1493,7 +1493,7 @@ const _sfc_main$G = {
         _push(`<!---->`);
       }
       _push(`</div></div><div class="hidden sm:ms-6 sm:flex sm:items-center"><div class="relative ms-3">`);
-      _push(ssrRenderComponent(_sfc_main$K, {
+      _push(ssrRenderComponent(_sfc_main$R, {
         align: "right",
         width: "48"
       }, {
@@ -1527,7 +1527,7 @@ const _sfc_main$G = {
         }),
         content: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(_sfc_main$J, {
+            _push2(ssrRenderComponent(_sfc_main$Q, {
               href: _ctx.route("profile.edit")
             }, {
               default: withCtx((_2, _push3, _parent3, _scopeId2) => {
@@ -1541,7 +1541,7 @@ const _sfc_main$G = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$J, {
+            _push2(ssrRenderComponent(_sfc_main$Q, {
               href: _ctx.route("logout"),
               method: "post",
               as: "button"
@@ -1559,7 +1559,7 @@ const _sfc_main$G = {
             }, _parent2, _scopeId));
           } else {
             return [
-              createVNode(_sfc_main$J, {
+              createVNode(_sfc_main$Q, {
                 href: _ctx.route("profile.edit")
               }, {
                 default: withCtx(() => [
@@ -1567,7 +1567,7 @@ const _sfc_main$G = {
                 ]),
                 _: 1
               }, 8, ["href"]),
-              createVNode(_sfc_main$J, {
+              createVNode(_sfc_main$Q, {
                 href: _ctx.route("logout"),
                 method: "post",
                 as: "button"
@@ -1592,7 +1592,7 @@ const _sfc_main$G = {
         block: showingNavigationDropdown.value,
         hidden: !showingNavigationDropdown.value
       }, "sm:hidden"])}"><div class="space-y-1 pb-3 pt-2">`);
-      _push(ssrRenderComponent(_sfc_main$H, {
+      _push(ssrRenderComponent(_sfc_main$O, {
         href: _ctx.route("dashboard"),
         active: _ctx.route().current("dashboard")
       }, {
@@ -1608,7 +1608,7 @@ const _sfc_main$G = {
         _: 1
       }, _parent));
       _push(`</div><div class="border-t border-gray-200 pb-1 pt-4"><div class="px-4"><div class="text-base font-medium text-gray-800">${ssrInterpolate(_ctx.$page.props.auth.user.name)}</div><div class="text-sm font-medium text-gray-500">${ssrInterpolate(_ctx.$page.props.auth.user.email)}</div></div><div class="mt-3 space-y-1">`);
-      _push(ssrRenderComponent(_sfc_main$H, {
+      _push(ssrRenderComponent(_sfc_main$O, {
         href: _ctx.route("profile.edit")
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
@@ -1622,7 +1622,7 @@ const _sfc_main$G = {
         }),
         _: 1
       }, _parent));
-      _push(ssrRenderComponent(_sfc_main$H, {
+      _push(ssrRenderComponent(_sfc_main$O, {
         href: _ctx.route("logout"),
         method: "post",
         as: "button"
@@ -1652,20 +1652,20 @@ const _sfc_main$G = {
     };
   }
 };
-const _sfc_setup$G = _sfc_main$G.setup;
-_sfc_main$G.setup = (props, ctx) => {
+const _sfc_setup$N = _sfc_main$N.setup;
+_sfc_main$N.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/AuthenticatedLayout.vue");
-  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
+  return _sfc_setup$N ? _sfc_setup$N(props, ctx) : void 0;
 };
-const _sfc_main$F = {
+const _sfc_main$M = {
   __name: "Dashboard",
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Dashboard" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Dashboard </h2>`);
@@ -1696,17 +1696,17 @@ const _sfc_main$F = {
     };
   }
 };
-const _sfc_setup$F = _sfc_main$F.setup;
-_sfc_main$F.setup = (props, ctx) => {
+const _sfc_setup$M = _sfc_main$M.setup;
+_sfc_main$M.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard.vue");
-  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
+  return _sfc_setup$M ? _sfc_setup$M(props, ctx) : void 0;
 };
 const __vite_glob_0_6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$F
+  default: _sfc_main$M
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$E = {
+const _sfc_main$L = {
   __name: "Create",
   __ssrInlineRender: true,
   props: {
@@ -1728,7 +1728,7 @@ const _sfc_main$E = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Create Advertisement" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Create Advertisement </h2>`);
@@ -1741,11 +1741,11 @@ const _sfc_main$E = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><form class="max-w-xl space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "title",
               value: "Title"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "title",
               type: "text",
               class: "mt-1 block w-full",
@@ -1754,12 +1754,12 @@ const _sfc_main$E = {
               autofocus: "",
               autocomplete: "title"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.title
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "position",
               value: "Position"
             }, null, _parent2, _scopeId));
@@ -1768,32 +1768,32 @@ const _sfc_main$E = {
               _push2(`<option${ssrRenderAttr("value", position.value)}${ssrIncludeBooleanAttr(Array.isArray(unref(form).position) ? ssrLooseContain(unref(form).position, position.value) : ssrLooseEqual(unref(form).position, position.value)) ? " selected" : ""}${_scopeId}>${ssrInterpolate(position.label)}</option>`);
             });
             _push2(`<!--]--></select>`);
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.position
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "image",
               value: "Image"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "title",
               type: "file",
               class: "mt-1 block w-full shadow-none",
               onInput: ($event) => unref(form).image = $event.target.files[0],
               autofocus: ""
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.image
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "target_url",
               value: "Target URL"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "target_url",
               type: "text",
               class: "mt-1 block w-full",
@@ -1802,16 +1802,16 @@ const _sfc_main$E = {
               autofocus: "",
               autocomplete: "target_url"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.target_url
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "start_date",
               value: "Start Date"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "start_date",
               type: "datetime-local",
               class: "mt-1 block w-full",
@@ -1820,16 +1820,16 @@ const _sfc_main$E = {
               autofocus: "",
               autocomplete: "start_date"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.start_date
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "end_date",
               value: "End Date"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "end_date",
               type: "datetime-local",
               class: "mt-1 block w-full",
@@ -1838,7 +1838,7 @@ const _sfc_main$E = {
               autofocus: "",
               autocomplete: "end_date"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.end_date
             }, null, _parent2, _scopeId));
@@ -1870,11 +1870,11 @@ const _sfc_main$E = {
                         class: "max-w-xl space-y-4"
                       }, [
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "title",
                             value: "Title"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "title",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -1883,13 +1883,13 @@ const _sfc_main$E = {
                             autofocus: "",
                             autocomplete: "title"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.title
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "position",
                             value: "Position"
                           }),
@@ -1910,34 +1910,34 @@ const _sfc_main$E = {
                           ], 8, ["onUpdate:modelValue"]), [
                             [vModelSelect, unref(form).position]
                           ]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.position
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "image",
                             value: "Image"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "title",
                             type: "file",
                             class: "mt-1 block w-full shadow-none",
                             onInput: ($event) => unref(form).image = $event.target.files[0],
                             autofocus: ""
                           }, null, 8, ["onInput"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.image
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "target_url",
                             value: "Target URL"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "target_url",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -1946,17 +1946,17 @@ const _sfc_main$E = {
                             autofocus: "",
                             autocomplete: "target_url"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.target_url
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "start_date",
                             value: "Start Date"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "start_date",
                             type: "datetime-local",
                             class: "mt-1 block w-full",
@@ -1965,17 +1965,17 @@ const _sfc_main$E = {
                             autofocus: "",
                             autocomplete: "start_date"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.start_date
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "end_date",
                             value: "End Date"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "end_date",
                             type: "datetime-local",
                             class: "mt-1 block w-full",
@@ -1984,7 +1984,7 @@ const _sfc_main$E = {
                             autofocus: "",
                             autocomplete: "end_date"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.end_date
                           }, null, 8, ["message"])
@@ -2014,17 +2014,17 @@ const _sfc_main$E = {
     };
   }
 };
-const _sfc_setup$E = _sfc_main$E.setup;
-_sfc_main$E.setup = (props, ctx) => {
+const _sfc_setup$L = _sfc_main$L.setup;
+_sfc_main$L.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Advertisement/Create.vue");
-  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
+  return _sfc_setup$L ? _sfc_setup$L(props, ctx) : void 0;
 };
 const __vite_glob_0_7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$E
+  default: _sfc_main$L
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$D = {
+const _sfc_main$K = {
   __name: "Edit",
   __ssrInlineRender: true,
   props: {
@@ -2044,7 +2044,7 @@ const _sfc_main$D = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Edit Category" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Edit Category </h2>`);
@@ -2057,11 +2057,11 @@ const _sfc_main$D = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><form class="max-w-xl space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "name",
               value: "Name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -2070,16 +2070,16 @@ const _sfc_main$D = {
               autofocus: "",
               autocomplete: "name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "slug",
               value: "Slug"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "slug",
               type: "text",
               class: "mt-1 block w-full",
@@ -2089,7 +2089,7 @@ const _sfc_main$D = {
               readonly: "",
               autocomplete: "slug"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.slug
             }, null, _parent2, _scopeId));
@@ -2121,11 +2121,11 @@ const _sfc_main$D = {
                         class: "max-w-xl space-y-4"
                       }, [
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "name",
                             value: "Name"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "name",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -2134,17 +2134,17 @@ const _sfc_main$D = {
                             autofocus: "",
                             autocomplete: "name"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.name
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "slug",
                             value: "Slug"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "slug",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -2154,7 +2154,7 @@ const _sfc_main$D = {
                             readonly: "",
                             autocomplete: "slug"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.slug
                           }, null, 8, ["message"])
@@ -2184,17 +2184,17 @@ const _sfc_main$D = {
     };
   }
 };
-const _sfc_setup$D = _sfc_main$D.setup;
-_sfc_main$D.setup = (props, ctx) => {
+const _sfc_setup$K = _sfc_main$K.setup;
+_sfc_main$K.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Advertisement/Edit.vue");
-  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
+  return _sfc_setup$K ? _sfc_setup$K(props, ctx) : void 0;
 };
 const __vite_glob_0_8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$D
+  default: _sfc_main$K
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$C = {
+const _sfc_main$J = {
   __name: "Pagination",
   __ssrInlineRender: true,
   props: {
@@ -2234,13 +2234,13 @@ const _sfc_main$C = {
     };
   }
 };
-const _sfc_setup$C = _sfc_main$C.setup;
-_sfc_main$C.setup = (props, ctx) => {
+const _sfc_setup$J = _sfc_main$J.setup;
+_sfc_main$J.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Core/Pagination.vue");
-  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
+  return _sfc_setup$J ? _sfc_setup$J(props, ctx) : void 0;
 };
-const _sfc_main$B = {
+const _sfc_main$I = {
   __name: "RecordStatus",
   __ssrInlineRender: true,
   props: {
@@ -2256,13 +2256,13 @@ const _sfc_main$B = {
     };
   }
 };
-const _sfc_setup$B = _sfc_main$B.setup;
-_sfc_main$B.setup = (props, ctx) => {
+const _sfc_setup$I = _sfc_main$I.setup;
+_sfc_main$I.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/RecordStatus.vue");
-  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
+  return _sfc_setup$I ? _sfc_setup$I(props, ctx) : void 0;
 };
-const _sfc_main$A = {
+const _sfc_main$H = {
   __name: "Index",
   __ssrInlineRender: true,
   props: {
@@ -2278,7 +2278,7 @@ const _sfc_main$A = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Advertisements" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Advertisements </h2>`);
@@ -2291,7 +2291,7 @@ const _sfc_main$A = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><div class="sm:flex sm:items-center sm:justify-between"${_scopeId}><div class="max-w-sm sm:flex-auto"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               placeholder: "Search advertisement...",
               id: "name",
               type: "text",
@@ -2332,7 +2332,7 @@ const _sfc_main$A = {
             _push2(`</div></div><div class="mt-8 flow-root"${_scopeId}><div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"${_scopeId}><div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8"${_scopeId}><table class="min-w-full divide-y divide-gray-300"${_scopeId}><thead${_scopeId}><tr${_scopeId}><th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"${_scopeId}> Title </th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"${_scopeId}> Position </th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"${_scopeId}> Target URL </th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"${_scopeId}> Start Date </th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"${_scopeId}> End Date </th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"${_scopeId}> Status </th><th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0"${_scopeId}><span class="sr-only"${_scopeId}>Edit</span></th></tr></thead><tbody class="divide-y divide-gray-200"${_scopeId}><!--[-->`);
             ssrRenderList(__props.advertisements.data, (advertisement) => {
               _push2(`<tr${_scopeId}><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0"${_scopeId}>${ssrInterpolate(advertisement.title)}</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"${_scopeId}>${ssrInterpolate(advertisement.position)}</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"${_scopeId}>${ssrInterpolate(advertisement.target_url)}</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"${_scopeId}>${ssrInterpolate(advertisement.start_date)}</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"${_scopeId}>${ssrInterpolate(advertisement.end_date)}</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"${_scopeId}>`);
-              _push2(ssrRenderComponent(_sfc_main$B, {
+              _push2(ssrRenderComponent(_sfc_main$I, {
                 status: advertisement.is_active
               }, null, _parent2, _scopeId));
               _push2(`</td><td class="relative flex gap-x-5 whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0"${_scopeId}>`);
@@ -2359,7 +2359,7 @@ const _sfc_main$A = {
             });
             _push2(`<!--]--></tbody></table></div></div></div>`);
             if (__props.advertisements.meta.last_page > 1) {
-              _push2(ssrRenderComponent(_sfc_main$C, {
+              _push2(ssrRenderComponent(_sfc_main$J, {
                 meta: __props.advertisements.meta
               }, null, _parent2, _scopeId));
             } else {
@@ -2374,7 +2374,7 @@ const _sfc_main$A = {
                     createVNode("div", { class: "p-6 text-gray-900" }, [
                       createVNode("div", { class: "sm:flex sm:items-center sm:justify-between" }, [
                         createVNode("div", { class: "max-w-sm sm:flex-auto" }, [
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             placeholder: "Search advertisement...",
                             id: "name",
                             type: "text",
@@ -2447,7 +2447,7 @@ const _sfc_main$A = {
                                     createVNode("td", { class: "whitespace-nowrap px-3 py-4 text-sm text-gray-500" }, toDisplayString(advertisement.start_date), 1),
                                     createVNode("td", { class: "whitespace-nowrap px-3 py-4 text-sm text-gray-500" }, toDisplayString(advertisement.end_date), 1),
                                     createVNode("td", { class: "whitespace-nowrap px-3 py-4 text-sm text-gray-500" }, [
-                                      createVNode(_sfc_main$B, {
+                                      createVNode(_sfc_main$I, {
                                         status: advertisement.is_active
                                       }, null, 8, ["status"])
                                     ]),
@@ -2480,7 +2480,7 @@ const _sfc_main$A = {
                           ])
                         ])
                       ]),
-                      __props.advertisements.meta.last_page > 1 ? (openBlock(), createBlock(_sfc_main$C, {
+                      __props.advertisements.meta.last_page > 1 ? (openBlock(), createBlock(_sfc_main$J, {
                         key: 0,
                         meta: __props.advertisements.meta
                       }, null, 8, ["meta"])) : createCommentVNode("", true)
@@ -2497,17 +2497,17 @@ const _sfc_main$A = {
     };
   }
 };
-const _sfc_setup$A = _sfc_main$A.setup;
-_sfc_main$A.setup = (props, ctx) => {
+const _sfc_setup$H = _sfc_main$H.setup;
+_sfc_main$H.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Advertisement/Index.vue");
-  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
+  return _sfc_setup$H ? _sfc_setup$H(props, ctx) : void 0;
 };
 const __vite_glob_0_9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$A
+  default: _sfc_main$H
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$z = {
+const _sfc_main$G = {
   __name: "Create",
   __ssrInlineRender: true,
   props: {
@@ -2527,7 +2527,7 @@ const _sfc_main$z = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Create Category" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Create Category </h2>`);
@@ -2540,11 +2540,11 @@ const _sfc_main$z = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><form class="max-w-xl space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "name",
               value: "Name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -2553,16 +2553,16 @@ const _sfc_main$z = {
               autofocus: "",
               autocomplete: "name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "slug",
               value: "Slug"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "slug",
               type: "text",
               class: "mt-1 block w-full",
@@ -2571,7 +2571,7 @@ const _sfc_main$z = {
               readonly: "",
               autocomplete: "slug"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.slug
             }, null, _parent2, _scopeId));
@@ -2603,11 +2603,11 @@ const _sfc_main$z = {
                         class: "max-w-xl space-y-4"
                       }, [
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "name",
                             value: "Name"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "name",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -2616,17 +2616,17 @@ const _sfc_main$z = {
                             autofocus: "",
                             autocomplete: "name"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.name
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "slug",
                             value: "Slug"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "slug",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -2635,7 +2635,7 @@ const _sfc_main$z = {
                             readonly: "",
                             autocomplete: "slug"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.slug
                           }, null, 8, ["message"])
@@ -2665,17 +2665,17 @@ const _sfc_main$z = {
     };
   }
 };
-const _sfc_setup$z = _sfc_main$z.setup;
-_sfc_main$z.setup = (props, ctx) => {
+const _sfc_setup$G = _sfc_main$G.setup;
+_sfc_main$G.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Category/Create.vue");
-  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
+  return _sfc_setup$G ? _sfc_setup$G(props, ctx) : void 0;
 };
 const __vite_glob_0_10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$z
+  default: _sfc_main$G
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$y = {
+const _sfc_main$F = {
   __name: "Edit",
   __ssrInlineRender: true,
   props: {
@@ -2695,7 +2695,7 @@ const _sfc_main$y = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Edit Category" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Edit Category </h2>`);
@@ -2708,11 +2708,11 @@ const _sfc_main$y = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><form class="max-w-xl space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "name",
               value: "Name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -2721,16 +2721,16 @@ const _sfc_main$y = {
               autofocus: "",
               autocomplete: "name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "slug",
               value: "Slug"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "slug",
               type: "text",
               class: "mt-1 block w-full",
@@ -2740,7 +2740,7 @@ const _sfc_main$y = {
               readonly: "",
               autocomplete: "slug"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.slug
             }, null, _parent2, _scopeId));
@@ -2772,11 +2772,11 @@ const _sfc_main$y = {
                         class: "max-w-xl space-y-4"
                       }, [
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "name",
                             value: "Name"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "name",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -2785,17 +2785,17 @@ const _sfc_main$y = {
                             autofocus: "",
                             autocomplete: "name"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.name
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "slug",
                             value: "Slug"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "slug",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -2805,7 +2805,7 @@ const _sfc_main$y = {
                             readonly: "",
                             autocomplete: "slug"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.slug
                           }, null, 8, ["message"])
@@ -2835,17 +2835,17 @@ const _sfc_main$y = {
     };
   }
 };
-const _sfc_setup$y = _sfc_main$y.setup;
-_sfc_main$y.setup = (props, ctx) => {
+const _sfc_setup$F = _sfc_main$F.setup;
+_sfc_main$F.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Category/Edit.vue");
-  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
+  return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
 };
 const __vite_glob_0_11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$y
+  default: _sfc_main$F
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$x = {
+const _sfc_main$E = {
   __name: "Index",
   __ssrInlineRender: true,
   props: {
@@ -2867,7 +2867,7 @@ const _sfc_main$x = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Categories" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Categories </h2>`);
@@ -2880,7 +2880,7 @@ const _sfc_main$x = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><div class="sm:flex sm:items-center sm:justify-between"${_scopeId}><div class="max-w-sm sm:flex-auto"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               placeholder: "Search category...",
               id: "name",
               type: "text",
@@ -2921,7 +2921,7 @@ const _sfc_main$x = {
             _push2(`</div></div><div class="mt-8 flow-root"${_scopeId}><div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8"${_scopeId}><div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8"${_scopeId}><table class="min-w-full divide-y divide-gray-300"${_scopeId}><thead${_scopeId}><tr${_scopeId}><th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"${_scopeId}> Name </th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"${_scopeId}> Slug </th><th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"${_scopeId}> Status </th><th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0"${_scopeId}><span class="sr-only"${_scopeId}>Edit</span></th></tr></thead><tbody class="divide-y divide-gray-200"${_scopeId}><!--[-->`);
             ssrRenderList(__props.categories.data, (category) => {
               _push2(`<tr${_scopeId}><td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0"${_scopeId}>${ssrInterpolate(category.name)}</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"${_scopeId}>${ssrInterpolate(category.slug)}</td><td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"${_scopeId}>`);
-              _push2(ssrRenderComponent(_sfc_main$B, {
+              _push2(ssrRenderComponent(_sfc_main$I, {
                 status: category.record_status
               }, null, _parent2, _scopeId));
               _push2(`</td><td class="relative flex gap-x-5 whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0"${_scopeId}>`);
@@ -2953,7 +2953,7 @@ const _sfc_main$x = {
             });
             _push2(`<!--]--></tbody></table></div></div></div>`);
             if (__props.categories.meta.last_page > 1) {
-              _push2(ssrRenderComponent(_sfc_main$C, {
+              _push2(ssrRenderComponent(_sfc_main$J, {
                 meta: __props.categories.meta
               }, null, _parent2, _scopeId));
             } else {
@@ -2968,7 +2968,7 @@ const _sfc_main$x = {
                     createVNode("div", { class: "p-6 text-gray-900" }, [
                       createVNode("div", { class: "sm:flex sm:items-center sm:justify-between" }, [
                         createVNode("div", { class: "max-w-sm sm:flex-auto" }, [
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             placeholder: "Search category...",
                             id: "name",
                             type: "text",
@@ -3026,7 +3026,7 @@ const _sfc_main$x = {
                                     createVNode("td", { class: "whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0" }, toDisplayString(category.name), 1),
                                     createVNode("td", { class: "whitespace-nowrap px-3 py-4 text-sm text-gray-500" }, toDisplayString(category.slug), 1),
                                     createVNode("td", { class: "whitespace-nowrap px-3 py-4 text-sm text-gray-500" }, [
-                                      createVNode(_sfc_main$B, {
+                                      createVNode(_sfc_main$I, {
                                         status: category.record_status
                                       }, null, 8, ["status"])
                                     ]),
@@ -3069,7 +3069,7 @@ const _sfc_main$x = {
                           ])
                         ])
                       ]),
-                      __props.categories.meta.last_page > 1 ? (openBlock(), createBlock(_sfc_main$C, {
+                      __props.categories.meta.last_page > 1 ? (openBlock(), createBlock(_sfc_main$J, {
                         key: 0,
                         meta: __props.categories.meta
                       }, null, 8, ["meta"])) : createCommentVNode("", true)
@@ -3086,17 +3086,17 @@ const _sfc_main$x = {
     };
   }
 };
-const _sfc_setup$x = _sfc_main$x.setup;
-_sfc_main$x.setup = (props, ctx) => {
+const _sfc_setup$E = _sfc_main$E.setup;
+_sfc_main$E.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Category/Index.vue");
-  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
+  return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
 };
 const __vite_glob_0_12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$x
+  default: _sfc_main$E
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$w = {
+const _sfc_main$D = {
   __name: "TiptapEditor",
   __ssrInlineRender: true,
   props: {
@@ -3166,13 +3166,13 @@ const _sfc_main$w = {
     };
   }
 };
-const _sfc_setup$w = _sfc_main$w.setup;
-_sfc_main$w.setup = (props, ctx) => {
+const _sfc_setup$D = _sfc_main$D.setup;
+_sfc_main$D.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/TiptapEditor.vue");
-  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
+  return _sfc_setup$D ? _sfc_setup$D(props, ctx) : void 0;
 };
-const _sfc_main$v = {
+const _sfc_main$C = {
   __name: "Editor",
   __ssrInlineRender: true,
   props: {
@@ -3186,18 +3186,18 @@ const _sfc_main$v = {
       emit("updateContent", content.value);
     });
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(_sfc_main$w, mergeProps({
+      _push(ssrRenderComponent(_sfc_main$D, mergeProps({
         modelValue: content.value,
         "onUpdate:modelValue": ($event) => content.value = $event
       }, _attrs), null, _parent));
     };
   }
 };
-const _sfc_setup$v = _sfc_main$v.setup;
-_sfc_main$v.setup = (props, ctx) => {
+const _sfc_setup$C = _sfc_main$C.setup;
+_sfc_main$C.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Editor.vue");
-  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
+  return _sfc_setup$C ? _sfc_setup$C(props, ctx) : void 0;
 };
 const generateSlug = (text) => {
   return text.toLowerCase().trim().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\w\s-]/g, "").replace(/\s+/g, "-").replace(/-+/g, "-").replace(/^-+|-+$/g, "");
@@ -3212,7 +3212,7 @@ const getSeoTitle = (title) => {
 const getAppUrl = () => {
   return "http://carokito.test";
 };
-const _sfc_main$u = {
+const _sfc_main$B = {
   __name: "Create",
   __ssrInlineRender: true,
   props: {
@@ -3250,7 +3250,7 @@ const _sfc_main$u = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Create Category" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Write a Post </h2>`);
@@ -3263,11 +3263,11 @@ const _sfc_main$u = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><form class="space-y-4 max-w-2xl" enctype="multipart/form-data"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "title",
               value: "Title"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "title",
               type: "text",
               class: "mt-1 block w-full",
@@ -3276,16 +3276,16 @@ const _sfc_main$u = {
               autofocus: "",
               autocomplete: "title"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.title
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "slug",
               value: "Slug"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "slug",
               type: "text",
               class: "mt-1 block w-full",
@@ -3295,7 +3295,7 @@ const _sfc_main$u = {
               readonly: "",
               autocomplete: "slug"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.slug
             }, null, _parent2, _scopeId));
@@ -3497,46 +3497,46 @@ const _sfc_main$u = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.slug
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "content",
               value: "Content"
             }, null, _parent2, _scopeId));
             _push2(`<article class="prose"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$v, {
+            _push2(ssrRenderComponent(_sfc_main$C, {
               onUpdateContent: ($event) => unref(form).content = $event
             }, null, _parent2, _scopeId));
             _push2(`</article>`);
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.content
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "coverImage",
               value: "Image Cover"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "title",
               type: "file",
               class: "mt-1 block w-full",
               onInput: ($event) => unref(form).coverImage = $event.target.files[0],
               autofocus: ""
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.coverImage
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}><h2 class="font-semibold"${_scopeId}>SEO Tags (Opsional)</h2><div class="space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "seo_description",
               value: "SEO Description"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "seo_description",
               type: "text",
               class: "mt-1 block w-full",
@@ -3545,7 +3545,7 @@ const _sfc_main$u = {
               autofocus: "",
               autocomplete: "seo_description"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.seo_description
             }, null, _parent2, _scopeId));
@@ -3579,11 +3579,11 @@ const _sfc_main$u = {
                         enctype: "multipart/form-data"
                       }, [
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "title",
                             value: "Title"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "title",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -3592,17 +3592,17 @@ const _sfc_main$u = {
                             autofocus: "",
                             autocomplete: "title"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.title
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "slug",
                             value: "Slug"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "slug",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -3612,7 +3612,7 @@ const _sfc_main$u = {
                             readonly: "",
                             autocomplete: "slug"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.slug
                           }, null, 8, ["message"])
@@ -3685,39 +3685,39 @@ const _sfc_main$u = {
                             ]),
                             _: 1
                           }, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.slug
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "content",
                             value: "Content"
                           }),
                           createVNode("article", { class: "prose" }, [
-                            createVNode(_sfc_main$v, {
+                            createVNode(_sfc_main$C, {
                               onUpdateContent: ($event) => unref(form).content = $event
                             }, null, 8, ["onUpdateContent"])
                           ]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.content
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "coverImage",
                             value: "Image Cover"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "title",
                             type: "file",
                             class: "mt-1 block w-full",
                             onInput: ($event) => unref(form).coverImage = $event.target.files[0],
                             autofocus: ""
                           }, null, 8, ["onInput"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.coverImage
                           }, null, 8, ["message"])
@@ -3726,11 +3726,11 @@ const _sfc_main$u = {
                           createVNode("h2", { class: "font-semibold" }, "SEO Tags (Opsional)"),
                           createVNode("div", { class: "space-y-4" }, [
                             createVNode("div", null, [
-                              createVNode(_sfc_main$U, {
+                              createVNode(_sfc_main$$, {
                                 for: "seo_description",
                                 value: "SEO Description"
                               }),
-                              createVNode(_sfc_main$S, {
+                              createVNode(_sfc_main$Z, {
                                 id: "seo_description",
                                 type: "text",
                                 class: "mt-1 block w-full",
@@ -3739,7 +3739,7 @@ const _sfc_main$u = {
                                 autofocus: "",
                                 autocomplete: "seo_description"
                               }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                              createVNode(_sfc_main$V, {
+                              createVNode(_sfc_main$10, {
                                 class: "mt-2",
                                 message: unref(form).errors.seo_description
                               }, null, 8, ["message"])
@@ -3772,17 +3772,17 @@ const _sfc_main$u = {
     };
   }
 };
-const _sfc_setup$u = _sfc_main$u.setup;
-_sfc_main$u.setup = (props, ctx) => {
+const _sfc_setup$B = _sfc_main$B.setup;
+_sfc_main$B.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Post/Create.vue");
-  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
+  return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
 const __vite_glob_0_13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$u
+  default: _sfc_main$B
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$t = {
+const _sfc_main$A = {
   __name: "Edit",
   __ssrInlineRender: true,
   props: {
@@ -3823,7 +3823,7 @@ const _sfc_main$t = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Create Category" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Write a Post </h2>`);
@@ -3836,11 +3836,11 @@ const _sfc_main$t = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900 grid grid-cols-2 gap-5"${_scopeId}><form class="space-y-4 max-w-2xl" enctype="multipart/form-data"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "title",
               value: "Title"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "title",
               type: "text",
               class: "mt-1 block w-full",
@@ -3849,16 +3849,16 @@ const _sfc_main$t = {
               autofocus: "",
               autocomplete: "title"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.title
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "slug",
               value: "Slug"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "slug",
               type: "text",
               class: "mt-1 block w-full",
@@ -3868,7 +3868,7 @@ const _sfc_main$t = {
               readonly: "",
               autocomplete: "slug"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.slug
             }, null, _parent2, _scopeId));
@@ -4070,47 +4070,47 @@ const _sfc_main$t = {
               }),
               _: 1
             }, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.slug
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "content",
               value: "Content"
             }, null, _parent2, _scopeId));
             _push2(`<article class="prose"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$v, {
+            _push2(ssrRenderComponent(_sfc_main$C, {
               onUpdateContent: ($event) => unref(form).content = $event,
               "initial-content": unref(form).content
             }, null, _parent2, _scopeId));
             _push2(`</article>`);
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.content
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "coverImage",
               value: "Image Cover"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "title",
               type: "file",
               class: "mt-1 block w-full",
               onInput: ($event) => unref(form).coverImage = $event.target.files[0],
               autofocus: ""
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.coverImage
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}><h2 class="font-semibold"${_scopeId}>SEO Tags (Opsional)</h2><div class="space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "seo_description",
               value: "SEO Description"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "seo_description",
               type: "text",
               class: "mt-1 block w-full",
@@ -4119,7 +4119,7 @@ const _sfc_main$t = {
               autofocus: "",
               autocomplete: "seo_description"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.seo_description
             }, null, _parent2, _scopeId));
@@ -4142,7 +4142,7 @@ const _sfc_main$t = {
             }, _parent2, _scopeId));
             _push2(`</div></form>`);
             if (!!__props.post.cover_image_url) {
-              _push2(`<div${_scopeId}><div class="mb-1"${_scopeId}>Cover Image</div><img${ssrRenderAttr("src", "/storage/" + __props.post.cover_image_url)}${_scopeId}></div>`);
+              _push2(`<div${_scopeId}><div class="mb-1"${_scopeId}>Cover Image</div><img${ssrRenderAttr("src", __props.post.cover_image_url)}${_scopeId}></div>`);
             } else {
               _push2(`<!---->`);
             }
@@ -4159,11 +4159,11 @@ const _sfc_main$t = {
                         enctype: "multipart/form-data"
                       }, [
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "title",
                             value: "Title"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "title",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -4172,17 +4172,17 @@ const _sfc_main$t = {
                             autofocus: "",
                             autocomplete: "title"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.title
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "slug",
                             value: "Slug"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "slug",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -4192,7 +4192,7 @@ const _sfc_main$t = {
                             readonly: "",
                             autocomplete: "slug"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.slug
                           }, null, 8, ["message"])
@@ -4265,40 +4265,40 @@ const _sfc_main$t = {
                             ]),
                             _: 1
                           }, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.slug
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "content",
                             value: "Content"
                           }),
                           createVNode("article", { class: "prose" }, [
-                            createVNode(_sfc_main$v, {
+                            createVNode(_sfc_main$C, {
                               onUpdateContent: ($event) => unref(form).content = $event,
                               "initial-content": unref(form).content
                             }, null, 8, ["onUpdateContent", "initial-content"])
                           ]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.content
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "coverImage",
                             value: "Image Cover"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "title",
                             type: "file",
                             class: "mt-1 block w-full",
                             onInput: ($event) => unref(form).coverImage = $event.target.files[0],
                             autofocus: ""
                           }, null, 8, ["onInput"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.coverImage
                           }, null, 8, ["message"])
@@ -4307,11 +4307,11 @@ const _sfc_main$t = {
                           createVNode("h2", { class: "font-semibold" }, "SEO Tags (Opsional)"),
                           createVNode("div", { class: "space-y-4" }, [
                             createVNode("div", null, [
-                              createVNode(_sfc_main$U, {
+                              createVNode(_sfc_main$$, {
                                 for: "seo_description",
                                 value: "SEO Description"
                               }),
-                              createVNode(_sfc_main$S, {
+                              createVNode(_sfc_main$Z, {
                                 id: "seo_description",
                                 type: "text",
                                 class: "mt-1 block w-full",
@@ -4320,7 +4320,7 @@ const _sfc_main$t = {
                                 autofocus: "",
                                 autocomplete: "seo_description"
                               }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                              createVNode(_sfc_main$V, {
+                              createVNode(_sfc_main$10, {
                                 class: "mt-2",
                                 message: unref(form).errors.seo_description
                               }, null, 8, ["message"])
@@ -4343,7 +4343,7 @@ const _sfc_main$t = {
                       !!__props.post.cover_image_url ? (openBlock(), createBlock("div", { key: 0 }, [
                         createVNode("div", { class: "mb-1" }, "Cover Image"),
                         createVNode("img", {
-                          src: "/storage/" + __props.post.cover_image_url
+                          src: __props.post.cover_image_url
                         }, null, 8, ["src"])
                       ])) : createCommentVNode("", true)
                     ])
@@ -4359,17 +4359,17 @@ const _sfc_main$t = {
     };
   }
 };
-const _sfc_setup$t = _sfc_main$t.setup;
-_sfc_main$t.setup = (props, ctx) => {
+const _sfc_setup$A = _sfc_main$A.setup;
+_sfc_main$A.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Post/Edit.vue");
-  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
+  return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
 const __vite_glob_0_14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$t
+  default: _sfc_main$A
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$s = {
+const _sfc_main$z = {
   __name: "Select",
   __ssrInlineRender: true,
   props: {
@@ -4389,13 +4389,13 @@ const _sfc_main$s = {
     };
   }
 };
-const _sfc_setup$s = _sfc_main$s.setup;
-_sfc_main$s.setup = (props, ctx) => {
+const _sfc_setup$z = _sfc_main$z.setup;
+_sfc_main$z.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/Core/Select.vue");
-  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
+  return _sfc_setup$z ? _sfc_setup$z(props, ctx) : void 0;
 };
-const _sfc_main$r = {
+const _sfc_main$y = {
   __name: "Index",
   __ssrInlineRender: true,
   props: {
@@ -4439,7 +4439,7 @@ const _sfc_main$r = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Posts" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Posts </h2>`);
@@ -4452,14 +4452,14 @@ const _sfc_main$r = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><div class="sm:flex sm:items-center sm:justify-between"${_scopeId}><div class="flex gap-2"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               placeholder: "Search post...",
               id: "name",
               type: "text",
               class: "block w-full",
               autofocus: ""
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$s, {
+            _push2(ssrRenderComponent(_sfc_main$z, {
               modelValue: isFeatured.value,
               "onUpdate:modelValue": ($event) => isFeatured.value = $event
             }, {
@@ -4566,7 +4566,7 @@ const _sfc_main$r = {
             });
             _push2(`<!--]--></tbody></table></div></div></div>`);
             if (__props.posts.meta.last_page > 1) {
-              _push2(ssrRenderComponent(_sfc_main$C, {
+              _push2(ssrRenderComponent(_sfc_main$J, {
                 meta: __props.posts.meta
               }, null, _parent2, _scopeId));
             } else {
@@ -4581,14 +4581,14 @@ const _sfc_main$r = {
                     createVNode("div", { class: "p-6 text-gray-900" }, [
                       createVNode("div", { class: "sm:flex sm:items-center sm:justify-between" }, [
                         createVNode("div", { class: "flex gap-2" }, [
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             placeholder: "Search post...",
                             id: "name",
                             type: "text",
                             class: "block w-full",
                             autofocus: ""
                           }),
-                          createVNode(_sfc_main$s, {
+                          createVNode(_sfc_main$z, {
                             modelValue: isFeatured.value,
                             "onUpdate:modelValue": ($event) => isFeatured.value = $event
                           }, {
@@ -4729,7 +4729,7 @@ const _sfc_main$r = {
                           ])
                         ])
                       ]),
-                      __props.posts.meta.last_page > 1 ? (openBlock(), createBlock(_sfc_main$C, {
+                      __props.posts.meta.last_page > 1 ? (openBlock(), createBlock(_sfc_main$J, {
                         key: 0,
                         meta: __props.posts.meta
                       }, null, 8, ["meta"])) : createCommentVNode("", true)
@@ -4746,17 +4746,17 @@ const _sfc_main$r = {
     };
   }
 };
-const _sfc_setup$r = _sfc_main$r.setup;
-_sfc_main$r.setup = (props, ctx) => {
+const _sfc_setup$y = _sfc_main$y.setup;
+_sfc_main$y.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/Post/Index.vue");
-  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+  return _sfc_setup$y ? _sfc_setup$y(props, ctx) : void 0;
 };
 const __vite_glob_0_15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$r
+  default: _sfc_main$y
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$q = {
+const _sfc_main$x = {
   __name: "Create",
   __ssrInlineRender: true,
   props: {
@@ -4775,7 +4775,7 @@ const _sfc_main$q = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Create User" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Create User </h2>`);
@@ -4788,11 +4788,11 @@ const _sfc_main$q = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><form class="max-w-xl space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "name",
               value: "Name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -4801,16 +4801,16 @@ const _sfc_main$q = {
               autofocus: "",
               autocomplete: "name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "email",
               value: "Email"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "email",
               type: "email",
               class: "mt-1 block w-full",
@@ -4818,35 +4818,35 @@ const _sfc_main$q = {
               "onUpdate:modelValue": ($event) => unref(form).email = $event,
               autocomplete: "email"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.email
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "password",
               value: "Password"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "password",
               type: "password",
               class: "mt-1 block w-full",
               modelValue: unref(form).password,
               "onUpdate:modelValue": ($event) => unref(form).password = $event
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.password
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               value: "Roles",
               class: "mb-1"
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-2"${_scopeId}><!--[-->`);
             ssrRenderList(__props.roles, (role) => {
               _push2(`<div class="flex items-center gap-x-1.5"${_scopeId}><input${ssrRenderAttr("id", role.id)} type="radio" name="roleId"${ssrRenderAttr("value", role.id)}${ssrIncludeBooleanAttr(ssrLooseEqual(unref(form).roleId, role.id)) ? " checked" : ""}${_scopeId}>`);
-              _push2(ssrRenderComponent(_sfc_main$U, {
+              _push2(ssrRenderComponent(_sfc_main$$, {
                 class: "capitalize",
                 for: role.id,
                 value: role.name
@@ -4854,7 +4854,7 @@ const _sfc_main$q = {
               _push2(`</div>`);
             });
             _push2(`<!--]--></div>`);
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.roleId
             }, null, _parent2, _scopeId));
@@ -4886,11 +4886,11 @@ const _sfc_main$q = {
                         class: "max-w-xl space-y-4"
                       }, [
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "name",
                             value: "Name"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "name",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -4899,17 +4899,17 @@ const _sfc_main$q = {
                             autofocus: "",
                             autocomplete: "name"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.name
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "email",
                             value: "Email"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "email",
                             type: "email",
                             class: "mt-1 block w-full",
@@ -4917,30 +4917,30 @@ const _sfc_main$q = {
                             "onUpdate:modelValue": ($event) => unref(form).email = $event,
                             autocomplete: "email"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.email
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "password",
                             value: "Password"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "password",
                             type: "password",
                             class: "mt-1 block w-full",
                             modelValue: unref(form).password,
                             "onUpdate:modelValue": ($event) => unref(form).password = $event
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.password
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             value: "Roles",
                             class: "mb-1"
                           }),
@@ -4959,7 +4959,7 @@ const _sfc_main$q = {
                                 }, null, 8, ["id", "value", "onUpdate:modelValue"]), [
                                   [vModelRadio, unref(form).roleId]
                                 ]),
-                                createVNode(_sfc_main$U, {
+                                createVNode(_sfc_main$$, {
                                   class: "capitalize",
                                   for: role.id,
                                   value: role.name
@@ -4967,7 +4967,7 @@ const _sfc_main$q = {
                               ]);
                             }), 128))
                           ]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.roleId
                           }, null, 8, ["message"])
@@ -4997,17 +4997,17 @@ const _sfc_main$q = {
     };
   }
 };
-const _sfc_setup$q = _sfc_main$q.setup;
-_sfc_main$q.setup = (props, ctx) => {
+const _sfc_setup$x = _sfc_main$x.setup;
+_sfc_main$x.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/User/Create.vue");
-  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+  return _sfc_setup$x ? _sfc_setup$x(props, ctx) : void 0;
 };
 const __vite_glob_0_16 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$q
+  default: _sfc_main$x
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$p = {
+const _sfc_main$w = {
   __name: "Edit",
   __ssrInlineRender: true,
   props: {
@@ -5026,7 +5026,7 @@ const _sfc_main$p = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Create User" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Edit User </h2>`);
@@ -5039,11 +5039,11 @@ const _sfc_main$p = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><form class="max-w-xl space-y-4"${_scopeId}><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "name",
               value: "Name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "name",
               type: "text",
               class: "mt-1 block w-full",
@@ -5052,16 +5052,16 @@ const _sfc_main$p = {
               autofocus: "",
               autocomplete: "name"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.name
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "email",
               value: "Email"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "email",
               type: "email",
               class: "mt-1 block w-full",
@@ -5069,19 +5069,19 @@ const _sfc_main$p = {
               "onUpdate:modelValue": ($event) => unref(form).email = $event,
               autocomplete: "email"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.email
             }, null, _parent2, _scopeId));
             _push2(`</div><div${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               value: "Roles",
               class: "mb-1"
             }, null, _parent2, _scopeId));
             _push2(`<div class="space-y-2"${_scopeId}><!--[-->`);
             ssrRenderList(__props.roles, (role) => {
               _push2(`<div class="flex items-center gap-x-1.5"${_scopeId}><input${ssrRenderAttr("id", role.id)} type="radio" name="roleId"${ssrRenderAttr("value", role.id)}${ssrIncludeBooleanAttr(ssrLooseEqual(unref(form).roleId, role.id)) ? " checked" : ""}${_scopeId}>`);
-              _push2(ssrRenderComponent(_sfc_main$U, {
+              _push2(ssrRenderComponent(_sfc_main$$, {
                 class: "capitalize",
                 for: role.id,
                 value: role.name
@@ -5089,7 +5089,7 @@ const _sfc_main$p = {
               _push2(`</div>`);
             });
             _push2(`<!--]--></div>`);
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               class: "mt-2",
               message: unref(form).errors.roleId
             }, null, _parent2, _scopeId));
@@ -5121,11 +5121,11 @@ const _sfc_main$p = {
                         class: "max-w-xl space-y-4"
                       }, [
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "name",
                             value: "Name"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "name",
                             type: "text",
                             class: "mt-1 block w-full",
@@ -5134,17 +5134,17 @@ const _sfc_main$p = {
                             autofocus: "",
                             autocomplete: "name"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.name
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             for: "email",
                             value: "Email"
                           }),
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             id: "email",
                             type: "email",
                             class: "mt-1 block w-full",
@@ -5152,13 +5152,13 @@ const _sfc_main$p = {
                             "onUpdate:modelValue": ($event) => unref(form).email = $event,
                             autocomplete: "email"
                           }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.email
                           }, null, 8, ["message"])
                         ]),
                         createVNode("div", null, [
-                          createVNode(_sfc_main$U, {
+                          createVNode(_sfc_main$$, {
                             value: "Roles",
                             class: "mb-1"
                           }),
@@ -5177,7 +5177,7 @@ const _sfc_main$p = {
                                 }, null, 8, ["id", "value", "onUpdate:modelValue"]), [
                                   [vModelRadio, unref(form).roleId]
                                 ]),
-                                createVNode(_sfc_main$U, {
+                                createVNode(_sfc_main$$, {
                                   class: "capitalize",
                                   for: role.id,
                                   value: role.name
@@ -5185,7 +5185,7 @@ const _sfc_main$p = {
                               ]);
                             }), 128))
                           ]),
-                          createVNode(_sfc_main$V, {
+                          createVNode(_sfc_main$10, {
                             class: "mt-2",
                             message: unref(form).errors.roleId
                           }, null, 8, ["message"])
@@ -5215,17 +5215,17 @@ const _sfc_main$p = {
     };
   }
 };
-const _sfc_setup$p = _sfc_main$p.setup;
-_sfc_main$p.setup = (props, ctx) => {
+const _sfc_setup$w = _sfc_main$w.setup;
+_sfc_main$w.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/User/Edit.vue");
-  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
+  return _sfc_setup$w ? _sfc_setup$w(props, ctx) : void 0;
 };
 const __vite_glob_0_17 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$p
+  default: _sfc_main$w
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$o = {
+const _sfc_main$v = {
   __name: "Index",
   __ssrInlineRender: true,
   props: {
@@ -5247,7 +5247,7 @@ const _sfc_main$o = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Users" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Users </h2>`);
@@ -5260,7 +5260,7 @@ const _sfc_main$o = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="py-12"${_scopeId}><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"${_scopeId}><div class="overflow-hidden bg-white shadow-sm sm:rounded-lg"${_scopeId}><div class="p-6 text-gray-900"${_scopeId}><div class="sm:flex sm:items-center sm:justify-between"${_scopeId}><div class="max-w-sm sm:flex-auto"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               placeholder: "Search user...",
               id: "name",
               type: "text",
@@ -5333,7 +5333,7 @@ const _sfc_main$o = {
             });
             _push2(`<!--]--></tbody></table></div></div></div>`);
             if (__props.users.meta.last_page > 1) {
-              _push2(ssrRenderComponent(_sfc_main$C, {
+              _push2(ssrRenderComponent(_sfc_main$J, {
                 meta: __props.users.meta
               }, null, _parent2, _scopeId));
             } else {
@@ -5348,7 +5348,7 @@ const _sfc_main$o = {
                     createVNode("div", { class: "p-6 text-gray-900" }, [
                       createVNode("div", { class: "sm:flex sm:items-center sm:justify-between" }, [
                         createVNode("div", { class: "max-w-sm sm:flex-auto" }, [
-                          createVNode(_sfc_main$S, {
+                          createVNode(_sfc_main$Z, {
                             placeholder: "Search user...",
                             id: "name",
                             type: "text",
@@ -5456,7 +5456,7 @@ const _sfc_main$o = {
                           ])
                         ])
                       ]),
-                      __props.users.meta.last_page > 1 ? (openBlock(), createBlock(_sfc_main$C, {
+                      __props.users.meta.last_page > 1 ? (openBlock(), createBlock(_sfc_main$J, {
                         key: 0,
                         meta: __props.users.meta
                       }, null, 8, ["meta"])) : createCommentVNode("", true)
@@ -5473,17 +5473,17 @@ const _sfc_main$o = {
     };
   }
 };
-const _sfc_setup$o = _sfc_main$o.setup;
-_sfc_main$o.setup = (props, ctx) => {
+const _sfc_setup$v = _sfc_main$v.setup;
+_sfc_main$v.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Dashboard/User/Index.vue");
-  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
+  return _sfc_setup$v ? _sfc_setup$v(props, ctx) : void 0;
 };
 const __vite_glob_0_18 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  default: _sfc_main$o
+  default: _sfc_main$v
 }, Symbol.toStringTag, { value: "Module" }));
-const _sfc_main$n = {
+const _sfc_main$u = {
   __name: "PostCard",
   __ssrInlineRender: true,
   props: {
@@ -5517,24 +5517,23 @@ const _sfc_main$n = {
         class: "absolute inset-0 z-10"
       }, null, _parent));
       if (__props.post.cover_image_url && __props.variant === "simplified" && __props.showImage) {
-        _push(`<figure class="h-16 aspect-square self-start"><img${ssrRenderAttr("src", "/storage/" + __props.post.cover_image_url)}${ssrRenderAttr("alt", __props.post.title)} class="h-full w-full object-cover rounded-sm text-xs" loading="lazy"></figure>`);
+        _push(`<figure class="h-16 aspect-square self-start"><img${ssrRenderAttr("src", __props.post.cover_image_url)}${ssrRenderAttr("alt", __props.post.title)} class="h-full w-full object-cover rounded-sm text-xs" loading="lazy"></figure>`);
       } else {
         _push(`<!---->`);
       }
       if (__props.post.cover_image_url && __props.variant === "default") {
-        _push(`<figure class="h-16 md:h-28 aspect-video self-start"><img${ssrRenderAttr("src", "/storage/" + __props.post.cover_image_url)}${ssrRenderAttr("alt", __props.post.title)} class="h-full w-full object-cover rounded-sm text-xs" loading="lazy"></figure>`);
+        _push(`<figure class="h-16 md:h-28 aspect-video self-start"><img${ssrRenderAttr("src", __props.post.cover_image_url)}${ssrRenderAttr("alt", __props.post.title)} class="h-full w-full object-cover rounded-sm text-xs" loading="lazy"></figure>`);
       } else {
         _push(`<!---->`);
       }
       _push(`<div><h2 class="${ssrRenderClass({
         "group-hover:text-primary": true,
-        "text-base md:text-xl font-medium": __props.variant === "default",
-        "text-base md:text-lg font-normal": __props.variant === "simplified",
-        "!text-lg": __props.size === "sm"
+        "text-sm md:text-lg font-semibold": __props.variant === "default",
+        "text-sm md:text-base font-medium": __props.variant === "simplified"
       })}">${ssrInterpolate(__props.post.title)}</h2><div class="${ssrRenderClass(["flex gap-2 mt-2 text-sm md:text-base", { "text-sm": __props.variant === "simplified" || __props.size === "sm" }])}">`);
       _push(ssrRenderComponent(unref(Link), {
         href: _ctx.route("posts.category.index", __props.post.category),
-        class: "font-medium underline z-20 hover:text-primary"
+        class: "font-normal underline z-20 hover:text-primary"
       }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
@@ -5551,26 +5550,26 @@ const _sfc_main$n = {
     };
   }
 };
-const _sfc_setup$n = _sfc_main$n.setup;
-_sfc_main$n.setup = (props, ctx) => {
+const _sfc_setup$u = _sfc_main$u.setup;
+_sfc_main$u.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Components/PostCard.vue");
-  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
+  return _sfc_setup$u ? _sfc_setup$u(props, ctx) : void 0;
 };
-const _sfc_main$m = {};
-function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+const _sfc_main$t = {};
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
   _push(`<h2${ssrRenderAttrs(mergeProps({ class: "text-lg md:text-xl font-extrabold mb-3 uppercase" }, _attrs))}>`);
   ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
   _push(`</h2>`);
 }
-const _sfc_setup$m = _sfc_main$m.setup;
-_sfc_main$m.setup = (props, ctx) => {
+const _sfc_setup$t = _sfc_main$t.setup;
+_sfc_main$t.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/SectionTitle.vue");
-  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
+  return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
 };
-const SectionTitle = /* @__PURE__ */ _export_sfc(_sfc_main$m, [["ssrRender", _sfc_ssrRender$1]]);
-const _sfc_main$l = {
+const SectionTitle = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["ssrRender", _sfc_ssrRender$2]]);
+const _sfc_main$s = {
   __name: "PopularPost",
   __ssrInlineRender: true,
   props: {
@@ -5594,7 +5593,7 @@ const _sfc_main$l = {
       _push(`<div class="py-2"><!--[-->`);
       ssrRenderList(__props.posts, (post, index) => {
         _push(`<div class="flex items-center gap-x-3"><div class="bg-gray-100 size-10 text-xl font-medium rounded-full flex items-center justify-center shrink-0">${ssrInterpolate(index + 1)}</div>`);
-        _push(ssrRenderComponent(_sfc_main$n, {
+        _push(ssrRenderComponent(_sfc_main$u, {
           post,
           variant: "simplified"
         }, null, _parent));
@@ -5610,123 +5609,20 @@ const _sfc_main$l = {
     };
   }
 };
-const _sfc_setup$l = _sfc_main$l.setup;
-_sfc_main$l.setup = (props, ctx) => {
+const _sfc_setup$s = _sfc_main$s.setup;
+_sfc_main$s.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/PopularPost.vue");
-  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
+  return _sfc_setup$s ? _sfc_setup$s(props, ctx) : void 0;
 };
-const _sfc_main$k = {
-  __name: "Header",
+const _sfc_main$r = {
+  __name: "DefaultSeoMeta",
   __ssrInlineRender: true,
   setup(__props) {
-    const openNavigation = ref(false);
-    const openSearch = ref(false);
-    const search = ref("");
-    const categories = computed(() => usePage().props.categories);
-    return (_ctx, _push, _parent, _attrs) => {
-      _push(`<!--[--><div id="sidenav"></div><div class="sticky top-0 bg-white z-40"><header class="max-w-2xl lg:max-w-6xl mx-auto py-2 lg:py-3 relative"><button class="absolute left-4 top-5 lg:hidden">`);
-      _push(ssrRenderComponent(unref(Bars3Icon), { class: "size-5" }, null, _parent));
-      _push(`</button>`);
-      ssrRenderTeleport(_push, (_push2) => {
-        _push2(`<div style="${ssrRenderStyle(openNavigation.value ? null : { display: "none" })}" class="fixed inset-0 bg-black/50 z-40"><div class="fixed h-full w-full max-w-[275px] left-0 bg-white"><div class="flex items-center justify-between border-b p-4"><div class="font-bold">Menu</div><button class="p-1">`);
-        _push2(ssrRenderComponent(unref(XMarkIcon), { class: "size-6" }, null, _parent));
-        _push2(`</button></div><nav class="p-4 border-b"><ul class="grid gap-y-5"><!--[-->`);
-        ssrRenderList(categories.value, (category) => {
-          _push2(`<li>`);
-          _push2(ssrRenderComponent(unref(Link), {
-            href: _ctx.route("posts.category.index", category),
-            class: "capitalize py-2 pr-2",
-            onClick: ($event) => openNavigation.value = false
-          }, {
-            default: withCtx((_, _push3, _parent2, _scopeId) => {
-              if (_push3) {
-                _push3(`${ssrInterpolate(category.name)}`);
-              } else {
-                return [
-                  createTextVNode(toDisplayString(category.name), 1)
-                ];
-              }
-            }),
-            _: 2
-          }, _parent));
-          _push2(`</li>`);
-        });
-        _push2(`<!--]--></ul></nav><nav class="p-4 border-b"><ul class="grid gap-y-5"><li><a class="flex items-center gap-3" href="https://www.instagram.com/wartabengkulu.id/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg> Instagram </a></li><li><a class="flex items-center gap-3" href="https://www.facebook.com/share/15iuzXfuaY/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg> Facebook </a></li><li><a class="flex items-center gap-3" href="https://www.youtube.com/@wartabengkulu4357" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-instagram"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg> Youtube </a></li><li><a class="flex items-center gap-3" href="https://www.tiktok.com/@wartabengkulu?_t=ZS-8tnd7nbZ4Aq&amp;_r=1" target="_blank"><svg fill="currentColor" class="size-5 text-gray-500" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"></path></svg> Tiktok </a></li></ul></nav><footer class="text-sm text-gray-500 p-3"> © ${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())}. All Right Reserved </footer></div></div>`);
-      }, "#sidenav", false, _parent);
-      _push(`<button class="absolute right-4 top-5 lg:hidden">`);
-      _push(ssrRenderComponent(unref(MagnifyingGlassIcon), { class: "size-5" }, null, _parent));
-      _push(`</button><div class="flex flex-col gap-3 md:flex-row items-center justify-between"><div class="flex items-center">`);
-      _push(ssrRenderComponent(unref(Link), {
-        href: "/",
-        class: "flex items-center"
-      }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(`<img src="/logo.png" alt="" class="w-10"${_scopeId}><span class="font-bold text-red-700 text-xl"${_scopeId}> Warta Bengkulu </span>`);
-          } else {
-            return [
-              createVNode("img", {
-                src: "/logo.png",
-                alt: "",
-                class: "w-10"
-              }),
-              createVNode("span", { class: "font-bold text-red-700 text-xl" }, " Warta Bengkulu ")
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`</div><div class="flex items-center"><div class="${ssrRenderClass([
-        "gap-2 w-full lg:flex md:w-auto",
-        openSearch.value ? "block" : "hidden"
-      ])}"><div class="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end"><form class="grid w-full mx-2 grid-cols-1 lg:max-w-xs"><input type="search" name="search" class="col-start-1 row-start-1 block w-full rounded-sm bg-white py-1.5 pl-10 pr-3 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6" placeholder="Pencarian berita..."${ssrRenderAttr("value", search.value)}>`);
-      _push(ssrRenderComponent(unref(MagnifyingGlassIcon), {
-        class: "pointer-events-none col-start-1 row-start-1 ml-3 size-5 self-center text-gray-400",
-        "aria-hidden": "true"
-      }, null, _parent));
-      _push(`</form></div></div><nav class="p-4 hidden lg:block"><ul class="flex gap-5"><li><a class="flex items-center gap-3" href="https://www.instagram.com/wartabengkulu.id/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg><span class="sr-only">Instagram</span></a></li><li><a class="flex items-center gap-3" href="https://www.facebook.com/share/15iuzXfuaY/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><span class="sr-only">Facebook</span></li><li><a class="flex items-center gap-3" href="https://www.youtube.com/@wartabengkulu4357" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg><span class="sr-only">Youtube</span></a></li><li><a class="flex items-center gap-3" href="https://www.tiktok.com/@wartabengkulu?_t=ZS-8tnd7nbZ4Aq&amp;_r=1" target="_blank"><svg fill="currentColor" class="size-5 text-gray-500" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"></path></svg><span class="sr-only">Tiktok</span></a></li></ul></nav></div></div></header><nav class="bg-primary pl-5 md:px-0"><ul class="max-w-2xl lg:max-w-6xl mx-auto flex gap-x-5 py-3 overflow-auto"><!--[-->`);
-      ssrRenderList(categories.value, (category) => {
-        _push(`<li style="${ssrRenderStyle({ "display": "flex", "flex-shrink": "0" })}">`);
-        _push(ssrRenderComponent(unref(Link), {
-          href: _ctx.route("posts.category.index", category),
-          class: "text-white text-sm font-bold capitalize"
-        }, {
-          default: withCtx((_, _push2, _parent2, _scopeId) => {
-            if (_push2) {
-              _push2(`${ssrInterpolate(category.name)}`);
-            } else {
-              return [
-                createTextVNode(toDisplayString(category.name), 1)
-              ];
-            }
-          }),
-          _: 2
-        }, _parent));
-        _push(`</li>`);
-      });
-      _push(`<!--]--></ul></nav></div><!--]-->`);
-    };
-  }
-};
-const _sfc_setup$k = _sfc_main$k.setup;
-_sfc_main$k.setup = (props, ctx) => {
-  const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/Header.vue");
-  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
-};
-const _sfc_main$j = {
-  __name: "BaseLayout",
-  __ssrInlineRender: true,
-  setup(__props) {
-    const pageProps = usePage().props;
-    const ads = computed(() => pageProps.advertisement);
-    const popularPosts = computed(() => pageProps.popularPosts);
     const seoTitle = computed(() => getSeoTitle());
     const seoDescription = computed(() => "Berita terbaru, akurat dan terpercaya di Wartabengkulu.co. Baca di sini biar kamu gak ketinggalan informasi terbaru seputar Politik, Hukum, Ekonomi, Teknologi, dan Lainnya.");
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<!--[-->`);
-      _push(ssrRenderComponent(unref(Head), null, {
+      _push(ssrRenderComponent(unref(Head), _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<meta property="description"${ssrRenderAttr("content", seoDescription.value)} head-key="description"${_scopeId}><meta property="og:type" content="website" head-key="og:type"${_scopeId}><meta property="og:title"${ssrRenderAttr("content", seoTitle.value)} head-key="og:title"${_scopeId}><meta property="og:description"${ssrRenderAttr("content", seoDescription.value)} head-key="og:description"${_scopeId}><meta property="og:url"${ssrRenderAttr("content", unref(getAppUrl)())} head-key="og:url"${_scopeId}><meta property="og:locale" content="id_ID"${_scopeId}><meta property="og:site_name"${ssrRenderAttr("content", unref(getAppName)())}${_scopeId}><meta name="twitter:card" content="summary"${_scopeId}><meta name="twitter:title"${ssrRenderAttr("content", seoTitle.value)} head-key="twitter:title"${_scopeId}><meta name="twitter:description"${ssrRenderAttr("content", seoDescription.value)} head-key="twitter:description"${_scopeId}><meta name="twitter:image"${ssrRenderAttr("content", unref(getAppUrl)() + "/logo.png")} head-key="twitter:image"${_scopeId}><meta name="robots" content="index, follow"${_scopeId}><meta http-equiv="Content-Language" content="id"${_scopeId}>`);
@@ -5797,25 +5693,288 @@ const _sfc_main$j = {
         }),
         _: 1
       }, _parent));
-      _push(ssrRenderComponent(_sfc_main$k, null, null, _parent));
-      if (ads.value.header) {
-        _push(`<div><div class="max-w-2xl lg:max-w-6xl mx-auto bg-gray-100 p-2 lg:rounded my-5"><a${ssrRenderAttr("href", ads.value.header.target_url)} target="_blank"><img${ssrRenderAttr("src", "/storage/" + ads.value.header.image_path)}${ssrRenderAttr("alt", ads.value.header.title)} class="w-full max-h-[250px] object-cover rounded"></a></div></div>`);
+    };
+  }
+};
+const _sfc_setup$r = _sfc_main$r.setup;
+_sfc_main$r.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/BaseLayout/Partials/DefaultSeoMeta.vue");
+  return _sfc_setup$r ? _sfc_setup$r(props, ctx) : void 0;
+};
+const _sfc_main$q = {};
+function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
+  _push(`<p${ssrRenderAttrs(mergeProps({ class: "text-sm text-gray-500 p-3" }, _attrs))}> © ${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())}. All Right Reserved </p>`);
+}
+const _sfc_setup$q = _sfc_main$q.setup;
+_sfc_main$q.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/Copyright.vue");
+  return _sfc_setup$q ? _sfc_setup$q(props, ctx) : void 0;
+};
+const Copyright = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["ssrRender", _sfc_ssrRender$1]]);
+const _sfc_main$p = {
+  __name: "SocialLinks",
+  __ssrInlineRender: true,
+  props: {
+    showLabel: {
+      type: Boolean,
+      default: true
+    }
+  },
+  setup(__props) {
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<ul${ssrRenderAttrs(mergeProps({ class: "grid sm:flex gap-y-5" }, _attrs))}><li><a class="flex items-center gap-3" href="https://www.instagram.com/wartabengkulu.id/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>`);
+      if (__props.showLabel) {
+        _push(`<span> Instagram </span>`);
       } else {
         _push(`<!---->`);
       }
-      _push(`<main class="px-5 lg:p-0"><div class="max-w-2xl lg:max-w-6xl mx-auto my-5 mb-10"><section class="grid lg:grid-cols-12 gap-10"><div class="grid lg:col-span-8 w-full">`);
+      _push(`</a></li><li><a class="flex items-center gap-3" href="https://www.facebook.com/share/15iuzXfuaY/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>`);
+      if (__props.showLabel) {
+        _push(`<span> Facebook </span>`);
+      } else {
+        _push(`<!---->`);
+      }
+      _push(`</a></li><li><a class="flex items-center gap-3" href="https://www.youtube.com/@wartabengkulu4357" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-gray-500 lucide lucide-instagram"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>`);
+      if (__props.showLabel) {
+        _push(`<span> Youtube </span>`);
+      } else {
+        _push(`<!---->`);
+      }
+      _push(`</a></li><li><a class="flex items-center gap-3" href="https://www.tiktok.com/@wartabengkulu?_t=ZS-8tnd7nbZ4Aq&amp;_r=1" target="_blank"><svg fill="currentColor" class="size-5 text-gray-500" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"></path></svg>`);
+      if (__props.showLabel) {
+        _push(`<span> Tiktok </span>`);
+      } else {
+        _push(`<!---->`);
+      }
+      _push(`</a></li></ul>`);
+    };
+  }
+};
+const _sfc_setup$p = _sfc_main$p.setup;
+_sfc_main$p.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/SocialLinks.vue");
+  return _sfc_setup$p ? _sfc_setup$p(props, ctx) : void 0;
+};
+const _sfc_main$o = {
+  __name: "MobileMenu",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const openNavigation = ref(false);
+    const categories = computed(() => usePage().props.categories);
+    onMounted(() => {
+      watch(openNavigation, () => {
+        if (openNavigation.value) {
+          document.body.classList.add("overflow-hidden");
+        } else {
+          document.body.classList.remove("overflow-hidden");
+        }
+      });
+    });
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<div${ssrRenderAttrs(_attrs)}><button class="absolute left-4 top-5">`);
+      _push(ssrRenderComponent(unref(Bars3Icon), { class: "size-5" }, null, _parent));
+      _push(`</button>`);
+      ssrRenderTeleport(_push, (_push2) => {
+        _push2(`<div style="${ssrRenderStyle(openNavigation.value ? null : { display: "none" })}" class="fixed inset-0 bg-black/50 z-50"><div class="fixed h-full w-full max-w-[275px] left-0 bg-white overflow-auto"><div class="flex items-center justify-between border-b p-4 sticky top-0 left-0 bg-white"><div class="font-bold">Menu</div><button class="p-1">`);
+        _push2(ssrRenderComponent(unref(XMarkIcon), { class: "size-6" }, null, _parent));
+        _push2(`</button></div><nav class="p-4 border-b"><ul class="grid gap-y-5"><!--[-->`);
+        ssrRenderList(categories.value, (category) => {
+          _push2(`<li>`);
+          _push2(ssrRenderComponent(unref(Link), {
+            href: _ctx.route("posts.category.index", category),
+            class: "capitalize py-2 pr-2",
+            onClick: ($event) => openNavigation.value = false
+          }, {
+            default: withCtx((_, _push3, _parent2, _scopeId) => {
+              if (_push3) {
+                _push3(`${ssrInterpolate(category.name)}`);
+              } else {
+                return [
+                  createTextVNode(toDisplayString(category.name), 1)
+                ];
+              }
+            }),
+            _: 2
+          }, _parent));
+          _push2(`</li>`);
+        });
+        _push2(`<!--]--></ul></nav><nav class="p-4 border-b">`);
+        _push2(ssrRenderComponent(_sfc_main$p, null, null, _parent));
+        _push2(`</nav>`);
+        _push2(ssrRenderComponent(Copyright, null, null, _parent));
+        _push2(`</div></div>`);
+      }, "#sidenav", false, _parent);
+      _push(`</div>`);
+    };
+  }
+};
+const _sfc_setup$o = _sfc_main$o.setup;
+_sfc_main$o.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/BaseLayout/Partials/MobileMenu.vue");
+  return _sfc_setup$o ? _sfc_setup$o(props, ctx) : void 0;
+};
+const _sfc_main$n = {
+  __name: "BrandLink",
+  __ssrInlineRender: true,
+  setup(__props) {
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(ssrRenderComponent(unref(Link), mergeProps({
+        href: "/",
+        class: "flex items-center"
+      }, _attrs), {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(`<img src="/logo.png" alt="" class="w-10"${_scopeId}><span class="font-bold text-red-700 text-xl"${_scopeId}> Warta Bengkulu </span>`);
+          } else {
+            return [
+              createVNode("img", {
+                src: "/logo.png",
+                alt: "",
+                class: "w-10"
+              }),
+              createVNode("span", { class: "font-bold text-red-700 text-xl" }, " Warta Bengkulu ")
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+    };
+  }
+};
+const _sfc_setup$n = _sfc_main$n.setup;
+_sfc_main$n.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/BrandLink.vue");
+  return _sfc_setup$n ? _sfc_setup$n(props, ctx) : void 0;
+};
+const _sfc_main$m = {
+  __name: "Header",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const openSearch = ref(false);
+    const search = ref("");
+    const categories = computed(() => usePage().props.categories);
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "sticky top-0 bg-white z-40" }, _attrs))}><header class="max-w-2xl lg:max-w-5xl xl:max-w-6xl mx-auto py-2 lg:py-3 relative"><div class="md:hidden">`);
+      _push(ssrRenderComponent(_sfc_main$o, null, null, _parent));
+      _push(`</div><button class="absolute right-4 top-5 md:hidden">`);
+      _push(ssrRenderComponent(unref(MagnifyingGlassIcon), { class: "size-5" }, null, _parent));
+      _push(`</button><div class="flex flex-col gap-3 md:flex-row items-center justify-between lg:px-5"><div class="flex items-center">`);
+      _push(ssrRenderComponent(_sfc_main$n, null, null, _parent));
+      _push(`</div><div class="flex items-center"><div class="${ssrRenderClass([
+        "gap-2 w-full md:flex md:w-auto",
+        openSearch.value ? "block" : "hidden"
+      ])}"><div class="flex flex-1 items-center justify-center px-2 lg:ml-6 lg:justify-end"><form class="grid w-full mx-2 grid-cols-1 lg:max-w-xs"><input type="search" name="search" class="col-start-1 row-start-1 block w-full rounded-sm bg-white py-1.5 pl-10 pr-3 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-primary sm:text-sm/6" placeholder="Pencarian berita..."${ssrRenderAttr("value", search.value)}>`);
+      _push(ssrRenderComponent(unref(MagnifyingGlassIcon), {
+        class: "pointer-events-none col-start-1 row-start-1 ml-3 size-5 self-center text-gray-400",
+        "aria-hidden": "true"
+      }, null, _parent));
+      _push(`</form></div></div><nav class="p-4 hidden md:block">`);
+      _push(ssrRenderComponent(_sfc_main$p, {
+        class: "gap-5",
+        "show-label": false
+      }, null, _parent));
+      _push(`</nav></div></div></header><nav class="bg-primary pl-5"><ul class="max-w-2xl lg:max-w-6xl mx-auto flex gap-x-5 py-3 md:flex-wrap overflow-auto md:overflow-visible gap-y-3"><!--[-->`);
+      ssrRenderList(categories.value, (category, index) => {
+        _push(`<li class="${ssrRenderClass({
+          "flex shrink-0 grow-0": true,
+          "mr-5": index === categories.value.length - 1
+        })}">`);
+        _push(ssrRenderComponent(unref(Link), {
+          href: _ctx.route("posts.category.index", category),
+          class: "text-white text-sm font-bold capitalize"
+        }, {
+          default: withCtx((_, _push2, _parent2, _scopeId) => {
+            if (_push2) {
+              _push2(`${ssrInterpolate(category.name)}`);
+            } else {
+              return [
+                createTextVNode(toDisplayString(category.name), 1)
+              ];
+            }
+          }),
+          _: 2
+        }, _parent));
+        _push(`</li>`);
+      });
+      _push(`<!--]--></ul></nav></div>`);
+    };
+  }
+};
+const _sfc_setup$m = _sfc_main$m.setup;
+_sfc_main$m.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/BaseLayout/Partials/Header.vue");
+  return _sfc_setup$m ? _sfc_setup$m(props, ctx) : void 0;
+};
+const _sfc_main$l = {
+  __name: "AdsHeader",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const pageProps = usePage().props;
+    const ads = computed(() => pageProps.advertisement);
+    return (_ctx, _push, _parent, _attrs) => {
+      if (ads.value.header) {
+        _push(`<div${ssrRenderAttrs(_attrs)}><div class="max-w-2xl lg:max-w-6xl mx-auto bg-gray-100 p-2 lg:rounded my-5"><a${ssrRenderAttr("href", ads.value.header.target_url)} target="_blank"><img${ssrRenderAttr("src", ads.value.header.image_path)}${ssrRenderAttr("alt", ads.value.header.title)} class="w-full max-h-[250px] object-cover rounded"></a></div></div>`);
+      } else {
+        _push(`<!---->`);
+      }
+    };
+  }
+};
+const _sfc_setup$l = _sfc_main$l.setup;
+_sfc_main$l.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/AdsHeader.vue");
+  return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
+};
+const _sfc_main$k = {
+  __name: "AdsSidebar",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const pageProps = usePage().props;
+    const ads = computed(() => pageProps.advertisement);
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "grid grid-cols-2 gap-2" }, _attrs))}><!--[-->`);
+      ssrRenderList(ads.value.sidebar, (ad) => {
+        _push(`<div class="p-2 bg-gray-100 rounded mt-2.5"><a${ssrRenderAttr("href", ad.target_url)} target="_blank"><img class="h-[150px] w-full rounded object-cover"${ssrRenderAttr("src", ad.image_path)}></a></div>`);
+      });
+      _push(`<!--]--></div>`);
+    };
+  }
+};
+const _sfc_setup$k = _sfc_main$k.setup;
+_sfc_main$k.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Shared/AdsSidebar.vue");
+  return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
+};
+const _sfc_main$j = {
+  __name: "Index",
+  __ssrInlineRender: true,
+  setup(__props) {
+    const pageProps = usePage().props;
+    const ads = computed(() => pageProps.advertisement);
+    const popularPosts = computed(() => pageProps.popularPosts);
+    return (_ctx, _push, _parent, _attrs) => {
+      _push(`<!--[--><div id="sidenav"></div>`);
+      _push(ssrRenderComponent(_sfc_main$r, null, null, _parent));
+      _push(ssrRenderComponent(_sfc_main$m, null, null, _parent));
+      _push(ssrRenderComponent(_sfc_main$l, null, null, _parent));
+      _push(`<main class="px-5 xl:p-0"><div class="max-w-2xl lg:max-w-5xl xl:max-w-6xl mx-auto my-5 mb-10"><section class="grid lg:grid-cols-12 gap-10"><div class="grid lg:col-span-8 w-full">`);
       ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
       _push(`</div><div class="lg:col-span-4 hidden lg:block"><div class="sticky top-32">`);
-      _push(ssrRenderComponent(_sfc_main$l, { posts: popularPosts.value }, null, _parent));
-      _push(`<div class="grid grid-cols-2 gap-2"><!--[-->`);
-      ssrRenderList(ads.value.sidebar, (ad) => {
-        _push(`<div class="p-2 bg-gray-100 rounded mt-2.5"><a${ssrRenderAttr("href", ad.target_url)} target="_blank"><img class="h-[150px] w-full rounded object-cover"${ssrRenderAttr("src", "/storage/" + ad.image_path)}></a></div>`);
-      });
-      _push(`<!--]--></div></div></div></section><section class="block lg:hidden mt-7">`);
-      _push(ssrRenderComponent(_sfc_main$l, { posts: popularPosts.value }, null, _parent));
+      _push(ssrRenderComponent(_sfc_main$s, { posts: popularPosts.value }, null, _parent));
+      _push(ssrRenderComponent(_sfc_main$k, null, null, _parent));
+      _push(`</div></div></section><section class="block lg:hidden mt-7">`);
+      _push(ssrRenderComponent(_sfc_main$s, { posts: popularPosts.value }, null, _parent));
       _push(`<div class="grid grid-cols-2 gap-5"><!--[-->`);
       ssrRenderList(ads.value.sidebar, (ad) => {
-        _push(`<div class="p-2 bg-gray-100 mt-2.5"><a${ssrRenderAttr("href", ad.target_url)} target="_blank"><img class="h-[150px] w-full rounded object-cover"${ssrRenderAttr("src", "/storage/" + ad.image_path)}></a></div>`);
+        _push(`<div class="p-2 bg-gray-100 mt-2.5"><a${ssrRenderAttr("href", ad.target_url)} target="_blank"><img class="h-[150px] w-full rounded object-cover"${ssrRenderAttr("src", ad.image_path)}></a></div>`);
       });
       _push(`<!--]--></div></section>`);
       if (_ctx.$slots.category_posts) {
@@ -5825,14 +5984,16 @@ const _sfc_main$j = {
       } else {
         _push(`<!---->`);
       }
-      _push(`</div></main><footer class="py-3 lg:py-4 border-t text-center lg:text-end px-5"><p class="text-sm text-gray-500">© ${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())}. All Right Reserved</p></footer><!--]-->`);
+      _push(`</div></main>`);
+      _push(ssrRenderComponent(Copyright, { class: "py-3 lg:py-4 border-t text-center lg:text-end px-5" }, null, _parent));
+      _push(`<!--]-->`);
     };
   }
 };
 const _sfc_setup$j = _sfc_main$j.setup;
 _sfc_main$j.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/BaseLayout.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Layouts/BaseLayout/Index.vue");
   return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
 };
 const _sfc_main$i = {
@@ -5842,56 +6003,56 @@ const _sfc_main$i = {
     postsByCategory: Array
   },
   setup(__props) {
+    const filteredPostsByCategory = computed(() => {
+      return __props.postsByCategory.filter((postByCategory) => {
+        return postByCategory.posts.length > 0;
+      });
+    });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<div${ssrRenderAttrs(mergeProps({ class: "grid lg:grid-cols-3 gap-10" }, _attrs))}><!--[-->`);
-      ssrRenderList(__props.postsByCategory, (postByCategory, index) => {
-        _push(`<!--[-->`);
-        if (postByCategory.posts.length > 0) {
-          _push(`<div class="grid gap-4"><div class="h-auto max-w-full"><div class="flex items-center justify-between mb-5">`);
-          _push(ssrRenderComponent(SectionTitle, { class: "!mb-0" }, {
-            default: withCtx((_, _push2, _parent2, _scopeId) => {
-              if (_push2) {
-                _push2(`${ssrInterpolate(postByCategory.category.name)}`);
-              } else {
-                return [
-                  createTextVNode(toDisplayString(postByCategory.category.name), 1)
-                ];
-              }
-            }),
-            _: 2
-          }, _parent));
-          _push(ssrRenderComponent(unref(Link), {
-            href: _ctx.route("posts.category.index", postByCategory.category),
-            class: "hover:text-primary-400 hover:underline text-sm font-medium flex items-center gap-2"
-          }, {
-            default: withCtx((_, _push2, _parent2, _scopeId) => {
-              if (_push2) {
-                _push2(` Artikel Lainnya `);
-                _push2(ssrRenderComponent(unref(ArrowRightIcon), { class: "size-4" }, null, _parent2, _scopeId));
-              } else {
-                return [
-                  createTextVNode(" Artikel Lainnya "),
-                  createVNode(unref(ArrowRightIcon), { class: "size-4" })
-                ];
-              }
-            }),
-            _: 2
-          }, _parent));
-          _push(`</div><div class="grid grid-cols-1 gap-y-5"><!--[-->`);
-          ssrRenderList(postByCategory.posts, (post, index2) => {
-            _push(ssrRenderComponent(_sfc_main$n, {
-              post,
-              variant: "simplified",
-              size: "sm",
-              "show-image": postByCategory.posts.length > 1 && index2 === 0,
-              class: { "border-b": index2 !== postByCategory.posts.length - 1 }
-            }, null, _parent));
-          });
-          _push(`<!--]--></div></div></div>`);
-        } else {
-          _push(`<!---->`);
-        }
-        if (postByCategory.posts.length && index !== __props.postsByCategory.length - 1) {
+      ssrRenderList(filteredPostsByCategory.value, (postByCategory, index) => {
+        _push(`<!--[--><div class="grid gap-4"><div class="h-auto max-w-full"><div class="flex items-center justify-between mb-5">`);
+        _push(ssrRenderComponent(SectionTitle, { class: "!mb-0" }, {
+          default: withCtx((_, _push2, _parent2, _scopeId) => {
+            if (_push2) {
+              _push2(`${ssrInterpolate(postByCategory.category.name)}`);
+            } else {
+              return [
+                createTextVNode(toDisplayString(postByCategory.category.name), 1)
+              ];
+            }
+          }),
+          _: 2
+        }, _parent));
+        _push(ssrRenderComponent(unref(Link), {
+          href: _ctx.route("posts.category.index", postByCategory.category),
+          class: "hover:text-primary-400 hover:underline text-sm font-medium flex items-center gap-2"
+        }, {
+          default: withCtx((_, _push2, _parent2, _scopeId) => {
+            if (_push2) {
+              _push2(` Artikel Lainnya `);
+              _push2(ssrRenderComponent(unref(ArrowRightIcon), { class: "size-4" }, null, _parent2, _scopeId));
+            } else {
+              return [
+                createTextVNode(" Artikel Lainnya "),
+                createVNode(unref(ArrowRightIcon), { class: "size-4" })
+              ];
+            }
+          }),
+          _: 2
+        }, _parent));
+        _push(`</div><div class="grid grid-cols-1 gap-y-5"><!--[-->`);
+        ssrRenderList(postByCategory.posts, (post, index2) => {
+          _push(ssrRenderComponent(_sfc_main$u, {
+            post,
+            variant: "simplified",
+            size: "sm",
+            "show-image": postByCategory.posts.length > 1 && index2 === 0,
+            class: { "border-b": index2 !== postByCategory.posts.length - 1 }
+          }, null, _parent));
+        });
+        _push(`<!--]--></div></div></div>`);
+        if (index < filteredPostsByCategory.value.length - 1) {
           _push(`<hr class="-mx-5 lg:hidden">`);
         } else {
           _push(`<!---->`);
@@ -5946,7 +6107,7 @@ const _sfc_main$h = {
         }),
         class: "absolute inset-0 z-10"
       }, null, _parent));
-      _push(`<img${ssrRenderAttr("src", "/storage/" + firstPost.value.cover_image_url)} alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-500"><div class="bg-black/70 absolute bottom-0 inset-x-0 px-2 py-3"><h2 class="text-white font-bold text-lg">${ssrInterpolate(firstPost.value.title)}</h2><div class="flex gap-2 mt-2 text-sm text-white">`);
+      _push(`<img${ssrRenderAttr("src", firstPost.value.cover_image_url)} alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-500"><div class="bg-black/70 absolute bottom-0 inset-x-0 px-2 py-3"><h2 class="text-white font-bold text-lg">${ssrInterpolate(firstPost.value.title)}</h2><div class="flex gap-2 mt-2 text-sm text-white">`);
       _push(ssrRenderComponent(unref(Link), {
         href: _ctx.route("posts.category.index", firstPost.value.category),
         class: "font-medium underline z-20 hover:text-primary"
@@ -5966,7 +6127,7 @@ const _sfc_main$h = {
       if (__props.posts.length > 1) {
         _push(`<div class="col-span-12 md:col-span-7 overflow-y-auto h-96"><div class="grid grid-cols-1 gap-y-3"><!--[-->`);
         ssrRenderList(otherPosts.value, (post) => {
-          _push(ssrRenderComponent(_sfc_main$n, {
+          _push(ssrRenderComponent(_sfc_main$u, {
             class: "border-b",
             key: post.id,
             "show-image": "",
@@ -6003,7 +6164,7 @@ const _sfc_main$g = {
   },
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<!--[-->`);
+      _push(`<div${ssrRenderAttrs(_attrs)}>`);
       _push(ssrRenderComponent(SectionTitle, null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
@@ -6018,7 +6179,7 @@ const _sfc_main$g = {
       }, _parent));
       _push(`<div class="grid grid-cols-1 gap-y-5"><!--[-->`);
       ssrRenderList(__props.posts, (post) => {
-        _push(ssrRenderComponent(_sfc_main$n, {
+        _push(ssrRenderComponent(_sfc_main$u, {
           post,
           key: post.id,
           class: "border-b"
@@ -6052,7 +6213,7 @@ const _sfc_main$g = {
       } else {
         _push(`<!---->`);
       }
-      _push(`<!--]-->`);
+      _push(`</div>`);
     };
   }
 };
@@ -6194,7 +6355,7 @@ const _sfc_main$d = /* @__PURE__ */ Object.assign({
       }, _parent));
       _push(`<!--[-->`);
       ssrRenderList(__props.posts.data, (post) => {
-        _push(ssrRenderComponent(_sfc_main$n, {
+        _push(ssrRenderComponent(_sfc_main$u, {
           post,
           key: post.id
         }, null, _parent));
@@ -6251,7 +6412,7 @@ const _sfc_main$c = /* @__PURE__ */ Object.assign({
       }, _parent));
       _push(`<div class="grid grid-cols-1 gap-y-5"><!--[-->`);
       ssrRenderList(__props.posts.data, (post) => {
-        _push(ssrRenderComponent(_sfc_main$n, {
+        _push(ssrRenderComponent(_sfc_main$u, {
           post,
           key: post.id,
           class: "border-b"
@@ -6352,17 +6513,29 @@ const _sfc_main$a = {
     }
   },
   setup(__props) {
-    const seoUrl = computed(() => getAppUrl() + usePage().url);
+    const appUrl = computed(() => getAppUrl());
+    const seoImageUrl = computed(() => appUrl.value + __props.post.cover_image_url);
+    const seoUrl = computed(() => appUrl.value + usePage().url);
     const seoTitle = computed(() => getSeoTitle(__props.post.title));
     const seoDescription = computed(() => __props.post.seo.description || __props.post.title);
     const seoPublishedAt = computed(() => __props.post.seo.published_at);
+    const seoDateModifiedAt = computed(() => __props.post.seo.updated_at);
+    const jsonLd = computed(() => JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": __props.post.title,
+      "image": [seoImageUrl.value],
+      "datePublished": seoPublishedAt.value,
+      "dateModified": seoDateModifiedAt.value,
+      "author": { "@type": "Person", "name": __props.post.author.name }
+    }));
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(Head), mergeProps({
         title: __props.post.title
       }, _attrs), {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`<meta property="description"${ssrRenderAttr("content", seoDescription.value)} head-key="description"${_scopeId}><meta property="og:title"${ssrRenderAttr("content", seoTitle.value)} head-key="og:title"${_scopeId}><meta property="og:description"${ssrRenderAttr("content", seoDescription.value)} head-key="og:description"${_scopeId}><meta property="og:image"${ssrRenderAttr("content", __props.post.cover_image_url)} head-key="og:image"${_scopeId}><meta property="og:url"${ssrRenderAttr("content", seoUrl.value)} head-key="og:url"${_scopeId}><meta property="og:type" content="article" head-key="og:type"${_scopeId}><meta name="twitter:title"${ssrRenderAttr("content", seoTitle.value)} head-key="twitter:title"${_scopeId}><meta name="twitter:description"${ssrRenderAttr("content", seoDescription.value)} head-key="twitter:description"${_scopeId}><meta name="twitter:image"${ssrRenderAttr("content", __props.post.cover_image_url)} head-key="twitter:image"${_scopeId}><link rel="canonical"${ssrRenderAttr("href", seoUrl.value)}${_scopeId}><meta name="googlebot" content="index, follow"${_scopeId}><meta name="googlebot-news" content="index, follow"${_scopeId}><meta name="yahoobot" content="index, follow"${_scopeId}><meta property="article:published_time"${ssrRenderAttr("content", seoPublishedAt.value)}${_scopeId}>`);
+            _push2(`<meta property="description"${ssrRenderAttr("content", seoDescription.value)} head-key="description"${_scopeId}><script type="application/ld+json"${_scopeId}>${ssrInterpolate(jsonLd.value)}<\/script><meta property="og:title"${ssrRenderAttr("content", seoTitle.value)} head-key="og:title"${_scopeId}><meta property="og:description"${ssrRenderAttr("content", seoDescription.value)} head-key="og:description"${_scopeId}><meta property="og:image"${ssrRenderAttr("content", seoImageUrl.value)} head-key="og:image"${_scopeId}><meta property="og:url"${ssrRenderAttr("content", seoUrl.value)} head-key="og:url"${_scopeId}><meta property="og:type" content="article" head-key="og:type"${_scopeId}><meta name="twitter:title"${ssrRenderAttr("content", seoTitle.value)} head-key="twitter:title"${_scopeId}><meta name="twitter:description"${ssrRenderAttr("content", seoDescription.value)} head-key="twitter:description"${_scopeId}><meta name="twitter:image"${ssrRenderAttr("content", seoImageUrl.value)} head-key="twitter:image"${_scopeId}><link rel="canonical"${ssrRenderAttr("href", seoUrl.value)}${_scopeId}><meta name="googlebot" content="index, follow"${_scopeId}><meta name="googlebot-news" content="index, follow"${_scopeId}><meta name="yahoobot" content="index, follow"${_scopeId}><meta property="article:published_time"${ssrRenderAttr("content", seoPublishedAt.value)}${_scopeId}>`);
           } else {
             return [
               createVNode("meta", {
@@ -6370,6 +6543,10 @@ const _sfc_main$a = {
                 content: seoDescription.value,
                 "head-key": "description"
               }, null, 8, ["content"]),
+              createVNode("script", {
+                type: "application/ld+json",
+                textContent: toDisplayString(jsonLd.value)
+              }, null, 8, ["textContent"]),
               createVNode("meta", {
                 property: "og:title",
                 content: seoTitle.value,
@@ -6382,7 +6559,7 @@ const _sfc_main$a = {
               }, null, 8, ["content"]),
               createVNode("meta", {
                 property: "og:image",
-                content: __props.post.cover_image_url,
+                content: seoImageUrl.value,
                 "head-key": "og:image"
               }, null, 8, ["content"]),
               createVNode("meta", {
@@ -6407,7 +6584,7 @@ const _sfc_main$a = {
               }, null, 8, ["content"]),
               createVNode("meta", {
                 name: "twitter:image",
-                content: __props.post.cover_image_url,
+                content: seoImageUrl.value,
                 "head-key": "twitter:image"
               }, null, 8, ["content"]),
               createVNode("link", {
@@ -6464,7 +6641,7 @@ const _sfc_main$9 = /* @__PURE__ */ Object.assign({
         pages: breadcrumbPages.value,
         class: "mb-4"
       }, null, _parent));
-      _push(`<article class="prose-sm md:prose-lg"><header><h1 class="capitalize md:text-4xl mb-2.5">${ssrInterpolate(__props.post.title)}</h1><div class="flex flex-col gap-1"><div class="text-gray-400 text-sm"> Reporter: ${ssrInterpolate(__props.post.author.name)} `);
+      _push(`<article class="prose-sm md:prose-lg"><header><h1 class="capitalize md:text-4xl mb-2.5 font-semibold">${ssrInterpolate(__props.post.title)}</h1><div class="flex flex-col gap-1"><div class="text-gray-400 text-sm"> Reporter: ${ssrInterpolate(__props.post.author.name)} `);
       if (__props.post.editor) {
         _push(`<span> ‐ Editor: ${ssrInterpolate(__props.post.editor.name)}</span>`);
       } else {
@@ -6472,7 +6649,7 @@ const _sfc_main$9 = /* @__PURE__ */ Object.assign({
       }
       _push(`</div><div class="my-0 text-sm text-gray-500">${ssrInterpolate(__props.post.created_at)} · waktu baca ${ssrInterpolate(__props.post.minutes_to_read)} menit </div></div></header><main class="mt-6">`);
       if (!!__props.post.cover_image_url) {
-        _push(`<figure><img${ssrRenderAttr("src", "/storage/" + __props.post.cover_image_url)}${ssrRenderAttr("alt", __props.post.title)}></figure>`);
+        _push(`<figure><img${ssrRenderAttr("src", __props.post.cover_image_url)}${ssrRenderAttr("alt", __props.post.title)}></figure>`);
       } else {
         _push(`<!---->`);
       }
@@ -6665,12 +6842,12 @@ const _sfc_main$5 = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<div class="p-6"${_scopeId}><h2 class="text-lg font-medium text-gray-900"${_scopeId}> Are you sure you want to delete your account? </h2><p class="mt-1 text-sm text-gray-600"${_scopeId}> Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account. </p><div class="mt-6"${_scopeId}>`);
-            _push2(ssrRenderComponent(_sfc_main$U, {
+            _push2(ssrRenderComponent(_sfc_main$$, {
               for: "password",
               value: "Password",
               class: "sr-only"
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$S, {
+            _push2(ssrRenderComponent(_sfc_main$Z, {
               id: "password",
               ref_key: "passwordInput",
               ref: passwordInput,
@@ -6681,7 +6858,7 @@ const _sfc_main$5 = {
               placeholder: "Password",
               onKeyup: deleteUser
             }, null, _parent2, _scopeId));
-            _push2(ssrRenderComponent(_sfc_main$V, {
+            _push2(ssrRenderComponent(_sfc_main$10, {
               message: unref(form).errors.password,
               class: "mt-2"
             }, null, _parent2, _scopeId));
@@ -6721,12 +6898,12 @@ const _sfc_main$5 = {
                 createVNode("h2", { class: "text-lg font-medium text-gray-900" }, " Are you sure you want to delete your account? "),
                 createVNode("p", { class: "mt-1 text-sm text-gray-600" }, " Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account. "),
                 createVNode("div", { class: "mt-6" }, [
-                  createVNode(_sfc_main$U, {
+                  createVNode(_sfc_main$$, {
                     for: "password",
                     value: "Password",
                     class: "sr-only"
                   }),
-                  createVNode(_sfc_main$S, {
+                  createVNode(_sfc_main$Z, {
                     id: "password",
                     ref_key: "passwordInput",
                     ref: passwordInput,
@@ -6737,7 +6914,7 @@ const _sfc_main$5 = {
                     placeholder: "Password",
                     onKeyup: withKeys(deleteUser, ["enter"])
                   }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                  createVNode(_sfc_main$V, {
+                  createVNode(_sfc_main$10, {
                     message: unref(form).errors.password,
                     class: "mt-2"
                   }, null, 8, ["message"])
@@ -6793,11 +6970,11 @@ const _sfc_main$4 = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(_attrs)}><header><h2 class="text-lg font-medium text-gray-900"> Update Password </h2><p class="mt-1 text-sm text-gray-600"> Ensure your account is using a long, random password to stay secure. </p></header><form class="mt-6 space-y-6"><div>`);
-      _push(ssrRenderComponent(_sfc_main$U, {
+      _push(ssrRenderComponent(_sfc_main$$, {
         for: "current_password",
         value: "Current Password"
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$S, {
+      _push(ssrRenderComponent(_sfc_main$Z, {
         id: "current_password",
         ref_key: "currentPasswordInput",
         ref: currentPasswordInput,
@@ -6807,16 +6984,16 @@ const _sfc_main$4 = {
         class: "mt-1 block w-full",
         autocomplete: "current-password"
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$V, {
+      _push(ssrRenderComponent(_sfc_main$10, {
         message: unref(form).errors.current_password,
         class: "mt-2"
       }, null, _parent));
       _push(`</div><div>`);
-      _push(ssrRenderComponent(_sfc_main$U, {
+      _push(ssrRenderComponent(_sfc_main$$, {
         for: "password",
         value: "New Password"
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$S, {
+      _push(ssrRenderComponent(_sfc_main$Z, {
         id: "password",
         ref_key: "passwordInput",
         ref: passwordInput,
@@ -6826,16 +7003,16 @@ const _sfc_main$4 = {
         class: "mt-1 block w-full",
         autocomplete: "new-password"
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$V, {
+      _push(ssrRenderComponent(_sfc_main$10, {
         message: unref(form).errors.password,
         class: "mt-2"
       }, null, _parent));
       _push(`</div><div>`);
-      _push(ssrRenderComponent(_sfc_main$U, {
+      _push(ssrRenderComponent(_sfc_main$$, {
         for: "password_confirmation",
         value: "Confirm Password"
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$S, {
+      _push(ssrRenderComponent(_sfc_main$Z, {
         id: "password_confirmation",
         modelValue: unref(form).password_confirmation,
         "onUpdate:modelValue": ($event) => unref(form).password_confirmation = $event,
@@ -6843,7 +7020,7 @@ const _sfc_main$4 = {
         class: "mt-1 block w-full",
         autocomplete: "new-password"
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$V, {
+      _push(ssrRenderComponent(_sfc_main$10, {
         message: unref(form).errors.password_confirmation,
         class: "mt-2"
       }, null, _parent));
@@ -6900,11 +7077,11 @@ const _sfc_main$3 = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<section${ssrRenderAttrs(_attrs)}><header><h2 class="text-lg font-medium text-gray-900"> Profile Information </h2><p class="mt-1 text-sm text-gray-600"> Update your account&#39;s profile information and email address. </p></header><form class="mt-6 space-y-6"><div>`);
-      _push(ssrRenderComponent(_sfc_main$U, {
+      _push(ssrRenderComponent(_sfc_main$$, {
         for: "name",
         value: "Name"
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$S, {
+      _push(ssrRenderComponent(_sfc_main$Z, {
         id: "name",
         type: "text",
         class: "mt-1 block w-full",
@@ -6914,16 +7091,16 @@ const _sfc_main$3 = {
         autofocus: "",
         autocomplete: "name"
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$V, {
+      _push(ssrRenderComponent(_sfc_main$10, {
         class: "mt-2",
         message: unref(form).errors.name
       }, null, _parent));
       _push(`</div><div>`);
-      _push(ssrRenderComponent(_sfc_main$U, {
+      _push(ssrRenderComponent(_sfc_main$$, {
         for: "email",
         value: "Email"
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$S, {
+      _push(ssrRenderComponent(_sfc_main$Z, {
         id: "email",
         type: "email",
         class: "mt-1 block w-full",
@@ -6932,7 +7109,7 @@ const _sfc_main$3 = {
         required: "",
         autocomplete: "username"
       }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$V, {
+      _push(ssrRenderComponent(_sfc_main$10, {
         class: "mt-2",
         message: unref(form).errors.email
       }, null, _parent));
@@ -7009,7 +7186,7 @@ const _sfc_main$2 = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Profile" }, null, _parent));
-      _push(ssrRenderComponent(_sfc_main$G, null, {
+      _push(ssrRenderComponent(_sfc_main$N, null, {
         header: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             _push2(`<h2 class="text-xl font-semibold leading-tight text-gray-800"${_scopeId}> Profile </h2>`);
@@ -7101,7 +7278,7 @@ const _sfc_main$1 = /* @__PURE__ */ Object.assign({
       }, _parent));
       _push(`<div class="grid grid-cols-1 gap-y-5"><!--[-->`);
       ssrRenderList(__props.posts.data, (post, index) => {
-        _push(ssrRenderComponent(_sfc_main$n, {
+        _push(ssrRenderComponent(_sfc_main$u, {
           post,
           key: post.id,
           class: "border-b"
