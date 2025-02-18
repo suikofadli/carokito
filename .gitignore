@@ -2,7 +2,9 @@
 /node_modules
 /public/build
 /public/hot
+/public/sitemap.xml
 /public/storage
+/bootstrap/ssr/ssr.js
 /storage/*.key
 /storage/pail
 /vendor

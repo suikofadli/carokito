@@ -45,7 +45,7 @@
                 class="max-w-2xl lg:max-w-6xl mx-auto flex gap-x-5 py-3 md:flex-wrap overflow-auto md:overflow-visible gap-y-3">
                 <template v-for="(category, index) in categories" :key="category.id">
                     <li :class="{
-                        'flex shrink-0': true,
+                        'flex shrink-0 grow-0': true,
                         'mr-5': index === categories.length - 1
                     }">
                         <Link :href="route('posts.category.index', category)"
