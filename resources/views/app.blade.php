@@ -9,6 +9,8 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-K7LBDCFD');</script>
     <!-- End Google Tag Manager -->
+
+    <meta name="google-site-verification" content="google-site-verification=YmRBy9LioZ9XCR2dDsvEgAQKpW1v7OirCN3Gj4hRaOs" />
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
