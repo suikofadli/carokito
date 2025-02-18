@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 import vue from "@vitejs/plugin-vue";
+import { hash } from "./resources/js/utils";
 
 export default defineConfig({
     plugins: [
@@ -18,5 +19,13 @@ export default defineConfig({
             },
         }),
     ],
-    build: {}
+    build: {
+        rollupOptions: {
+            output: {
+                entryFileNames: `[name]` + hash + `.js`,
+                chunkFileNames: `[name]` + hash + `.js`,
+                assetFileNames: `[name]` + hash + `.[ext]`,
+            },
+        },
+    },
 });

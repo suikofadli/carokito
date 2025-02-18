@@ -5704,7 +5704,7 @@ _sfc_main$r.setup = (props, ctx) => {
 };
 const _sfc_main$q = {};
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs) {
-  _push(`<p${ssrRenderAttrs(mergeProps({ class: "text-sm text-gray-500 p-3" }, _attrs))}> © ${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())}. All Right Reserved </p>`);
+  _push(`<p${ssrRenderAttrs(mergeProps({ class: "text-sm text-gray-500 p-3" }, _attrs))}> © ${ssrInterpolate((/* @__PURE__ */ new Date()).getFullYear())}. All Right Reserved. </p>`);
 }
 const _sfc_setup$q = _sfc_main$q.setup;
 _sfc_main$q.setup = (props, ctx) => {

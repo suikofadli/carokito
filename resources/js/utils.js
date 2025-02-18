@@ -30,3 +30,5 @@ export const getSeoDescription = (title) => {
 export const getAppUrl = () => {
     return import.meta.env.VITE_APP_URL || "";
 }
+
+export const hash = Math.floor(Math.random() * 90000) + 10000;
