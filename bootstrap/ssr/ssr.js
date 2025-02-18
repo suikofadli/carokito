@@ -5881,7 +5881,7 @@ const _sfc_main$m = {
       _push(`</nav></div></div></header><nav class="bg-primary pl-5"><ul class="max-w-2xl lg:max-w-6xl mx-auto flex gap-x-5 py-3 md:flex-wrap overflow-auto md:overflow-visible gap-y-3"><!--[-->`);
       ssrRenderList(categories.value, (category, index) => {
         _push(`<li class="${ssrRenderClass({
-          "flex shrink-0 grow-0": true,
+          "flex shrink-0 grow-0 flex-row": true,
           "mr-5": index === categories.value.length - 1
         })}">`);
         _push(ssrRenderComponent(unref(Link), {

@@ -4,7 +4,7 @@
 /public/hot
 /public/sitemap.xml
 /public/storage
-/bootstrap/ssr/ssr.js
+/bootstrap/ssr
 /storage/*.key
 /storage/pail
 /vendor
