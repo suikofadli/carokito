@@ -2,8 +2,6 @@
     <!-- Avoid mismatch hydration SSR of Teleport -->
     <div id="sidenav"></div>
 
-    <DefaultSeoMeta />
-
     <Header />
 
     <AdsHeader />
