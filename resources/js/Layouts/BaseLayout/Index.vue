@@ -2,6 +2,8 @@
     <!-- Avoid mismatch hydration SSR of Teleport -->
     <div id="sidenav"></div>
 
+    <DefaultSeoMeta />
+
     <Header />
 
     <AdsHeader />
@@ -48,6 +50,7 @@
 import PopularPost from '@/Shared/PopularPost.vue';
 import { usePage } from '@inertiajs/vue3';
 import { computed } from 'vue';
+import DefaultSeoMeta from './Partials/DefaultSeoMeta.vue';
 import Header from './Partials/Header.vue';
 import AdsHeader from '@/Shared/AdsHeader.vue';
 import AdsSidebar from '@/Shared/AdsSidebar.vue';
