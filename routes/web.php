@@ -42,10 +42,6 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-Route::get('/dashboard/posts', function () {
-    return 'List Post';
-});
-
 Route::middleware(['auth', 'can:manage-users'])->group(function () {
     Route::resource('/dashboard/users', UserController::class)
         ->names('dashboard.users');
