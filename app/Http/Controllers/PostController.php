@@ -98,7 +98,6 @@ class PostController extends Controller
             'category_id' => $request->categoryId,
             'content' => $request->content,
             'cover_image_url' => isset($coverImageUrl) ? "/storage/$coverImageUrl" : ($post->cover_image_url ?? null),
-            'user_id' => Auth::id(),
             'seo_description' => $request->seo_description,
         ]);
 
