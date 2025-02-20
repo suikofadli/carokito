@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedang Dalam Perbaikan</title>
 
-    @vite(['resources/css/app.css'])
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="flex min-h-screen items-center justify-center bg-gray-100">
