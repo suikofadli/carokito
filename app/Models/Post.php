@@ -28,7 +28,8 @@ class Post extends Model
     {
         $query
             ->withCount('views')
-            ->having('views_count', '>', 0)
+            ->where('views_count', '>', 0)
+            // ->having('views_count', '>', 0)
             ->orderByDesc('views_count', '>', 0);
     }
 
