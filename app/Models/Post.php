@@ -27,9 +27,9 @@ class Post extends Model
     public function scopePopular(Builder $query)
     {
         $query
-            ->withCount('views');
-        // ->orderByDesc('views_count');
-        // ->where('views_count', '>', 0);
+            ->withCount('views')
+            ->having('views_count', '>', 0)
+            ->orderByDesc('views_count', '>', 0);
     }
 
     public function scopeFeaturing(Builder $query)
