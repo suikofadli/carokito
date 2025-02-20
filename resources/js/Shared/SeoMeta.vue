@@ -3,7 +3,8 @@
     <Head :title="post.title">
         <meta property="description" :content="seoDescription" head-key="description" />
 
-        <script type="application/ld+json" v-text="jsonLd"></script>
+        <!-- <component is="script" type="application/ld+json" v-text="jsonLd"></component> -->
+        <component is="script" type="application/ld+json">{{ jsonLd }}</component>
 
         <meta property="og:title" :content="seoTitle" head-key="og:title" />
         <meta property="og:description" :content="seoDescription" head-key="og:description" />
