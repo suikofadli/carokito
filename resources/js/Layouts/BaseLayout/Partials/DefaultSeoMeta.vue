@@ -2,6 +2,7 @@
 
     <Head>
         <meta property="description" :content="seoDescription" head-key="description" />
+        <meta name="keywords" content="berita bengkulu hari ini, berita bengkulu, berita terkini bengkulu, portal berita bengkulu" head-key="keywords" />
 
         <meta property="og:type" content="website" head-key="og:type" />
         <meta property="og:title" :content="seoTitle" head-key="og:title" />
