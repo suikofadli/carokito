@@ -14,13 +14,14 @@ class PostController extends Controller
 {
     public function index(Request $request)
     {
-        $posts = PostResource::collection(Post::query()
-            ->when($request->is_featured, function ($query, $isFeatured) {
-                return $query->where('is_featured', $isFeatured);
-            })
-            ->withCount('views')
-            ->with(['user', 'editor'])
-            ->paginate(10)
+        $posts = PostResource::collection(
+            Post::query()
+                ->when($request->is_featured, function ($query, $isFeatured) {
+                    return $query->where('is_featured', $isFeatured);
+                })
+                ->withCount('views')
+                ->with(['user', 'editor'])
+                ->paginate(10)
         );
 
         return inertia('Dashboard/Post/Index', compact('posts'));

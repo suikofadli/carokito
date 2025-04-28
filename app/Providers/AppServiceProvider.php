@@ -23,6 +23,13 @@ class AppServiceProvider extends ServiceProvider
         Vite::prefetch(concurrency: 3);
         JsonResource::withoutWrapping();
 
+        // Protect /pulse route
+        if (config('app.env') === 'production') {
+            Gate::define('viewPulse', function (User $user) {
+                return $user->hasRole('admin');
+            });
+        }
+
         Gate::define('manage-users', function (User $user) {
             return $user->hasRole('admin');
         });
