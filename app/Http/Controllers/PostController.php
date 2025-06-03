@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 
@@ -40,7 +41,10 @@ class PostController extends Controller
 
         if ($request->hasFile('coverImage')) {
             $coverImageUrl = $request->file('coverImage')->store('images');
+            Log::info($coverImageUrl);
         }
+
+        Log::info($request->all());
 
         Post::create([
             'title' => $request->title,
